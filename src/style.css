@@ -319,6 +319,23 @@ body {
   line-height: 1.4;
 }
 
+.popup-verified {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 10px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  cursor: help;
+}
+
+.popup-verified::before {
+  content: '✓';
+  color: #16a34a;
+  font-size: 12px;
+}
+
 .popup dl {
   margin: 0;
   display: grid;

@@ -173,20 +173,38 @@ function popupContent(feature: MapGeoJSONFeature, def: LayerDef): HTMLElement {
   layer.append(swatch, document.createTextNode(def.label));
   wrapper.append(layer);
 
-  // ~230 of 20,725 points were placed by matching address text to a locality
-  // centroid, not by a real coordinate. Saying so is the whole difference
-  // between a map and a guess.
-  if (props.locationConfidence === 'approximate' || props.geocodeConfidence === 'approximate') {
+  // 581 of 7740 features have no real coordinate: the 12 "kumbhdoot" source
+  // sheets carried names and addresses only, so each point was placed by
+  // matching address text to a locality centroid ("locality-match", 348) or to
+  // the city centre when even that failed ("approximate", 233). Both are
+  // neighbourhood-level guesses and both have to say so — a silent
+  // locality-match is how City Centre Mall sat 688 m from the real building
+  // while looking like solid data.
+  const confidence = props.locationConfidence ?? props.geocodeConfidence;
+  const CAVEAT: Record<string, string> = {
+    'locality-match': 'Approximate — placed by locality name from its address, not a surveyed position.',
+    approximate: 'Approximate — no locality match, placed near the city centre.',
+  };
+  if (typeof confidence === 'string' && CAVEAT[confidence]) {
     const warn = document.createElement('p');
     warn.className = 'popup-warn';
-    warn.textContent = 'Approximate location — placed by locality, not a verified address.';
+    warn.textContent = CAVEAT[confidence]!;
     wrapper.append(warn);
+  } else if (confidence === 'verified') {
+    const ok = document.createElement('p');
+    ok.className = 'popup-verified';
+    ok.textContent = 'Verified position';
+    if (typeof props.locationSource === 'string') ok.title = props.locationSource;
+    wrapper.append(ok);
   }
+
+  // Already shown as the confidence badge above, or internal plumbing.
+  const HIDDEN_KEYS = ['locationConfidence', 'geocodeConfidence', 'locationSource', 'role'];
 
   const table = document.createElement('dl');
   for (const [key, value] of Object.entries(props)) {
     if (value === null || value === undefined || value === '') continue;
-    if (NAME_KEYS.includes(key)) continue;
+    if (NAME_KEYS.includes(key) || HIDDEN_KEYS.includes(key)) continue;
     const dt = document.createElement('dt');
     dt.textContent = key;
     const dd = document.createElement('dd');
