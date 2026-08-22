@@ -1,0 +1,3841 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Godavari Nagar Rockel Galli Ashok Stambh",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.781464,
+          20.006888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mangalwadi Gangapur Road",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.771349,
+          20.010747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siddharth Nagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.762496,
+          19.999082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Utkarsh Nagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.780519,
+          19.991567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rachana Vidyalaya Road",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.771569,
+          20.000452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Milind Nagar Pulajaval",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.772562,
+          19.991484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Milind Nagar Samaj Mandir",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.772065,
+          19.991624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rahul Nagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.775276,
+          19.994281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sahwas Nagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.780519,
+          19.991567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kalika Jhopadpatti",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.780784,
+          19.991473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kasturba Nagar Jhopadpatti Rickshaw Colony",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.773135,
+          19.9973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panchsheel Nagar Hotel Royal Heritage",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.787314,
+          19.997252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panchsheel Nagar Mayur Gas",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.785844,
+          19.995964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhadrakali Taxi Stand",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78607,
+          19.997492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rasulbag Kalidas Kalamandir",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.785699,
+          19.999856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gangawadi Ravivar Peth",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.790023,
+          20.008564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chitramandir Theatre Angulikula Parisar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.788172,
+          20.003119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manpa Building Red Cross",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78741,
+          20.005458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malharkhan Ashok Stambh",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.781464,
+          20.006888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joshiwada Gangapur Road",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.77762,
+          20.009015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siddharth Nagar (Public)",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.761685,
+          19.999883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kranti Nagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.768615,
+          19.992467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mhasobawadi Hotel Jhankar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.785476,
+          19.996652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kismat Bag (New Construction)",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.785699,
+          19.999856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kumbharwada Chowk Old Nashik",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.793865,
+          20.000404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Darbar Road Chowk Old Nashik",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.796506,
+          19.995877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Modakeshwar Gadge Maharaj Dharmashala",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79546,
+          20.000933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matangwada Manpa Vidyaniketan School",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.794957,
+          20.001798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganesh Tekdi Holi Old Nashik",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.793426,
+          20.001394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dingar Ali Sambhaji Chowk Old Nashik",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.793409,
+          20.001387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mhasrul Tekdi Parshanath Lane Old Nashik",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.790926,
+          20.001263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malharkhan Ashok Stambh (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.781464,
+          20.006888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Old CBS Bus Stand",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.783245,
+          20.001035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Collector Office",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.782063,
+          20.003579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lakshmibag Milind Nagar",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.771872,
+          19.989601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tibetan Market Sharanpur Market",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.761787,
+          19.999924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Highway Bus Stand (New Construction)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.773451,
+          19.993116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Civil Hospital",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.778893,
+          19.996479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Civil Hospital Compound",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.777882,
+          19.997488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Thakkar Bazar Bus Stand",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.780573,
+          19.997688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Highway Bus Stand Inside",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.782263,
+          19.989223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mahatma Kaladalan Shivaji Garden",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.785699,
+          19.999856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suruchi Hotel Shivaji Garden",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.783187,
+          20.001089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nehru Garden",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.787121,
+          20.002011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yashwant Mandai Ravivar Karanja",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.788842,
+          20.006504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saraf Bazar",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.790253,
+          20.004711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saraswati Nala Damodar Theatre Bhadrakali",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.789931,
+          20.00263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandarbh Seva Hospital Shalimar Chowk",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.785599,
+          19.999858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rugtha High School Ashok Stambh (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.782348,
+          20.007141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Thate Nagar Gangapur Road (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.762708,
+          20.010796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajiv Gandhi Bhavan Sharanpur Road (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.775344,
+          20.003655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dudh Dairy Trimbak Road (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.765388,
+          19.994761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parijat Nagar Bus Stop (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.771569,
+          20.000452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Golf Club Jogging Track (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.780519,
+          19.991567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hemlata Talkies (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.787723,
+          20.00781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saraf Bazar (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.790253,
+          20.004711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Swarg Dukan R.K. (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7878,
+          20.00706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ghanekar Lane (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7878,
+          20.00706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhobi Bol Saraf Bazar (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.790253,
+          20.004711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhagwant Mithai Main Road (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.789005,
+          20.006554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tempo Stand Rajebahadur Hospital Road (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.788531,
+          20.00431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Damodar Talkies Main Road (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.788802,
+          20.002784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madhukar Talkies Main Road (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.780802,
+          20.002784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ST Mahamandal Depot N.D. Patel Road (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.784467,
+          19.993456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Charanseva Dukan Shalimar (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795599,
+          19.999858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandarbh Seva Hospital Gate Shalimar Chowk (Urinal)",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795599,
+          19.999858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadnagar Mhasrul",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.805751,
+          20.050536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ramabai Ambedkarnagar Dindori Road",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.804476,
+          20.053805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shivasamarth Nagar Kishor Suryavanshi Road",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.797913,
+          20.037183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gajanan Maharaj Mandir Vrundavan Nagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.800427,
+          20.043137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Omkar Nagar Public Library",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.797491,
+          20.0463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vitthal Mandir Akash Petrol Pump",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.806523,
+          20.039106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mhasrul Gharpatti Office",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.80654,
+          20.047117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mhasrul Amardham",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.810613,
+          20.046714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Truck Terminus Jakat Naka",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.867275,
+          20.034917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Matangwada Bus Stand",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.865905,
+          20.035692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Dattamandir Road",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.866271,
+          20.036155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Mahalakshmi Garden",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.866272,
+          20.036156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Rakhadvasti Bhagur Road",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.863136,
+          20.033556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhaji Market Nilgiri Bag",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.830284,
+          20.006674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dattamandir Ganesh Market Konark Nagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.846481,
+          20.020191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhikale Library Konark Nagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.85026,
+          20.019733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Canal Road Bidi Kamgarnagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.826588,
+          20.009301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shriram Library Yatra Hotel Road",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.844477,
+          20.022069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Dashkriya Shed",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.86673,
+          20.039885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Bus Stop Swami Samarth Kendra",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.865852,
+          20.035675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hanuman Mandir Hanuman Nagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.830723,
+          20.016021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Janardan Swami Math",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.814494,
+          20.0077794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Naka ST Depot",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8031633,
+          20.0091585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tapovan Kapila Sangam",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8142043,
+          20.00079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhikusa Paper Mill",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8083443,
+          20.0160387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Late Nagar Corner",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8153315,
+          20.0226483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sanjay Nagar Water Tank",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.801516,
+          20.01115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RTO Office Gate",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7951165,
+          20.030409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Charanpaduka Public Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79825,
+          20.006952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Godapark Ahilyadevi Bridge",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.781682,
+          20.010947
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Makhmalabad Library",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.774865,
+          20.045418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajwada Mhasrul",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.808067,
+          20.047063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Rajwada Society",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.857276,
+          20.032747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Dhangar Galli",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.867263,
+          20.034923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nilgiri Bag Devi Mandir",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.831283,
+          20.00713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waghadi Pul",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795792,
+          20.004934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Avdhutwadi Dindori Road",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.797563,
+          20.019431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samrat Nagar No. 9",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795372,
+          20.010944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vaishali Nagar Peth Road",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79506,
+          20.019883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dalvi Dukan Phule Nagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795161,
+          20.020848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kalika Nagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79632,
+          20.017528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panchavati Rajwada",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.796293,
+          20.009901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ram Mandir Valmiki Nagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.801477,
+          20.010252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rathi Chawl Agra Road",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.800047,
+          20.010322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shinde Chawl",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.799298,
+          20.01004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhorewada",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.796174,
+          20.006479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nagchowk Public Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.798147,
+          20.00683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ram Garden Public Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.792504,
+          20.017132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erandwadi Public Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79217,
+          20.01206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Avjinath Dattanagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.792935,
+          20.018967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganesh Chowk Krantinagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.786233,
+          20.013237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krishnanagar Moremala",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.780696,
+          20.015712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Royal Town Chh.Shi.Vidyalaya",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.773123,
+          20.043748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kumbharwada Makhmalabad",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.77485,
+          20.045433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marud Galla Maruti Mandir Mhasrul",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.803404,
+          20.048559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vaidyawada Mhasrul",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.807195,
+          20.045283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon Dagdoba Mandir",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.857277,
+          20.032747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manur Shala Magche",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.849323,
+          19.9914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajendra Nagar",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8002044,
+          20.0074598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ramtekadi Tapovan",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8155217,
+          19.9988617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joshi Wada Hirawadi",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8086833,
+          20.0161533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mayco Dawakhanyamage",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79632,
+          20.017528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadarwadi Peth Road",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795413,
+          20.017572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ranapratap Road Bauddhavihar",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79651,
+          20.018789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rahulwadi Peth Road",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795094,
+          20.018889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gajanan Chowk Dindori Road",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79503,
+          20.020338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gondwadi Peth Road",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795501,
+          20.019071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valmiki Nagar Samajmandir",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.800596,
+          20.011129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Avjinath Dattamandir",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.793197,
+          20.019771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shramjivi Nagar Rohini Nagar Peth Road",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.791634,
+          20.016269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adarshnagar Ramwada",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.784379,
+          20.012069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shitala Devi Ramwada",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.788276,
+          20.013313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajwada Makhmalabad",
+        "facilityType": "Sulabh Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.77377,
+          20.044664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manur Road Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.797455,
+          19.998798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhoigalli Urinal",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79857392,
+          19.99653324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shivajichowk Urinal",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79857392,
+          19.99653324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lokhandbazar Chowk Urinal",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.790658,
+          19.996765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Phule Market Urinal",
+        "facilityType": "Urinal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.789638,
+          19.997965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maroti Wafers Right to Pee",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.80915,
+          19.9987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sonje Pul Right to Pee",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.809157,
+          19.98918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Agartakli Bus Stop",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.817748,
+          19.987099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vaiduwadi",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.809789,
+          19.980866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Upnagar Bhaji Market",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.823564,
+          19.973982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Upnagar Bhaji Market Sahakarnagar Building",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.805863,
+          19.983303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Upnagar Old Bhaji Market",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.824465,
+          19.974935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Panchshilnagar Shinde Niwas",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.813221,
+          19.979437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samatanagar Hemat Niwas",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.816093,
+          19.984708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samatanagar Tejadhbaba Chowk",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.816767,
+          19.988453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samatanagar Right to Pee",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.814986,
+          19.984212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Janata Vidyalaya Right to Pee",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.81181,
+          19.977767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "City Garden Right to Pee",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78495,
+          19.978524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samaj Kalyan Right to Pee",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.801382,
+          19.98611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salvemala Right to Pee",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.785827,
+          19.968681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sadiknagar Toilet (2)",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.791585,
+          19.96761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Padriai Devi Mandir Samor Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.794205,
+          19.967738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajivnagar Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.777903,
+          19.97105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhangatsingh Jhop. Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.77025,
+          19.968848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganjmal Bus Stop Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.787887,
+          19.996772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhimwadi Ghasbazar Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.788887,
+          19.996561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nanavali Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.797081,
+          19.99882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dwarka Police Chowki",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.796248,
+          19.994193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khadkali Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78881,
+          19.998487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koliwada Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.798281,
+          19.997572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suyognagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.805863,
+          19.983303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Punjab Colony Sulabh",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.822725,
+          19.973972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sadiknagar Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.791542,
+          19.967579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gopalwadi Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.792235,
+          19.970018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Padriai Devi Chowk Toilet",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.794818,
+          19.967813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matangwada Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79574,
+          19.995166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nagsenanagar Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795056,
+          19.993546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kokanipura Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.789098,
+          19.998034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kajipura Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795939,
+          19.99721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maheshnagar Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.799946,
+          19.991916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samatanagar Tejadhbaba Chowk (Community)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.817638,
+          19.987162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adivasiwada",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.82064,
+          19.98757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhimshaktinagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.815668,
+          19.986149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambedkarnagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.812012,
+          19.977515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gautamnagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.823839,
+          19.973422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambedkarwadi",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.805298,
+          19.984988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indira Gandhi Jhop.",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.810179,
+          19.978365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rahulnagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.817461,
+          19.979408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sarojbabanagar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.806172,
+          19.986866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sant Gadge Maharaj Parisar",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.815761,
+          19.985577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bajarangwadi Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795794,
+          19.982459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siddharthnagar Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.807371,
+          19.976861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shivajiwadi 1 Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.791359,
+          19.984198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shivajiwadi 2 Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.790567,
+          19.983191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shivajiwadi 3 Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.787332,
+          19.983578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shivajiwadi 4 Toilet",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.791713,
+          19.983271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gopalwadi Toilet (Community)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.792725,
+          19.969377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koliwada Toilet (Community)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.792911,
+          19.971084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Ambedkar Garden Toilet",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.796757,
+          19.998486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kandha Market Aayppa Mandir Magche",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.795764,
+          19.995147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amardham Gate Toilet",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.798294,
+          19.997618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganjmal Bus Stop Toilet (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.787887,
+          19.996772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhimwadi Ghasbazar Toilet (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.788887,
+          19.996561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nanavali Toilet (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.797081,
+          19.99882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dwarka Police Chowki (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.796248,
+          19.994193
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khadkali Toilet (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78881,
+          19.998487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koliwada Toilet (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.798281,
+          19.997572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Suyognagar (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.805863,
+          19.983303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Punjab Colony Sulabh 2",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.822725,
+          19.973972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sadiknagar Toilet (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.791542,
+          19.967579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gopalwadi Toilet (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.792235,
+          19.970018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Padriai Devi Chowk Toilet (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.794818,
+          19.967813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mahadev Wadi Milanni Chowk Satpur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.733012,
+          19.987725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santoshi Mata Nagar Satpur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.73622,
+          20.002002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santoshi Mata Nagar Satpur (2)",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.734911,
+          19.999675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Satpur Vister Bus Stand",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.735641,
+          19.991362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Divisional Office Satpur Samor",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.734626,
+          19.993205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Satpur Police Station Samor",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.74331,
+          19.99451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ujwal Agency Satpur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.745336,
+          19.992715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ITI Samor Satpur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.749548,
+          19.99317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ITI Shejari Satpur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.749312,
+          19.993286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamble Wadi Satpur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.745208,
+          19.989316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sangam Chowk Satpur (1)",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.740479,
+          19.988697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sangam Chowk Satpur (2)",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.74046,
+          19.988666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sangam Chowk Satpur (3)",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.74023,
+          19.988687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganesh Nagar Kamgar Nagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.746772,
+          20.006102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sitamai Kale Marg Pipeline Road",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.741867,
+          20.006146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kranti Chowk Bhaji Market Gangapur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.747213,
+          20.032203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Godavari Parichay Garden Gangapur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.74816,
+          20.03115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gangapur Dhakka",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.722543,
+          20.029493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Someshwar Gangapur",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.726215,
+          20.021145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gangapur Gaon Rajwada",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.714886,
+          20.030477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bajrang Nagar Maruji Mandir Anandwalli",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.748107,
+          20.013969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bajrang Nagar Amardham Anandwalli",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.744705,
+          20.015562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chincholi Gaon",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.724854,
+          19.966054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Satpur Colony Bhaji Market",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.749292,
+          19.989785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hanuman Nagar Dhuvnagar",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.720328,
+          20.016951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Motiwala College Samor",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.717973,
+          20.017237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prabuddha Nagar Satpur Ashtapali Chowk",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.724564,
+          19.99173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "J.P. Nagar Satpur",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.73391,
+          19.991802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chh. Shivaji Miraj Bhaji Mandai",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.733126,
+          19.985923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamble Wadi Satpur (Community)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.745329,
+          19.989244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jagtap Wadi Satpur",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.74203,
+          19.988702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amardham Road Satpur",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.736412,
+          19.988729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sant Kabir Nagar (1)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.749732,
+          20.007962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sant Kabir Nagar (2)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.749422,
+          20.007934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prabuddha Nagar Satpur Sant Rohidas Chowk",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.734366,
+          19.991896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prabuddha Nagar Satpur Mahendra Gate Samor",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.719814,
+          19.999501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tempo Stand Satpur",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.73434,
+          19.990311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Swarbaba Nagar Satpur",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.741717,
+          19.99002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mutton Market Satpur",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.733646,
+          19.981256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dadoba Pul Satpur",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.733012,
+          19.987724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mahadev Wadi Satpur (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.73065,
+          19.9944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fire Station Satpur",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.740161,
+          19.991291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amardham Road Satpur (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.736312,
+          19.988708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chincholi Gaon (Sulabh)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.72562,
+          19.967452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mahatma Phule Udyan Shivaji Nagar",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.709106,
+          20.009032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saptashrungi Devi Mandir Samor Shivaji Nagar",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.707949,
+          20.008986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shankar Nagar Samoril Toilet (Ambad)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.744573,
+          19.9633568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pathardi Gaon Gaikwad Road Khaderao Mandir (Sulabh)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.763543,
+          19.941072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dahegaon Maruti Mandir Mage (Sulabh)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.761965,
+          19.924547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pimpalgaon Khamb Waldevi Pulajaval (Sulabh)",
+        "facilityType": "Community Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.769697,
+          19.926501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shivaji Bhaji Market Lekha Nagar Cidco",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.772912,
+          19.975694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bal Bharati Indira Gandhi Vasahat No.02 Cidco",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.773048,
+          19.974298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambad Gaon Smashanbhumi Shejari (Sulabh International)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.746315,
+          19.96124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pawan Nagar Mini Stadium",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.745011,
+          19.963416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pandit Nagar Sulabh Toilet",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.746149,
+          19.967765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pathardi Gaon Gharpatti Office (Sulabh International)",
+        "facilityType": "Sulabh Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.748472,
+          19.942624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Indira Gandhi Vasahat No.01 Cidco",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.772581,
+          19.975435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Utwadi Gaon",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.760544,
+          19.98828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Warcha Chuchale Gaon",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.726688,
+          19.947459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vijay Nagar Morwadi Gaon Sarvajanik",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.749298,
+          19.968117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ravi Muralidhar Gaikwad Jogging Track Vasan Nagar (New Nashik)",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.746704,
+          19.946981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pathardi Gaon Dahegaon Road Dattamandir",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.745403,
+          19.942877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pathardi Gaon Dahegaon Road Rajwada",
+        "facilityType": "Public Toilet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.745402,
+          19.942918
+        ]
+      }
+    }
+  ]
+}
