@@ -14,7 +14,8 @@ export type LayerDef = {
 export const LAYERS: LayerDef[] = [
   { id: 'ghats',               file: 'ghats.geojson',               label: 'Ghats',               color: '#b45309', group: 'Kumbh', on: true },
   { id: 'parking-zones',       file: 'parking-zones.geojson',       label: 'Parking zones',       color: '#7c3aed', group: 'Kumbh', on: true },
-  { id: 'ring-road',           file: 'ring-road.geojson',           label: 'Ring road',           color: '#475569', group: 'Kumbh' },
+  { id: 'ring-road',           file: 'ring-road.geojson',           label: 'Ring road',           color: '#475569', group: 'Kumbh', on: true },
+  { id: 'congestion-points',   file: 'congestion-points.geojson',   label: 'Congestion points',   color: '#57534e', group: 'Kumbh' },
   { id: 'cctv-cameras',        file: 'cctv-cameras.geojson',        label: 'CCTV cameras',        color: '#0891b2', group: 'Kumbh' },
   { id: 'mandirs',             file: 'mandirs.geojson',             label: 'Mandirs',             color: '#ea580c', group: 'Kumbh' },
 
