@@ -1,19 +1,49 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <title>Nashik Monitor — Kumbh Mela 2027 city map</title>
-    <meta name="description" content="Interactive map of Nashik–Trimbakeshwar civic and Kumbh Mela 2027 infrastructure: ghats, CCTV, parking, ring road, hospitals, police stations, mandirs and more." />
+    <meta name="description" content="Interactive map of Nashik–Trimbakeshwar civic and Kumbh Mela 2027 infrastructure: ghats, CCTV, parking, ring road, hospitals, police stations, mandirs and more. An initiative by Kumbhathon Innovation Foundation." />
+    <meta name="theme-color" content="#fdfcfb" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preload" as="image" href="/kumbhathon-logo.png" />
+    <script>
+      // Applied before first paint so a dark-theme reload never flashes white.
+      try {
+        var t = localStorage.getItem('nm-theme');
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
   </head>
   <body>
+    <div id="splash">
+      <div class="splash-inner">
+        <img class="splash-logo" src="/kumbhathon-logo.png" alt="Kumbhathon — Innovation for Impact" width="900" height="227" />
+        <div class="splash-rule"></div>
+        <p class="splash-kicker">Presenting</p>
+        <h1 class="splash-title">Nashik Monitor</h1>
+        <p class="splash-sub">for Kumbh Mela 2027</p>
+        <p class="splash-credit">An initiative by Kumbhathon Innovation Foundation</p>
+      </div>
+      <p class="splash-skip">click anywhere to skip</p>
+    </div>
+
     <div id="app">
       <aside id="sidebar">
         <header>
-          <h1>Nashik Monitor</h1>
-          <p>Kumbh Mela 2027 · city infrastructure</p>
+          <div class="brand">
+            <h1>Nashik Monitor</h1>
+            <button id="theme-toggle" type="button" aria-label="Switch theme"></button>
+          </div>
+          <p class="tagline">Kumbh Mela 2027</p>
         </header>
         <div id="layers"></div>
+        <footer>
+          <span>An initiative by</span>
+          <strong>Kumbhathon Innovation Foundation</strong>
+        </footer>
       </aside>
       <main id="map"></main>
     </div>
