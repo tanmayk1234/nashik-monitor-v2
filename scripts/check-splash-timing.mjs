@@ -1,18 +1,15 @@
 // Guards the splash against the regression it was written for: style.css used to
 // arrive as a JS import behind maplibre-gl's module graph, so the intro started
-// ~450 ms late and then fought the map for the main thread. If someone moves the
-// stylesheet back into main.ts, or makes boot.ts import the map eagerly, the
-// assertion at the bottom fails.
-// node scripts/check-splash-timing.mjs [url] [tag]
+// ~450 ms late and then fought the map for the main thread. Moving the stylesheet
+// back into main.ts, or making boot.ts import the map eagerly, fails the
+// assertion at the bottom.
+// Usage: node scripts/check-splash-timing.mjs [url] [tag]
 import assert from 'node:assert/strict';
-import { chromium } from '@playwright/test';
+import { launch } from './browser.mjs';
 
 const url = process.argv[2] ?? 'http://localhost:5173/';
 const tag = process.argv[3] ?? 'dev';
-const browser = await chromium.launch({
-  executablePath: 'C:/Users/Batman/AppData/Local/ms-playwright/chromium-1223/chrome-win64/chrome.exe',
-  args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'],
-});
+const browser = await launch();
 const page = await browser.newPage({ viewport: { width: 1280, height: 820 } });
 
 // Recorded from inside the page, before any of the app's own scripts run.

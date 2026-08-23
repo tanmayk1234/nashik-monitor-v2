@@ -1,5 +1,7 @@
 # Nashik Monitor
 
+[![CI](https://github.com/tanmayk1234/nashik-monitor-v2/actions/workflows/ci.yml/badge.svg)](https://github.com/tanmayk1234/nashik-monitor-v2/actions/workflows/ci.yml)
+
 Interactive map of Nashik–Trimbakeshwar civic and Kumbh Mela 2027 infrastructure:
 ghats, CCTV, parking, ring road, hospitals, police stations, mandirs and 18 more
 layers. An initiative by **Kumbhathon Innovation Foundation**.
@@ -11,7 +13,12 @@ npm install
 npm run dev        # http://localhost:5173
 npm run build      # tsc && vite build
 npm run typecheck
-npm test           # export-format checks
+npm test           # export-format assertions
+
+# Browser checks, against a running dev server. Set CHROMIUM_PATH if the
+# installed browser build does not match the one @playwright/test pins.
+node scripts/check-splash-timing.mjs
+node scripts/check-download-ui.mjs
 ```
 
 ## Stack
@@ -22,11 +29,6 @@ Vite + TypeScript + MapLibre GL. No framework. Three runtime dependencies:
 Basemap is [OpenFreeMap](https://openfreemap.org) — `positron` for light,
 `dark` for dark. Keyless, no account, no usage cap to manage.
 
-This is a from-scratch rewrite. It replaces a fork of
-[koala73/worldmonitor](https://github.com/koala73/worldmonitor) that carried
-~2,700 files and an 8,694-line map component to render one city. That fork has
-been deleted.
-
 ## Layout
 
 | file | role |
@@ -35,6 +37,7 @@ been deleted.
 | `src/main.ts` | map, lazy layer loading, sidebar, popups, theme swap |
 | `src/layers.ts` | the 25-layer config table — one row per file in `public/data` |
 | `src/formats.ts` | the five export converters, and the name-key list popups share |
+| `src/download.ts` | the per-layer format menu and the file save |
 | `src/theme.ts` | theme state, basemap URLs, point-halo colour |
 | `src/splash.ts` | intro sequence timing and skip |
 | `src/style.css` | design tokens, splash, shell, popup |
@@ -43,6 +46,7 @@ been deleted.
 | `scripts/test-formats.ts` | asserts each export format; `npm test` |
 | `scripts/check-download-ui.mjs` | drives the real page and downloads all five formats |
 | `scripts/check-splash-timing.mjs` | asserts the intro animates before the map chunk lands |
+| `scripts/browser.mjs` | shared Playwright launch for the two checks |
 
 ### How layers render
 
@@ -55,8 +59,10 @@ theme switch can rebuild layers without re-downloading. Boot pulls ~300 KB, not
 the full 2.4 MB.
 
 `setStyle()` discards custom sources along with the old style, so switching theme
-re-adds every cached layer on `style.load`. That is the only non-obvious part of
-`main.ts`.
+re-adds every cached layer on `style.load`.
+
+Hit-testing runs on every `mousemove`, so the list of live sublayer ids is cached
+when a layer mounts rather than rebuilt per event.
 
 ### Why boot.ts exists
 
@@ -127,14 +133,15 @@ This matters. Two real errors found by cross-checking:
 
 Method that caught both: pull ground truth from OpenStreetMap via Overpass, then
 measure. For a class of POI with enough OSM coverage, compare the *mean offset
-vector* — mandirs across 382 matches came to 8 m, which is how we know the
-pipeline is unbiased and the ghats sheet was uniquely wrong.
+vector* — mandirs across 382 matches came to 8 m, which is what establishes that
+the pipeline is unbiased and the ghats sheet was uniquely wrong.
 
-Raw sources (KML, KMZ, GeoPackage, PDF) and a full dataset inventory live outside
-this repo, in `Downloads/Nashik Monitor/` — see `datasets/README.md` there for
-per-file provenance and the dated corrections.
+The raw survey sources (KML, KMZ, GeoPackage, PDF) are not in the repo — only the
+GeoJSON built from them. `scripts/build-datasets.mjs` takes the KML path as its
+first argument, so regenerating the four KML-derived layers needs a local copy of
+the NTKMA master file.
 
-## Not built yet
+## Roadmap
 
 - **Clustering.** Mandirs (1,089), grocery shops (745) and CCTV (4,079) draw as
   raw circles. Needs per-layer cluster config, so decide first which layers are
@@ -148,4 +155,6 @@ per-file provenance and the dated corrections.
 
 ## License
 
-AGPL-3.0-only, inherited from the upstream project the original fork came from.
+AGPL-3.0-only — see [LICENSE](LICENSE). Inherited from
+[koala73/worldmonitor](https://github.com/koala73/worldmonitor), which an earlier
+version of this project was forked from before being rewritten.

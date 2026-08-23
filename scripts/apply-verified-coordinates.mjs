@@ -25,7 +25,7 @@ const OVERRIDES = [
     lon: 73.76197,
     lat: 19.99055,
     source: 'OpenStreetMap way/1466134492 (shop=mall, landuse=retail, 316x119 m footprint) — centroid; corroborated by Photon geocoder at 19.99056, 73.76143 (57 m away, inside the same footprint)',
-    note: 'Was 19.99660, 73.76058 from a Parijat Nagar locality match — 688 m north of the real mall. Our address string reads "Untwadi Rd, Parijat Nagar"; OSM places the footprint off Ambad Link Road (M17), with an "Untawadi Store" 145 m away, so the Untwadi name does reach this spot.',
+    note: 'Was 19.99660, 73.76058 from a Parijat Nagar locality match — 688 m north of the real mall. The source address string reads "Untwadi Rd, Parijat Nagar"; OSM places the footprint off Ambad Link Road (M17), with an "Untawadi Store" 145 m away, so the Untwadi name does reach this spot.',
   },
   {
     file: 'malls.geojson',

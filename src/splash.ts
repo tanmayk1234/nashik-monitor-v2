@@ -1,8 +1,6 @@
 // Brand intro. Sequencing lives in CSS (animation-delay per element); this only
-// decides when to leave and lets the user cut it short.
-//
-// ponytail: plays on every load, as asked. If it starts feeling long on repeat
-// visits, gate it on sessionStorage — one `if` here, no other change.
+// decides when to leave and lets the viewer cut it short. It plays on every
+// load; gating it on sessionStorage would be one `if` here and no other change.
 const HOLD_MS = 3900;
 const FADE_MS = 700;
 

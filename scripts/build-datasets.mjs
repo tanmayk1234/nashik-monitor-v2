@@ -21,8 +21,9 @@ import path from 'node:path';
 import assert from 'node:assert';
 import { XMLParser } from 'fast-xml-parser';
 
-const srcPath = process.argv[2] ?? 'C:/Users/Batman/Downloads/Nashik Monitor/updated_main.kml';
+const srcPath = process.argv[2];
 const outDir = process.argv[3] ?? 'public/data';
+assert.ok(srcPath, 'usage: node scripts/build-datasets.mjs <updated_main.kml> [outDir]');
 
 const parser = new XMLParser({
   ignoreAttributes: false,
