@@ -81,10 +81,12 @@ body {
 }
 
 .splash-rule {
-  width: 0;
+  width: 96px;
   height: 1px;
   margin: 26px 0 22px;
   background: #b34a2e;
+  /* scaleX, not width: the map is being built on the main thread while this
+     plays, and only transform and opacity keep running on the compositor. */
   animation: rule 0.8s var(--ease) 0.95s both;
 }
 
@@ -144,8 +146,8 @@ body {
 }
 
 @keyframes rule {
-  from { width: 0; opacity: 0; }
-  to   { width: 96px; opacity: 1; }
+  from { transform: scaleX(0); opacity: 0; }
+  to   { transform: scaleX(1); opacity: 1; }
 }
 
 @keyframes fade {
@@ -272,6 +274,87 @@ body {
   font-size: 11px;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
+}
+
+/* ── Download ───────────────────────────────────────────────────────────── */
+
+.dl {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.18s var(--ease), color 0.18s var(--ease), border-color 0.18s var(--ease);
+}
+
+.layer:hover .dl { opacity: 1; }
+
+.dl:hover, .dl:focus-visible {
+  opacity: 1;
+  color: var(--accent);
+  border-color: var(--border);
+  background: var(--accent-soft);
+}
+
+#download-menu {
+  position: fixed;
+  width: 242px;
+  margin: 0;
+  padding: 10px;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+#download-menu:not(:popover-open) { display: none; }
+
+.dl-title {
+  margin: 0 2px 8px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+
+.dl-format {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  text-align: left;
+  font-family: inherit;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.16s var(--ease);
+}
+
+.dl-format:hover, .dl-format:focus-visible { background: var(--hover); }
+.dl-format strong { display: block; font-size: 13px; font-weight: 500; }
+.dl-format span { display: block; font-size: 11px; color: var(--muted); }
+
+.dl-note {
+  margin: 8px 2px 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+  font-size: 10.5px;
+  line-height: 1.4;
+  color: var(--muted);
 }
 
 #sidebar footer {

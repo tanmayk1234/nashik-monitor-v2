@@ -9,6 +9,9 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="preload" as="image" href="/kumbhathon-logo.png" />
+    <!-- A real stylesheet, not a JS import: the splash has to paint and start
+         animating before maplibre-gl's module graph is anywhere near loaded. -->
+    <link rel="stylesheet" href="/src/style.css" />
     <script>
       // Applied before first paint so a dark-theme reload never flashes white.
       try {
@@ -47,6 +50,6 @@
       </aside>
       <main id="map"></main>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/boot.ts"></script>
   </body>
 </html>

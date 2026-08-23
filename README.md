@@ -11,6 +11,7 @@ npm install
 npm run dev        # http://localhost:5173
 npm run build      # tsc && vite build
 npm run typecheck
+npm test           # export-format checks
 ```
 
 ## Stack
@@ -30,13 +31,18 @@ been deleted.
 
 | file | role |
 |---|---|
+| `src/boot.ts` | entry point: splash first, then the map after a painted frame |
 | `src/main.ts` | map, lazy layer loading, sidebar, popups, theme swap |
 | `src/layers.ts` | the 25-layer config table — one row per file in `public/data` |
+| `src/formats.ts` | the five export converters, and the name-key list popups share |
 | `src/theme.ts` | theme state, basemap URLs, point-halo colour |
 | `src/splash.ts` | intro sequence timing and skip |
 | `src/style.css` | design tokens, splash, shell, popup |
 | `scripts/build-datasets.mjs` | splits the master NTKMA KML into per-layer GeoJSON |
 | `scripts/apply-verified-coordinates.mjs` | idempotent coordinate override table |
+| `scripts/test-formats.ts` | asserts each export format; `npm test` |
+| `scripts/check-download-ui.mjs` | drives the real page and downloads all five formats |
+| `scripts/check-splash-timing.mjs` | asserts the intro animates before the map chunk lands |
 
 ### How layers render
 
@@ -51,6 +57,40 @@ the full 2.4 MB.
 `setStyle()` discards custom sources along with the old style, so switching theme
 re-adds every cached layer on `style.load`. That is the only non-obvious part of
 `main.ts`.
+
+### Why boot.ts exists
+
+A module script blocks the first paint until its whole graph has evaluated. With
+the map imported from the entry point, the splash could not start until ~1 MB of
+maplibre-gl had loaded — it began 450 ms late and then competed with the map
+build for the main thread. So `boot.ts` runs the splash, and imports the map
+after two animation frames; `style.css` is a `<link>` in `index.html` rather than
+a JS import, for the same reason. `scripts/check-splash-timing.mjs` asserts the
+intro is already playing while the map chunk is still in flight.
+
+### Downloads
+
+Every sidebar row has a ↓ button: pick a layer, pick a format, get that layer
+only. A layer that was never switched on is fetched on demand, so downloading
+does not require displaying.
+
+| format | for |
+|---|---|
+| GeoJSON | QGIS, Leaflet, the raw file |
+| CSV | Excel, Google Sheets, pandas — UTF-8 BOM so Devanagari names survive |
+| KML | Google Earth, Google My Maps — carries the layer colour |
+| GPX | GPS units, OsmAnd, Garmin — points as waypoints, shapes as tracks |
+| GeoJSON Lines | one feature per line, for streaming tools |
+
+All five are text formats, so `Blob` + `<a download>` is the whole pipeline and
+no dependency was added. Shapefile, GeoPackage and xlsx are absent on purpose:
+each is a binary container needing a library to write, and CSV plus GeoJSON
+already reach every tool a student is likely to open.
+
+Exports keep **all** properties, `locationConfidence` included — an approximate
+point has to stay labelled approximate outside this map too. In CSV, polygons
+and lines leave `longitude`/`latitude` empty and put the shape in a `wkt`
+column, rather than passing one vertex off as "the" location.
 
 ## Brand
 
@@ -99,7 +139,7 @@ per-file provenance and the dated corrections.
 - **Clustering.** Mandirs (1,089), grocery shops (745) and CCTV (4,079) draw as
   raw circles. Needs per-layer cluster config, so decide first which layers are
   "browse" and which are "look up".
-- **Search**, URL state, dataset downloads, deploy config.
+- **Search**, URL state, deploy config.
 - **9 of 11 malls remain `locality-match`** — unknown to OSM, Nominatim and
   Photon alike. Spot-check them and add to `apply-verified-coordinates.mjs`.
 - **Two ghats dropped**: Kushavarta Kund (Trimbakeshwar, outside the KML) and

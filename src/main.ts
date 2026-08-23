@@ -4,15 +4,13 @@ import '@fontsource/jost/500.css';
 import type { FeatureCollection } from 'geojson';
 import maplibregl, { type MapGeoJSONFeature } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import './style.css';
+// style.css is a <link> in index.html, not an import here: it has to be in
+// effect at first paint, and a module import lands well after it.
 import { GROUPS, LAYERS, type LayerDef } from './layers';
+import { FORMATS, NAME_KEYS, featureName, type Format } from './formats';
 import { applyTheme, currentTheme, haloColor, styleUrl } from './theme';
-import { runSplash } from './splash';
 
 const NASHIK_CENTER: [number, number] = [73.7898, 19.9975];
-const NAME_KEYS = ['name', 'Name', 'Ghat Name'];
-
-runSplash();
 
 const map = new maplibregl.Map({
   container: 'map',
@@ -30,6 +28,9 @@ const popup = new maplibregl.Popup({ closeButton: true, maxWidth: '320px' });
 // re-downloading: setStyle() drops all custom sources with the old style.
 const data = new Map<string, FeatureCollection>();
 const shown = new Set<string>();
+// The feature-count element of each sidebar row, so both a toggle and a
+// download can report progress on the row they came from.
+const counts = new Map<string, HTMLElement>();
 
 // Every file may hold points, lines and polygons at once (cctv-cameras and
 // ring-road both do), so each source gets one sublayer per geometry type and
@@ -79,26 +80,35 @@ function mount(def: LayerDef): void {
   addSublayers(def);
 }
 
-// ponytail: fetched on first toggle, never re-fetched. ring-road.geojson is
-// 6.5 MB of 12k LineStrings — fine on demand, would be indefensible eagerly.
-// Move that one file to vector tiles if it ever needs to be on by default.
-async function showLayer(def: LayerDef, countEl: HTMLElement): Promise<void> {
+// ponytail: fetched on first toggle or first download, never re-fetched.
+// ring-road.geojson is 6.5 MB of 12k LineStrings — fine on demand, would be
+// indefensible eagerly. Move that one file to vector tiles if it ever needs to
+// be on by default.
+async function loadData(def: LayerDef): Promise<FeatureCollection | null> {
+  const cached = data.get(def.id);
+  if (cached) return cached;
+  const countEl = counts.get(def.id);
+  if (countEl) countEl.textContent = '···';
+  try {
+    const geojson = await fetch(`data/${def.file}`).then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json() as Promise<FeatureCollection>;
+    });
+    data.set(def.id, geojson);
+    if (countEl) countEl.textContent = geojson.features.length.toLocaleString('en-IN');
+    return geojson;
+  } catch (err) {
+    if (countEl) countEl.textContent = 'failed';
+    console.error(`[${def.id}] load failed`, err);
+    return null;
+  }
+}
+
+async function showLayer(def: LayerDef): Promise<void> {
   shown.add(def.id);
-  if (!data.has(def.id)) {
-    countEl.textContent = '···';
-    try {
-      const geojson = await fetch(`data/${def.file}`).then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        return r.json() as Promise<FeatureCollection>;
-      });
-      data.set(def.id, geojson);
-      countEl.textContent = geojson.features.length.toLocaleString('en-IN');
-    } catch (err) {
-      shown.delete(def.id);
-      countEl.textContent = 'failed';
-      console.error(`[${def.id}] load failed`, err);
-      return;
-    }
+  if (!(await loadData(def))) {
+    shown.delete(def.id);
+    return;
   }
   if (!shown.has(def.id)) return; // toggled back off while the fetch was in flight
   mount(def);
@@ -112,6 +122,89 @@ function hideLayer(def: LayerDef): void {
   for (const id of sublayerIds(def.id)) {
     if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', 'none');
   }
+}
+
+// ── Downloads ─────────────────────────────────────────────────────────────
+// One menu shared by all 25 rows rather than one per row: the button that
+// opened it sets `pending`, and that decides what gets written.
+
+let pending: LayerDef | null = null;
+const dlTitle = document.createElement('p');
+dlTitle.className = 'dl-title';
+
+function save(text: string, filename: string, mime: string): void {
+  const url = URL.createObjectURL(new Blob([text], { type: `${mime};charset=utf-8` }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  // Firefox cancels the download if the blob URL dies too early.
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+async function download(fmt: Format): Promise<void> {
+  const def = pending;
+  if (!def) return;
+  dlTitle.textContent = `${def.label} — preparing ${fmt.label}…`;
+  const geojson = await loadData(def);
+  if (!geojson) {
+    dlTitle.textContent = `${def.label} — download failed`;
+    return;
+  }
+  save(fmt.convert(geojson, def), `nashik-${def.id}.${fmt.ext}`, fmt.mime);
+  dlMenu.hidePopover();
+}
+
+function buildDownloadMenu(): HTMLElement {
+  const menu = document.createElement('div');
+  menu.id = 'download-menu';
+  menu.popover = 'auto'; // native light-dismiss and Esc, no outside-click handler
+  menu.append(dlTitle);
+
+  for (const fmt of FORMATS) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'dl-format';
+    const label = document.createElement('strong');
+    label.textContent = fmt.label;
+    const hint = document.createElement('span');
+    hint.textContent = fmt.hint;
+    button.append(label, hint);
+    button.addEventListener('click', () => void download(fmt));
+    menu.append(button);
+  }
+
+  // Exports carry every property, locationConfidence included, so an
+  // approximate point stays labelled approximate outside this map too.
+  const note = document.createElement('p');
+  note.className = 'dl-note';
+  note.textContent = 'Includes the locationConfidence field — 581 of 7,806 features are neighbourhood-level guesses, not surveyed positions.';
+  menu.append(note);
+
+  document.body.append(menu);
+  return menu;
+}
+
+const dlMenu = buildDownloadMenu();
+
+function downloadButton(def: LayerDef): HTMLButtonElement {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'dl';
+  button.textContent = '↓';
+  button.title = `Download ${def.label}`;
+  button.setAttribute('aria-label', `Download ${def.label}`);
+  button.setAttribute('popovertarget', dlMenu.id);
+  button.addEventListener('click', (e) => {
+    e.stopPropagation(); // the row is a <label>; a download must not toggle it
+    pending = def;
+    dlTitle.textContent = def.label;
+    // Anchor positioning is Chrome-only, so place it by hand and keep it on screen.
+    const r = button.getBoundingClientRect();
+    dlMenu.style.left = `${Math.max(8, Math.min(r.right + 8, window.innerWidth - 250))}px`;
+    dlMenu.style.top = `${Math.max(8, Math.min(r.top - 8, window.innerHeight - 290))}px`;
+  });
+  return button;
 }
 
 function buildSidebar(): void {
@@ -140,15 +233,16 @@ function buildSidebar(): void {
 
       const count = document.createElement('span');
       count.className = 'count';
+      counts.set(def.id, count);
 
       box.addEventListener('change', () => {
-        if (box.checked) void showLayer(def, count);
+        if (box.checked) void showLayer(def);
         else hideLayer(def);
       });
 
-      row.append(box, dot, name, count);
+      row.append(box, dot, name, count, downloadButton(def));
       section.append(row);
-      if (def.on) void showLayer(def, count);
+      if (def.on) void showLayer(def);
     }
     root.append(section);
   }
@@ -162,7 +256,7 @@ function popupContent(feature: MapGeoJSONFeature, def: LayerDef): HTMLElement {
   wrapper.className = 'popup';
 
   const title = document.createElement('h3');
-  title.textContent = NAME_KEYS.map((k) => props[k]).find((v) => v) ?? def.label;
+  title.textContent = featureName(props) || def.label;
   wrapper.append(title);
 
   const layer = document.createElement('p');
