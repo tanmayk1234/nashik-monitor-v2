@@ -76,16 +76,21 @@ function addSublayers(def: LayerDef): void {
   });
   map.addLayer({
     id: `${def.id}-point`,
-    type: 'circle',
+    type: 'symbol',
     source: def.id,
     filter: ['==', ['geometry-type'], 'Point'],
-    layout: { visibility },
+    layout: {
+      visibility,
+      'text-field': def.symbol,
+      'text-font': ['Noto Sans Bold'],
+      'text-size': ['interpolate', ['linear'], ['zoom'], 10, 10, 16, 18],
+      'text-allow-overlap': true,
+      'text-ignore-placement': true,
+    },
     paint: {
-      'circle-color': def.color,
-      'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 3, 16, 8],
-      'circle-stroke-color': haloColor(),
-      'circle-stroke-width': 1,
-      'circle-opacity': 0.9,
+      'text-color': def.color,
+      'text-halo-color': haloColor(),
+      'text-halo-width': 1.5,
     },
   });
 }
