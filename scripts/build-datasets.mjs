@@ -8,7 +8,6 @@
 //
 // Outputs (one file per real-world thing):
 //   cctv-cameras.geojson     4079 Points, zone parsed off the Z<n>-C<m> label
-//   ghats.geojson              14 areas (13 Polygon + Laxman Ghat LineString)
 //   congestion-points.geojson   8 areas (crowd chokepoints + 2 landmarks)
 //   ring-road.geojson           8 LineStrings (Official Ring Road Segment 1-8)
 //
@@ -89,8 +88,9 @@ function toFeature({ pm, name }, properties = {}) {
   };
 }
 
-// A ghat is 24-330 m across, which at the default zoom 11 is 0.3-4.6 px — right
-// coordinates, invisible anyway. Each area therefore also gets a centroid Point,
+// These areas are a few hundred metres across at most, which at the default
+// zoom 11 is a pixel or two — right coordinates, invisible anyway. Each area
+// therefore also gets a centroid Point,
 // which the app's per-geometry sublayers draw as a dot at every zoom while the
 // polygon itself shows the true footprint once you zoom in. Vertex mean is good
 // enough for shapes this small and convex; no centroid library needed.
@@ -132,11 +132,6 @@ const cameras = named.filter(isCamera).map((entry) => {
   return toFeature(entry, zone ? { zone: `Zone ${zone}` } : {});
 }).filter(Boolean);
 
-// ── Ghats ─────────────────────────────────────────────────────────────────
-// Areas, not points: 13 polygons plus Laxman Ghat, which the survey drew as a
-// line along the bank.
-const ghats = named.filter(isGhat).map((entry) => toFeature(entry, { category: 'ghat' })).filter(Boolean);
-
 // ── Congestion points ─────────────────────────────────────────────────────
 // Whatever polygon is left once ghats and parking duplicates are removed:
 // transit hubs, chowks, markets and the two Gandhi Talav water bodies.
@@ -152,7 +147,6 @@ const ringRoad = named.filter(isRingRoad).map((entry) => toFeature(entry, { cate
 
 fs.mkdirSync(outDir, { recursive: true });
 write('cctv-cameras.geojson', cameras, 4079);
-write('ghats.geojson', withMarkers(ghats), 28); // 14 areas + 14 centroid markers
 write('congestion-points.geojson', withMarkers(congestion), 16); // 8 areas + 8 markers
 write('ring-road.geojson', ringRoad, 8);
 

@@ -1,6 +1,7 @@
-// Drives the real page: opens the Ghats download menu, clicks every format and
-// asserts a file arrives. Also downloads a layer that was never switched on, to
-// prove the menu fetches on demand.
+// Drives the real page: opens the Parking zones download menu, clicks every
+// format and asserts a file arrives. Polygons, so the CSV takes the wkt path and
+// the GPX takes the track path. Also downloads a layer that was never switched
+// on, to prove the menu fetches on demand.
 // Usage: node scripts/check-download-ui.mjs [url]
 import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
@@ -21,7 +22,7 @@ if (await splash.count()) await splash.click().catch(() => {});
 await splash.waitFor({ state: 'detached' });
 await page.waitForSelector('.layer');
 
-const row = page.locator('.layer', { hasText: 'Ghats' }).first();
+const row = page.locator('.layer', { hasText: 'Parking zones' }).first();
 await row.locator('.dl').click();
 await page.waitForSelector('#download-menu:popover-open');
 
@@ -39,7 +40,7 @@ async function pick(layer, format) {
 }
 
 for (const format of formats) {
-  const download = await pick('Ghats', format);
+  const download = await pick('Parking zones', format);
   const { size } = await stat(await download.path());
   assert.ok(size > 200, `${format}: ${size} bytes`);
   console.log(`${download.suggestedFilename()} — ${size.toLocaleString()} bytes`);
