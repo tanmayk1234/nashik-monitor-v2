@@ -3,7 +3,7 @@ export type LayerDef = {
   file: string;
   label: string;
   color: string;
-  group: 'Kumbh' | 'Emergency' | 'Civic' | 'Stay' | 'Shops';
+  group: 'Kumbh' | 'Mobility' | 'Emergency' | 'Civic' | 'Stay' | 'Shops';
   symbol: string;
   on?: boolean;
 };
@@ -24,6 +24,16 @@ export const LAYERS: LayerDef[] = [
   { id: 'congestion-points',   file: 'congestion-points.geojson',   label: 'Congestion points',   color: '#57534e', group: 'Kumbh', symbol: '!' },
   { id: 'cctv-cameras',        file: 'cctv-cameras.geojson',        label: 'CCTV cameras',        color: '#0891b2', group: 'Kumbh', symbol: '●' },
   { id: 'mandirs',             file: 'mandirs.geojson',             label: 'Mandirs',             color: '#ea580c', group: 'Kumbh', symbol: '▲' },
+
+  // From the NTKMA "Mobility plan Nashik" KMZ, split along its own folders —
+  // see scripts/build-mobility.mjs. All off by default: together they are ~490
+  // KB, and the route layers are only legible zoomed into one corridor anyway.
+  { id: 'staging-areas',       file: 'staging-areas.geojson',       label: 'Staging areas',       color: '#0369a1', group: 'Mobility', symbol: 'S' },
+  { id: 'holding-areas',       file: 'holding-areas.geojson',       label: 'Holding areas',       color: '#7e22ce', group: 'Mobility', symbol: 'HA' },
+  { id: 'railway-station',     file: 'railway-station.geojson',     label: 'Railway station plans', color: '#334155', group: 'Mobility', symbol: 'R' },
+  { id: 'vip-routes',          file: 'vip-routes.geojson',          label: 'VIP routes',          color: '#a16207', group: 'Mobility', symbol: 'VIP' },
+  { id: 'emergency-routes',    file: 'emergency-routes.geojson',    label: 'Emergency routes',    color: '#be123c', group: 'Mobility', symbol: 'E' },
+  { id: 'movement-routes',     file: 'movement-routes.geojson',     label: 'Movement routes',     color: '#0f766e', group: 'Mobility', symbol: 'MV' },
 
   { id: 'hospitals',           file: 'hospitals.geojson',           label: 'Hospitals',           color: '#dc2626', group: 'Emergency', symbol: '+',  on: true },
   { id: 'police-stations',     file: 'police-stations.geojson',     label: 'Police stations',     color: '#2563eb', group: 'Emergency', symbol: '★', on: true },
@@ -49,4 +59,4 @@ export const LAYERS: LayerDef[] = [
   { id: 'watch-stores',        file: 'watch-stores.geojson',        label: 'Watch & clock shops', color: '#64748b', group: 'Shops', symbol: 'W' },
 ];
 
-export const GROUPS = ['Kumbh', 'Emergency', 'Civic', 'Stay', 'Shops'] as const;
+export const GROUPS = ['Kumbh', 'Mobility', 'Emergency', 'Civic', 'Stay', 'Shops'] as const;
