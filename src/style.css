@@ -515,9 +515,16 @@ body {
 .popup dt { color: var(--muted); }
 .popup dd { margin: 0; overflow-wrap: anywhere; }
 
+/* !important on the colours, as on .maplibregl-ctrl-group below, and for the
+   same reason: maplibre-gl.css sets these on the identical single-class
+   selector, and it is imported from main.ts, so it is injected after this
+   file's <link> and wins the tie. Only background was actually contested —
+   maplibre sets no `color` — which made the bug invisible in the light theme,
+   where its white matches --panel, and unreadable in the dark one, where the
+   text went light and the background stayed white. */
 .maplibregl-popup-content {
-  background: var(--panel);
-  color: var(--text);
+  background: var(--panel) !important;
+  color: var(--text) !important;
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 14px 16px;
@@ -534,10 +541,20 @@ body {
 
 .maplibregl-popup-close-button:hover { background: transparent; color: var(--accent); }
 
-.maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--panel); }
-.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--panel); }
-.maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--panel); }
-.maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--panel); }
+/* The tip loses the same tie, and a white arrow under a dark popup is just as
+   wrong as a white popup. Eight anchors, not four: maplibre picks a corner
+   anchor whenever the popup would run off the edge of the viewport, and those
+   three were never covered here. */
+.maplibregl-popup-anchor-top .maplibregl-popup-tip,
+.maplibregl-popup-anchor-top-left .maplibregl-popup-tip,
+.maplibregl-popup-anchor-top-right .maplibregl-popup-tip { border-bottom-color: var(--panel) !important; }
+
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip,
+.maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip,
+.maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip { border-top-color: var(--panel) !important; }
+
+.maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--panel) !important; }
+.maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--panel) !important; }
 
 .maplibregl-ctrl-group {
   border-radius: 8px !important;
