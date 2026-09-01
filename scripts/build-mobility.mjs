@@ -13,12 +13,12 @@
 //
 // Outputs:
 //   staging-areas.geojson       13 Points
-//   holding-areas.geojson       48 Polygons + 48 centroid markers
-//   railway-station.geojson     89 mixed (station plans, drop/pickup, holding)
+//   holding-areas.geojson       30 Polygons + 30 centroid markers
+//   railway-station.geojson     86 mixed (station plans, drop/pickup, holding)
 //   vip-routes.geojson          19 mixed
 //   emergency-routes.geojson    67 mixed (ghat -> hospital routes)
 //   movement-routes.geojson     40 LineStrings
-//   ghats.geojson                2 Polygons + 2 centroid markers
+//   ghats.geojson               20 Polygons + 20 centroid markers
 //   parking-zones.geojson       merged into the existing file, see below
 //
 // Two things this file gets right that a naive import would not:
@@ -234,11 +234,46 @@ function withMarkers(features) {
 // ── Classification, by the KMZ's own folder names ──────────────────────────
 
 const at = (row, depth) => row.trail[depth] ?? '';
-// Two polygons are ghat areas rather than the plan furniture around them:
-// "Ramkund and near by Ghats" (18,343 m², 15 m from the surveyed Ganga Ghat 2)
-// and "Odha Ghat - Proposed" (5,691 m²). Both sit in folders named for something
-// else, so they are matched by name, and asserted to be exactly two.
-const isGhatArea = (row) => /^(Ramkund and near by Ghats|Odha Ghat - Proposed)$/i.test(row.name);
+
+// Two polygons are ghats by the administrator's own naming: "Ramkund and near by
+// Ghats" (18,343 m², and 15 m from the surveyed Ganga Ghat 2 that used to be in
+// this layer — two independent sources agreeing) and "Odha Ghat - Proposed".
+const NAMED_GHATS = new Set(['Ramkund and near by Ghats', 'Odha Ghat - Proposed']);
+
+// The riverside ghat platforms, which the KMZ files under "Holding Areas" with
+// their crowd capacity in the name. Selected by measuring every polygon's
+// nearest edge against the Godavari and its tributaries, pulled from
+// OpenStreetMap via Overpass (waterway=river over the Nashik bbox), and keeping
+// everything in the Holding Areas tree within 150 m. The distance behind each
+// name is that measurement, so the list can be re-derived rather than trusted.
+//
+// Deliberately NOT here, though all three fall inside 150 m: "Mahamarg Bus
+// Stand" (38 m) and "Bardi / Lakhalgaon Parking" (51 m) are parking — the first
+// is part of the parking merge below, so moving it would break that
+// reconciliation — and "Kasbe Sukene railway station" (133 m) is a station.
+// Sitting near water does not make something a ghat.
+const RIVERSIDE_GHATS = new Set([
+  'Navashya Ganpati HA - 12956 sqm',                            // 21 m
+  'Nandini Sangam Left Bank -72465 sq.m.',                      // 27 m
+  'Navashya Ganpati Add HA - 53993 sq.m.',                      // 33 m
+  'Takali Sangam Ghat - 75465 Sq.m.',                           // 36 m
+  'Lakshminarayan Ghat 14525Sq.M',                              // 44 m
+  'Laksminarayan Ghat D - 73965 sq.m.',                         // 51 m
+  'Holding Area - Nandur Dasak - 69067 sq.m.',                  // 53 m
+  'Nandur Dasak HA - 3126 sq.m.',                               // 54 m
+  'Add Holding Area - 91444 sq.m.',                             // 57 m
+  'Holding Area - Lakshminarayan Ghat Left Bank  - 65864 sq.m.', // 61 m
+  'Talkuteshwar - 47759 Sq.M.',                                 // 63 m
+  'Kapila Sangam Ghat - 26983',                                 // 64 m
+  'Nandur Dasak HA - 9506 sq.m.',                               // 75 m
+  'Nadur Dasak HA - 54603 sq.m.',                               // 76 m
+  'Nandur Dasak  HA - 11434 sq.m.',                             // 89 m
+  'Odha Holding Area - 17986 sq.m.',                            // 92 m
+  'Adiwashi pada takli holding point',                          // 106 m
+  'Someshwar Ghat - 16248 Sq.M.',                               // 147 m
+]);
+
+const isGhatArea = (row) => NAMED_GHATS.has(row.name) || RIVERSIDE_GHATS.has(row.name);
 
 const ghatRows = rows.filter(isGhatArea);
 const rest = rows.filter((r) => !isGhatArea(r));
@@ -261,7 +296,11 @@ const holding = pick((r) => at(r, 2) === 'Holding Areas');
 const vip = pick((r) => at(r, 2) === 'Routes' && at(r, 3).startsWith('VIP routes'));
 const emergency = pick((r) => at(r, 2) === 'Routes' && at(r, 3) === 'Emergency routes');
 const movement = pick((r) => at(r, 2) === 'Routes' && at(r, 3) === 'Movement');
-const ghats = ghatRows.map((r) => toFeature(r, { category: 'ghat' })).filter(Boolean);
+// The category keeps the two apart: a popup should not call a crowd holding
+// ground a bathing ghat just because it was grouped with them.
+const ghats = ghatRows
+  .map((r) => toFeature(r, { category: NAMED_GHATS.has(r.name) ? 'ghat' : 'riverside-holding' }))
+  .filter(Boolean);
 
 const parkingRows = rest.filter((r) => at(r, 2) === 'Parking');
 const inner = parkingRows.filter((r) => at(r, 3) === 'Inner parking');
@@ -277,7 +316,7 @@ assert.strictEqual(
   `${rows.length - classified - dropped.length} placemark(s) matched no folder rule`,
 );
 assert.strictEqual(dropped.length, 3, `expected 3 unusable placemarks, found ${dropped.length}`);
-assert.strictEqual(ghats.length, 2, `expected 2 ghat areas, found ${ghats.length}`);
+assert.strictEqual(ghats.length, 20, `expected 20 ghat areas, found ${ghats.length}`);
 
 // ── Parking merge ──────────────────────────────────────────────────────────
 
@@ -359,12 +398,12 @@ function write(file, features, expected) {
 
 fs.mkdirSync(outDir, { recursive: true });
 write('staging-areas.geojson', staging, 13);
-write('holding-areas.geojson', withMarkers(holding), 96); // 48 areas + 48 markers
+write('holding-areas.geojson', withMarkers(holding), 60); // 30 areas + 30 markers
 write('railway-station.geojson', railway, 86); // 89 in the KMZ, 3 have no usable ring
 write('vip-routes.geojson', vip, 19);
 write('emergency-routes.geojson', emergency, 67);
 write('movement-routes.geojson', movement, 40);
-write('ghats.geojson', withMarkers(ghats), 4); // 2 areas + 2 markers
+write('ghats.geojson', withMarkers(ghats), 40); // 20 areas + 20 markers
 write('parking-zones.geojson', existing.features, before + outer.length);
 
 console.log(`\nparking-zones.geojson ${before} -> ${existing.features.length} features`);
