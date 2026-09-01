@@ -6,6 +6,9 @@ export type LayerDef = {
   group: 'Kumbh' | 'Mobility' | 'Emergency' | 'Civic' | 'Stay' | 'Shops';
   symbol: string;
   on?: boolean;
+  // Name the features on the map from zoom 13, the way Google Earth does. Set
+  // on the layers imported from a styled KML, which carry per-feature colours.
+  labels?: boolean;
 };
 
 // One entry per file in public/data. Colors are mid-tone on purpose: the same
@@ -18,7 +21,7 @@ export type LayerDef = {
 // here renders through Noto Sans on OpenFreeMap's glyph server, so nothing
 // falls back to a blank tofu box.
 export const LAYERS: LayerDef[] = [
-  { id: 'ghats',               file: 'ghats.geojson',               label: 'Ghats',               color: '#b45309', group: 'Kumbh', symbol: '~',  on: true },
+  { id: 'ghats',               file: 'ghats.geojson',               label: 'Ghats',               color: '#b45309', group: 'Kumbh', symbol: '~',  on: true , labels: true },
   { id: 'parking-zones',       file: 'parking-zones.geojson',       label: 'Parking zones',       color: '#7c3aed', group: 'Kumbh', symbol: 'P',  on: true },
   { id: 'ring-road',           file: 'ring-road.geojson',           label: 'Ring road',           color: '#475569', group: 'Kumbh', symbol: '○', on: true },
   { id: 'congestion-points',   file: 'congestion-points.geojson',   label: 'Congestion points',   color: '#57534e', group: 'Kumbh', symbol: '!' },
@@ -28,12 +31,12 @@ export const LAYERS: LayerDef[] = [
   // From the NTKMA "Mobility plan Nashik" KMZ, split along its own folders —
   // see scripts/build-mobility.mjs. All off by default: together they are ~490
   // KB, and the route layers are only legible zoomed into one corridor anyway.
-  { id: 'staging-areas',       file: 'staging-areas.geojson',       label: 'Staging areas',       color: '#0369a1', group: 'Mobility', symbol: 'S' },
-  { id: 'holding-areas',       file: 'holding-areas.geojson',       label: 'Holding areas',       color: '#7e22ce', group: 'Mobility', symbol: 'HA' },
-  { id: 'railway-station',     file: 'railway-station.geojson',     label: 'Railway station plans', color: '#334155', group: 'Mobility', symbol: 'R' },
-  { id: 'vip-routes',          file: 'vip-routes.geojson',          label: 'VIP routes',          color: '#a16207', group: 'Mobility', symbol: 'VIP' },
-  { id: 'emergency-routes',    file: 'emergency-routes.geojson',    label: 'Emergency routes',    color: '#be123c', group: 'Mobility', symbol: 'E' },
-  { id: 'movement-routes',     file: 'movement-routes.geojson',     label: 'Movement routes',     color: '#0f766e', group: 'Mobility', symbol: 'MV' },
+  { id: 'staging-areas',       file: 'staging-areas.geojson',       label: 'Staging areas',       color: '#0369a1', group: 'Mobility', symbol: 'S' , labels: true },
+  { id: 'holding-areas',       file: 'holding-areas.geojson',       label: 'Holding areas',       color: '#7e22ce', group: 'Mobility', symbol: 'HA' , labels: true },
+  { id: 'railway-station',     file: 'railway-station.geojson',     label: 'Railway station plans', color: '#334155', group: 'Mobility', symbol: 'R' , labels: true },
+  { id: 'vip-routes',          file: 'vip-routes.geojson',          label: 'VIP routes',          color: '#a16207', group: 'Mobility', symbol: 'VIP' , labels: true },
+  { id: 'emergency-routes',    file: 'emergency-routes.geojson',    label: 'Emergency routes',    color: '#be123c', group: 'Mobility', symbol: 'E' , labels: true },
+  { id: 'movement-routes',     file: 'movement-routes.geojson',     label: 'Movement routes',     color: '#0f766e', group: 'Mobility', symbol: 'MV' , labels: true },
 
   { id: 'hospitals',           file: 'hospitals.geojson',           label: 'Hospitals',           color: '#dc2626', group: 'Emergency', symbol: '+',  on: true },
   { id: 'police-stations',     file: 'police-stations.geojson',     label: 'Police stations',     color: '#2563eb', group: 'Emergency', symbol: '★', on: true },

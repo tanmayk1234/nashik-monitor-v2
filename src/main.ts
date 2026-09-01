@@ -2,7 +2,7 @@ import '@fontsource/jost/300.css';
 import '@fontsource/jost/400.css';
 import '@fontsource/jost/500.css';
 import type { FeatureCollection } from 'geojson';
-import maplibregl, { type MapGeoJSONFeature } from 'maplibre-gl';
+import maplibregl, { type DataDrivenPropertyValueSpecification, type MapGeoJSONFeature } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { downloadButton } from './download';
 import { NAME_KEYS, featureName } from './formats';
@@ -26,7 +26,11 @@ const CAVEAT: Record<string, string> = {
 };
 
 // Shown as the confidence badge above the table, or internal plumbing.
-const HIDDEN_KEYS = new Set(['locationConfidence', 'geocodeConfidence', 'locationSource', 'role']);
+// The last five are the source file's own paint values, read by addSublayers.
+const HIDDEN_KEYS = new Set([
+  'locationConfidence', 'geocodeConfidence', 'locationSource', 'role',
+  'stroke', 'stroke-width', 'stroke-opacity', 'fill', 'fill-opacity',
+]);
 
 const map = new maplibregl.Map({
   container: 'map',
@@ -54,7 +58,23 @@ let pickable: string[] = [];
 // Any file may hold points, lines and polygons at once (cctv-cameras and
 // ring-road both do), so each source gets one sublayer per geometry type and
 // the empty ones simply draw nothing.
-const sublayerIds = (id: string): string[] => [`${id}-fill`, `${id}-line`, `${id}-point`];
+// -label exists only on layers with labels: true; every consumer already
+// filters on map.getLayer(), so listing it unconditionally is harmless.
+const sublayerIds = (id: string): string[] => [`${id}-fill`, `${id}-line`, `${id}-point`, `${id}-label`];
+
+// Features imported from a KML/KMZ carry the source file's own palette as
+// simplestyle properties. Where one is present it wins, so the layer looks like
+// the file does in Google Earth; where it is absent — every dataset that did not
+// come from a styled KML — the layer colour is used exactly as before.
+//
+// `case`/`has` rather than the more obvious `coalesce`: on a feature without the
+// property, `get` yields null, and coalesce hands that straight to a paint slot
+// typed number, which MapLibre rejects with "Expected value to be of type
+// number, but found null instead" and then drops the whole expression.
+const styledNumber = (key: string, fallback: number): DataDrivenPropertyValueSpecification<never> =>
+  ['case', ['has', key], ['to-number', ['get', key]], fallback] as never;
+const styledColor = (key: string, fallback: string): DataDrivenPropertyValueSpecification<never> =>
+  ['case', ['has', key], ['to-string', ['get', key]], fallback] as never;
 
 function addSublayers(def: LayerDef): void {
   const visibility = shown.has(def.id) ? 'visible' : 'none';
@@ -64,7 +84,10 @@ function addSublayers(def: LayerDef): void {
     source: def.id,
     filter: ['==', ['geometry-type'], 'Polygon'],
     layout: { visibility },
-    paint: { 'fill-color': def.color, 'fill-opacity': 0.18 },
+    paint: {
+      'fill-color': styledColor('fill', def.color),
+      'fill-opacity': styledNumber('fill-opacity', 0.18),
+    },
   });
   map.addLayer({
     id: `${def.id}-line`,
@@ -72,7 +95,11 @@ function addSublayers(def: LayerDef): void {
     source: def.id,
     filter: ['in', ['geometry-type'], ['literal', ['LineString', 'Polygon']]],
     layout: { visibility, 'line-cap': 'round', 'line-join': 'round' },
-    paint: { 'line-color': def.color, 'line-width': 2, 'line-opacity': 0.85 },
+    paint: {
+      'line-color': styledColor('stroke', def.color),
+      'line-width': styledNumber('stroke-width', 2),
+      'line-opacity': styledNumber('stroke-opacity', 0.85),
+    },
   });
   map.addLayer({
     id: `${def.id}-point`,
@@ -86,6 +113,40 @@ function addSublayers(def: LayerDef): void {
       'text-size': ['interpolate', ['linear'], ['zoom'], 10, 10, 16, 18],
       'text-allow-overlap': true,
       'text-ignore-placement': true,
+    },
+    paint: {
+      // Lines and fills take the source file's palette, but text does not: the
+      // KMZ is drawn over satellite imagery, where a #ffff00 route reads fine,
+      // and the same yellow as label text over the pale basemap and its white
+      // halo is invisible. Labels keep the layer colour, picked to hold up on
+      // both themes.
+      'text-color': def.color,
+      'text-halo-color': haloColor(),
+      'text-halo-width': 1.5,
+    },
+  });
+
+  // Google Earth names every placemark. A second layer rather than a two-line
+  // text-field on the one above, because these two want opposite placement
+  // rules: the glyph must always draw, so it forces overlap, while 300 names at
+  // once is a wall of text — so the names get MapLibre's default collision
+  // handling and drop out when they will not fit, which is what Earth does too.
+  if (!def.labels) return;
+  map.addLayer({
+    id: `${def.id}-label`,
+    type: 'symbol',
+    source: def.id,
+    filter: ['==', ['geometry-type'], 'Point'],
+    minzoom: 13,
+    layout: {
+      visibility,
+      'text-field': ['case', ['has', 'name'], ['to-string', ['get', 'name']], ''],
+      'text-font': ['Noto Sans Bold'],
+      'text-size': 11,
+      'text-anchor': 'top',
+      'text-offset': [0, 0.9],
+      'text-max-width': 12,
+      'text-padding': 4,
     },
     paint: {
       'text-color': def.color,

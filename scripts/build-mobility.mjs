@@ -49,9 +49,70 @@ const SOURCE = 'Mobility plan Nashik KMZ (NTKMA)';
 
 const parser = new XMLParser({
   ignoreAttributes: false,
-  isArray: (name) => ['Placemark', 'Document', 'Folder'].includes(name),
+  isArray: (name) => ['Placemark', 'Document', 'Folder', 'Style', 'StyleMap', 'Pair'].includes(name),
 });
 const doc = parser.parse(fs.readFileSync(srcPath, 'utf8'));
+
+// ── Styling ────────────────────────────────────────────────────────────────
+// The KMZ carries its own palette — 365 Styles and 183 StyleMaps, 19 line
+// colours and 20 fills — and that palette is the plan's meaning: red, yellow,
+// purple and orange corridors are different route classes. Dropping it and
+// painting each layer one flat colour is what made the map stop looking like
+// the file the administrator opens in Google Earth. So the styles are resolved
+// per placemark and travel with the feature.
+
+const styleById = {};
+const styleMapById = {};
+(function collect(node) {
+  if (!node || typeof node !== 'object') return;
+  for (const s of node.Style ?? []) if (s['@_id']) styleById[s['@_id']] = s;
+  for (const m of node.StyleMap ?? []) if (m['@_id']) styleMapById[m['@_id']] = m;
+  for (const key of ['Document', 'Folder']) for (const child of node[key] ?? []) collect(child);
+})(doc.kml);
+
+// A styleUrl may point at a StyleMap, whose "normal" pair points at a Style —
+// and in this file sometimes at another StyleMap, hence the depth guard.
+function resolveStyle(ref, depth = 0) {
+  if (!ref || depth > 4) return null;
+  const id = String(ref).replace(/^#/, '');
+  if (styleById[id]) return styleById[id];
+  const map = styleMapById[id];
+  if (!map) return null;
+  const pair = (map.Pair ?? []).find((p) => String(p.key) === 'normal') ?? (map.Pair ?? [])[0];
+  return resolveStyle(pair?.styleUrl, depth + 1);
+}
+
+// KML colour is aabbggrr, not #rrggbb — byte order reversed and alpha first.
+function kmlColor(value) {
+  const s = String(value).trim().padStart(8, 'f');
+  return {
+    hex: `#${s.slice(6, 8)}${s.slice(4, 6)}${s.slice(2, 4)}`.toLowerCase(),
+    opacity: Number((parseInt(s.slice(0, 2), 16) / 255).toFixed(3)),
+  };
+}
+
+// Emitted under the simplestyle names (stroke / fill / stroke-width), which is
+// the convention GeoJSON viewers already understand, so an exported file keeps
+// its colours in QGIS and geojson.io too.
+function styleProperties(pm) {
+  const style = resolveStyle(pm.styleUrl) ?? (Array.isArray(pm.Style) ? pm.Style[0] : pm.Style);
+  if (!style) return {};
+  const out = {};
+  if (style.LineStyle?.color !== undefined) {
+    const { hex, opacity } = kmlColor(style.LineStyle.color);
+    out.stroke = hex;
+    out['stroke-opacity'] = opacity;
+  }
+  if (style.LineStyle?.width !== undefined) out['stroke-width'] = Number(style.LineStyle.width);
+  if (style.PolyStyle?.color !== undefined) {
+    const { hex, opacity } = kmlColor(style.PolyStyle.color);
+    out.fill = hex;
+    out['fill-opacity'] = opacity;
+  }
+  // outline=0 means Google Earth draws no polygon edge at all.
+  if (String(style.PolyStyle?.outline) === '0') out['stroke-width'] = 0;
+  return out;
+}
 
 // Folder path per placemark: it is the only category in the file, and two
 // folders deep is where the meaning lives ("Routes / Emergency routes").
@@ -161,7 +222,7 @@ function parseBalloon(html) {
 }
 
 function propertiesOf({ pm, name, trail }) {
-  const props = { name };
+  const props = { name, ...styleProperties(pm) };
   const raw = String(pm.description ?? '').trim();
   if (raw) {
     if (/<td[^>]*>/i.test(raw)) Object.assign(props, parseBalloon(raw));
@@ -320,6 +381,13 @@ assert.strictEqual(ghats.length, 20, `expected 20 ghat areas, found ${ghats.leng
 
 // ── Parking merge ──────────────────────────────────────────────────────────
 
+// parking-zones is the one merged layer: 15 of its features predate this KMZ
+// and carry no style at all. Styling only the KMZ half would leave the layer
+// visibly patchy, so parking keeps the app's own colour throughout and the
+// per-feature palette is used on the layers that came wholly from the KMZ.
+const STYLE_KEYS = ['stroke', 'stroke-width', 'stroke-opacity', 'fill', 'fill-opacity'];
+const dropStyle = (props) => Object.fromEntries(Object.entries(props).filter(([k]) => !STYLE_KEYS.includes(k)));
+
 const parkingPath = path.join(outDir, 'parking-zones.geojson');
 const existing = JSON.parse(fs.readFileSync(parkingPath, 'utf8'));
 
@@ -350,13 +418,14 @@ for (const row of inner) {
     .sort((a, b) => a.d - b.d)[0];
   assert.ok(match && match.d < 200, `Inner parking "${row.name}" has no counterpart within 200 m — merge rule needs a look`);
 
-  // Attributes the KMZ adds (capacities, area, photo) land on the existing
-  // feature either way; name and sourceFolder do not overwrite what is there.
+  // Attributes the KMZ adds (capacities, area) land on the existing feature
+  // either way; name and sourceFolder do not overwrite what is there.
   // `source` is deliberately excluded: on a byte-identical polygon this KMZ is
   // corroboration, not the origin, and claiming otherwise would rewrite where
   // the coordinate actually came from. It is set below only where the geometry
   // is genuinely replaced.
-  const { name: _n, sourceFolder: _s, source: _src, ...gained } = feature.properties;
+  const { name: _n, sourceFolder: _s, source: _src, ...withStyle } = feature.properties;
+  const gained = dropStyle(withStyle);
   const added = Object.keys(gained).filter((k) => match.f.properties[k] === undefined);
   if (added.length) {
     Object.assign(match.f.properties, gained);
@@ -380,7 +449,10 @@ for (const row of inner) {
 // vocabulary rather than introducing a second, contradicting one.
 for (const row of outer) {
   const feature = toFeature(row, { category: 'parking', zone: 'outer' });
-  if (feature) existing.features.push(feature);
+  if (feature) {
+    feature.properties = dropStyle(feature.properties);
+    existing.features.push(feature);
+  }
 }
 
 // ── Write ──────────────────────────────────────────────────────────────────
