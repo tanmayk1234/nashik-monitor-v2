@@ -224,7 +224,8 @@ body {
   transform: rotate(-25deg);
 }
 
-#basemaps {
+#basemaps,
+#view {
   display: flex;
   gap: 2px;
   margin-top: 12px;
@@ -233,6 +234,9 @@ body {
   border: 1px solid var(--border);
   border-radius: 8px;
 }
+
+/* One button, so it sits closer to the row it belongs with. */
+#view { margin-top: 6px; }
 
 .basemap {
   flex: 1;

@@ -7,7 +7,19 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import { downloadAllButton, downloadButton } from './download';
 import { NAME_KEYS, featureName } from './formats';
 import { GROUPS, LAYERS, type LayerDef } from './layers';
-import { BASEMAPS, applyBasemap, applyTheme, currentBasemap, currentTheme, haloColor, styleUrl } from './theme';
+import {
+  BASEMAPS,
+  applyBasemap,
+  applyTerrain,
+  applyTheme,
+  currentBasemap,
+  currentTheme,
+  haloColor,
+  hillshadeColors,
+  skySpec,
+  styleUrl,
+  terrainOn,
+} from './theme';
 
 // style.css is a <link> in index.html rather than an import here: it has to be
 // in effect at first paint, and a module import lands long after it.
@@ -37,9 +49,14 @@ const map = new maplibregl.Map({
   style: styleUrl(),
   center: NASHIK_CENTER,
   zoom: 11,
+  // Past 60 the horizon comes into frame, which is the whole point of terrain —
+  // the Sahyadri skyline behind Trimbakeshwar only exists above that angle.
+  maxPitch: 80,
   attributionControl: { compact: true },
 });
-map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
+// The compass is also the way back to north-up after tilting, so it arrives
+// with terrain rather than being decoration on a flat map.
+map.addControl(new maplibregl.NavigationControl({ showCompass: true, visualizePitch: true }), 'bottom-right');
 map.addControl(new maplibregl.ScaleControl({ maxWidth: 100 }), 'bottom-left');
 
 const popup = new maplibregl.Popup({ closeButton: true, maxWidth: '320px' });
@@ -333,6 +350,71 @@ map.on('mousemove', (e) => {
   map.getCanvas().style.cursor = hits.length ? 'pointer' : '';
 });
 
+// AWS Terrain Tiles: public AWS Open Data, keyless and uncapped, the same
+// position as the basemaps — nothing here can be billed or rate-limited. It is a
+// mosaic (SRTM, 3DEP and others) and stops at zoom 13, which is the right
+// ceiling for ground nobody resurveys per metre.
+//
+// Worth having on a city map because Nashik's relief is the reason for its
+// layout: the city sits around 560 m and Brahmagiri above Trimbakeshwar, where
+// the Godavari rises, is near 1,290 m. Flat, that road is just a line.
+const TERRAIN_SOURCE = 'terrain-dem';
+const HILLSHADE_LAYER = 'terrain-hillshade';
+
+// Visual choice, not measurement: 1.2 lifts the Sahyadri edge enough to read
+// without turning the Godavari valley into a canyon.
+const EXAGGERATION = 1.2;
+
+function syncTerrain(): void {
+  // Sky is set either way. It costs no requests, and it is what the map shows
+  // above the horizon whenever anyone tilts — with or without a terrain mesh.
+  map.setSky(skySpec());
+
+  if (!terrainOn()) {
+    map.setTerrain(null);
+    if (map.getLayer(HILLSHADE_LAYER)) map.removeLayer(HILLSHADE_LAYER);
+    return;
+  }
+
+  if (!map.getSource(TERRAIN_SOURCE)) {
+    map.addSource(TERRAIN_SOURCE, {
+      type: 'raster-dem',
+      tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+      encoding: 'terrarium',
+      tileSize: 256,
+      maxzoom: 13,
+      attribution:
+        '<a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Tilezen Joerd</a>',
+    });
+  }
+
+  // Skipped on satellite: the imagery already contains the real shadows the
+  // hillshade is imitating, and drawing both darkens every slope twice.
+  const shaded = currentBasemap() !== 'satellite';
+  if (shaded && !map.getLayer(HILLSHADE_LAYER)) {
+    const { shadow, highlight } = hillshadeColors();
+    // Beneath the basemap's own labels so place names stay legible. Data layers
+    // mount after this and carry no beforeId, so they land above both.
+    const firstLabel = map.getStyle().layers.find((l) => l.type === 'symbol')?.id;
+    map.addLayer(
+      {
+        id: HILLSHADE_LAYER,
+        type: 'hillshade',
+        source: TERRAIN_SOURCE,
+        paint: {
+          'hillshade-exaggeration': 0.3,
+          'hillshade-shadow-color': shadow,
+          'hillshade-highlight-color': highlight,
+        },
+      },
+      firstLabel,
+    );
+  }
+  if (!shaded && map.getLayer(HILLSHADE_LAYER)) map.removeLayer(HILLSHADE_LAYER);
+
+  map.setTerrain({ source: TERRAIN_SOURCE, exaggeration: EXAGGERATION });
+}
+
 // setStyle() replaces the whole style document, taking our sources with it, so
 // every basemap or theme change rebuilds the layers from the cached GeoJSON once
 // the new basemap is ready. Nothing is re-downloaded.
@@ -356,6 +438,7 @@ function restyle(onFailure?: () => void): void {
 
   map.once('style.load', () => {
     map.off('error', failed);
+    syncTerrain(); // before the data layers, so the hillshade stays under them
     for (const def of LAYERS) if (data.has(def.id)) mount(def);
   });
   if (onFailure) map.on('error', failed);
@@ -416,8 +499,34 @@ function setupBasemapPicker(): void {
   paint();
 }
 
+function setupTerrainToggle(): void {
+  const button = document.getElementById('terrain-toggle') as HTMLButtonElement | null;
+  if (!button) return;
+
+  const paint = (): void => {
+    const on = terrainOn();
+    button.classList.toggle('is-active', on);
+    button.setAttribute('aria-pressed', String(on));
+    button.title = on ? 'Turn off 3D terrain' : 'Turn on 3D terrain and tilt the map';
+  };
+  paint();
+
+  button.addEventListener('click', () => {
+    const on = !terrainOn();
+    applyTerrain(on);
+    paint();
+    syncTerrain();
+    // Tilting is what makes a terrain mesh visible, and right-drag is not a
+    // gesture anyone guesses. Switching it on does it for them; switching it
+    // off puts the map back flat.
+    map.easeTo({ pitch: on ? 55 : 0, duration: 700 });
+  });
+}
+
 map.once('load', () => {
+  syncTerrain();
   buildSidebar();
   setupThemeToggle();
   setupBasemapPicker();
+  setupTerrainToggle();
 });
