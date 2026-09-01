@@ -7,7 +7,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import { downloadAllButton, downloadButton } from './download';
 import { NAME_KEYS, featureName } from './formats';
 import { GROUPS, LAYERS, type LayerDef } from './layers';
-import { applyTheme, currentTheme, haloColor, styleUrl } from './theme';
+import { BASEMAPS, applyBasemap, applyTheme, currentBasemap, currentTheme, haloColor, styleUrl } from './theme';
 
 // style.css is a <link> in index.html rather than an import here: it has to be
 // in effect at first paint, and a module import lands long after it.
@@ -333,6 +333,35 @@ map.on('mousemove', (e) => {
   map.getCanvas().style.cursor = hits.length ? 'pointer' : '';
 });
 
+// setStyle() replaces the whole style document, taking our sources with it, so
+// every basemap or theme change rebuilds the layers from the cached GeoJSON once
+// the new basemap is ready. Nothing is re-downloaded.
+//
+// onFailure covers the one basemap that can fail: a mistyped or origin-blocked
+// MapTiler key answers 403 for the style document and leaves an empty map with
+// nothing on screen to explain it. Falling back to the keyless basemap turns
+// that into a visible non-event.
+function restyle(onFailure?: () => void): void {
+  popup.remove();
+  const url = styleUrl();
+
+  const failed = (e: { error?: { status?: number }; sourceId?: string }): void => {
+    // Only the style document itself; a single missing sprite or tile is not a
+    // reason to throw the whole basemap away.
+    if (e.sourceId || !e.error?.status) return;
+    map.off('error', failed);
+    console.error(`[basemap] ${url} returned ${e.error.status} — falling back`);
+    onFailure?.();
+  };
+
+  map.once('style.load', () => {
+    map.off('error', failed);
+    for (const def of LAYERS) if (data.has(def.id)) mount(def);
+  });
+  if (onFailure) map.on('error', failed);
+  map.setStyle(url);
+}
+
 function setupThemeToggle(): void {
   const button = document.getElementById('theme-toggle') as HTMLButtonElement | null;
   if (!button) return;
@@ -347,17 +376,48 @@ function setupThemeToggle(): void {
   button.addEventListener('click', () => {
     applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
     paint();
-    popup.remove();
-    // setStyle() replaces the whole style document, taking our sources with it.
-    // Rebuild from the cached GeoJSON once the new basemap is ready.
-    map.setStyle(styleUrl());
-    map.once('style.load', () => {
-      for (const def of LAYERS) if (data.has(def.id)) mount(def);
-    });
+    restyle();
   });
+}
+
+// One row of the available basemaps. Satellite is only in BASEMAPS when a
+// MapTiler key is configured, so with no key this is a two-button control and
+// nothing anywhere else has to know the difference.
+function setupBasemapPicker(): void {
+  const host = document.getElementById('basemaps');
+  if (!host || BASEMAPS.length < 2) return;
+
+  const buttons = BASEMAPS.map((base) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'basemap';
+    button.textContent = base.label;
+    button.addEventListener('click', () => {
+      if (currentBasemap() === base.id) return;
+      applyBasemap(base.id);
+      paint();
+      restyle(() => {
+        applyBasemap('map');
+        paint();
+        restyle();
+      });
+    });
+    host.append(button);
+    return { base, button };
+  });
+
+  function paint(): void {
+    const active = currentBasemap();
+    for (const { base, button } of buttons) {
+      button.classList.toggle('is-active', base.id === active);
+      button.setAttribute('aria-pressed', String(base.id === active));
+    }
+  }
+  paint();
 }
 
 map.once('load', () => {
   buildSidebar();
   setupThemeToggle();
+  setupBasemapPicker();
 });
