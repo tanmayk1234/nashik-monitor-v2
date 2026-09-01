@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types scripts/test-formats.ts"
+    "test": "node --experimental-strip-types scripts/test-formats.ts && node --experimental-strip-types scripts/test-confidence.ts"
   },
   "dependencies": {
     "@fontsource/jost": "^5.3.0",

@@ -57,12 +57,14 @@ function buildMenu(): HTMLElement {
     el.append(button);
   }
 
-  // Exports carry every property, locationConfidence included, so an
-  // approximate point stays labelled approximate outside this map too.
+  // Exports carry every property, both confidence fields included, so an
+  // approximate point stays labelled approximate outside this map too. Two
+  // fields because the hospitals import brought its own vocabulary; quoting
+  // only locationConfidence here left all 495 hospitals out of the count.
   const note = document.createElement('p');
   note.className = 'dl-note';
   note.textContent =
-    'Includes the locationConfidence field — 579 of 8,057 features are neighbourhood-level guesses, not surveyed positions.';
+    'Includes the locationConfidence and geocodeConfidence fields — 579 features are neighbourhood-level guesses, and a further 495 hospitals carry a graded position that was never surveyed.';
   el.append(note);
 
   document.body.append(el);

@@ -4,6 +4,7 @@ import '@fontsource/jost/500.css';
 import type { FeatureCollection } from 'geojson';
 import maplibregl, { type DataDrivenPropertyValueSpecification, type MapGeoJSONFeature } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import { CAVEAT, VERIFIED } from './confidence';
 import { downloadAllButton, downloadButton } from './download';
 import { NAME_KEYS, featureName } from './formats';
 import { GROUPS, LAYERS, type LayerDef } from './layers';
@@ -26,18 +27,8 @@ import {
 
 const NASHIK_CENTER: [number, number] = [73.7898, 19.9975];
 
-// 581 of 7,806 features carry no surveyed coordinate. The 12 kumbhdoot source
-// sheets held names and addresses only, so each point was placed by matching
-// address text to a locality centroid (348) or to the city centre when even
-// that failed (233). Both are neighbourhood-level guesses and both have to say
-// so: a silent locality match is how City Centre Mall sat 688 m from the
-// building while looking like solid data.
-const CAVEAT: Record<string, string> = {
-  'locality-match': 'Approximate — placed by locality name from its address, not a surveyed position.',
-  approximate: 'Approximate — no locality match, placed near the city centre.',
-};
-
-// Shown as the confidence badge above the table, or internal plumbing.
+// Shown as the confidence badge above the table (see ./confidence), or
+// internal plumbing.
 // The last five are the source file's own paint values, read by addSublayers.
 const HIDDEN_KEYS = new Set([
   'locationConfidence', 'geocodeConfidence', 'locationSource', 'role',
@@ -313,10 +304,13 @@ function popupContent(feature: MapGeoJSONFeature, def: LayerDef): HTMLElement {
   const caveat = typeof confidence === 'string' ? CAVEAT[confidence] : undefined;
   if (caveat) {
     const warn = document.createElement('p');
-    warn.className = 'popup-warn';
-    warn.textContent = caveat;
+    // Two tones, because 206 of the 495 hospitals are HIGH: painting every one
+    // of them with the same alarm as a city-centre guess would train people to
+    // stop reading the badge, which is the opposite of the point.
+    warn.className = caveat.tone === 'warn' ? 'popup-warn' : 'popup-note';
+    warn.textContent = caveat.text;
     wrapper.append(warn);
-  } else if (confidence === 'verified') {
+  } else if (confidence === VERIFIED) {
     const ok = document.createElement('p');
     ok.className = 'popup-verified';
     ok.textContent = 'Verified position';
