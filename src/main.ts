@@ -4,7 +4,7 @@ import '@fontsource/jost/500.css';
 import type { FeatureCollection } from 'geojson';
 import maplibregl, { type DataDrivenPropertyValueSpecification, type MapGeoJSONFeature } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { downloadButton } from './download';
+import { downloadAllButton, downloadButton } from './download';
 import { NAME_KEYS, featureName } from './formats';
 import { GROUPS, LAYERS, type LayerDef } from './layers';
 import { applyTheme, currentTheme, haloColor, styleUrl } from './theme';
@@ -230,8 +230,26 @@ function layerRow(def: LayerDef): HTMLLabelElement {
   count.className = 'count';
   counts.set(def.id, count);
 
-  row.append(box, dot, name, count, downloadButton(def, loadData));
+  row.append(box, dot, name, count, downloadButton(def, () => loadData(def)));
   return row;
+}
+
+// Every layer in one file. Each feature gains a `layer` property, or a merged
+// export would be 8,057 features with no way to tell a hospital from a ghat.
+// Goes through loadData, so anything already on the map is reused from cache and
+// the sidebar counts fill in as the rest arrives.
+async function loadEverything(): Promise<FeatureCollection | null> {
+  const perLayer = await Promise.all(
+    LAYERS.map(async (def) => {
+      const geojson = await loadData(def);
+      return (geojson?.features ?? []).map((f) => ({
+        ...f,
+        properties: { ...f.properties, layer: def.label },
+      }));
+    }),
+  );
+  const features = perLayer.flat();
+  return features.length ? { type: 'FeatureCollection', features } : null;
 }
 
 function buildSidebar(): void {
@@ -247,6 +265,13 @@ function buildSidebar(): void {
     }
     root.append(section);
   }
+  root.append(
+    downloadAllButton(
+      { id: 'all', label: 'All datasets', color: '#b34a2e' },
+      loadEverything,
+      LAYERS.length,
+    ),
+  );
 }
 
 // Values come from scraped spreadsheets, so the popup is built as DOM nodes

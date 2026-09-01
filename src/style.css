@@ -348,6 +348,26 @@ body {
 .dl-format strong { display: block; font-size: 13px; font-weight: 500; }
 .dl-format span { display: block; font-size: 11px; color: var(--muted); }
 
+.dl-all {
+  display: block;
+  width: 100%;
+  margin: 22px 0 4px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.18s var(--ease), background-color 0.18s var(--ease);
+}
+
+.dl-all:hover, .dl-all:focus-visible { border-color: var(--accent); }
+
 .dl-note {
   margin: 8px 2px 0;
   padding-top: 8px;
@@ -368,7 +388,21 @@ body {
 }
 
 #sidebar footer span { display: block; text-transform: uppercase; letter-spacing: 0.14em; }
-#sidebar footer strong { font-weight: 500; color: var(--accent); }
+
+.brand-mark {
+  display: block;
+  width: 100%;
+  max-width: 186px;
+  height: auto;
+  margin-top: 9px;
+  /* The logo ships on its own near-white ground — 98.9% of its pixels are fully
+     opaque #fefefe — so on the dark theme it would read as a white rectangle
+     dropped on warm brown. A deliberate plate makes that intentional instead of
+     accidental, and on the light theme it disappears into the panel. */
+  background: #fefefe;
+  border-radius: 6px;
+  padding: 7px 9px;
+}
 
 #map { flex: 1; }
 
