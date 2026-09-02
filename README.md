@@ -3,8 +3,9 @@
 [![CI](https://github.com/tanmayk1234/nashik-monitor-v2/actions/workflows/ci.yml/badge.svg)](https://github.com/tanmayk1234/nashik-monitor-v2/actions/workflows/ci.yml)
 
 Interactive map of Nashik–Trimbakeshwar civic and Kumbh Mela 2027 infrastructure:
-ghats, CCTV, parking, ring road, hospitals, police stations, bus stops, mandirs
-and 25 more layers. An initiative by **Kumbhathon Innovation Foundation**.
+ghats, CCTV, parking, ring road, hospitals, police stations, bus stops, mandirs,
+waste collection rounds and 27 more layers. An initiative by **Kumbhathon
+Innovation Foundation**.
 
 Static site. No backend, no accounts. Keyless by default — the optional
 satellite basemap is the one thing that needs an API key, and it is opt-in.
@@ -46,6 +47,7 @@ Basemap is [OpenFreeMap](https://openfreemap.org) — `positron` for light,
 | `scripts/build-datasets.mjs` | splits the master NTKMA KML into per-layer GeoJSON |
 | `scripts/build-mobility.mjs` | splits the administrator's mobility-plan KMZ into layers |
 | `scripts/build-citilink.mjs` | Citilinc bus stops and depots, from the RTI annexure |
+| `scripts/build-waste-fleet.mjs` | NMC waste collection routes, zones and checkpoints, from the tracking RTI |
 | `scripts/apply-verified-coordinates.mjs` | idempotent coordinate override table |
 | `scripts/test-formats.ts` | asserts each export format; `npm test` |
 | `scripts/test-confidence.ts` | asserts every confidence value in the data has a caveat |
@@ -61,7 +63,7 @@ Every dataset gets three sublayers — `fill`, `line`, `point` — filtered on
 
 Data is fetched on **first toggle**, never re-fetched, and cached in memory so a
 theme switch can rebuild layers without re-downloading. Boot pulls ~300 KB, not
-the full 2.4 MB.
+the full 6.6 MB.
 
 `setStyle()` discards custom sources along with the old style, so switching theme
 re-adds every cached layer on `style.load`.
@@ -117,7 +119,7 @@ opaque ground; any other value shows its rectangle as a seam.
 
 ## Data honesty
 
-`public/data/` holds 33 GeoJSON files, 9,913 features, 3.5 MB.
+`public/data/` holds 36 GeoJSON files, 12,128 features, 6.6 MB.
 
 **579 features have no real coordinate.** The 12 "kumbhdoot" source sheets carried
 names and addresses only, so each point was placed by matching address text to a
@@ -142,6 +144,50 @@ against OSM land 5–20 m out (Tapovan Depot 5 m, Gangapur Dam 17 m, Nashik Road
 railway station 20 m). Six rows of that annexure sit in **Ahmedabad**, 570 km
 away — Iscon Cross Road, Prahladnagar, Karnavati and three more — and are dropped
 by `build-citilink.mjs`, which asserts the count so a seventh has to be looked at.
+
+The **NMC waste collection** layers come from a vehicle tracking RTI covering a
+single day, 30 August 2026: 408 vehicle folders holding 254 planned rounds, 398
+geofenced service areas and 1,563 timing checkpoints.
+
+**The raw GPS is deliberately not in the repo.** The export also carries 355,246
+position fixes — every vehicle's whole shift at roughly one fix per second. That
+is 77 MB against a `public/data` of 6.6 MB, and more to the point a vehicle maps
+to a crew, so publishing it would put named workers' entire working day on a
+public map. The route, the area and the checkpoints are what a resident actually
+needs. The pings stay local, where they are still the way to check the rounds
+against where the vehicles really went.
+
+What the fleet is rests on the requester, not the document: the export has no
+covering letter and no field naming the service. The payload alone supports only
+"a municipal fleet running residential rounds" — 13% of checkpoints fall within
+100 m of a Citilinc bus stop, median speed is 11 km/h, and the checkpoint names
+are mandirs, nagars, kirana shops and housing societies. It is measurably not
+the city bus fleet. If the identification is ever withdrawn, the layer labels
+are what to revisit.
+
+Three things in that data are recorded rather than resolved:
+
+- **The checkpoint clock is a slot, not a timetable.** 84% of `expected_time`
+  values land exactly on `:00` or `:30`, while `actual_reach_time` is spread
+  across every minute. So `deviationMinutes` is plain subtraction — half the
+  rows more than 5 minutes early, a third more than 5 minutes late — and it
+  measures against a nominal half-hour slot. It is a spread, not a punctuality
+  score, and nothing in the map calls it one.
+- **47 vehicle folders hold checkpoints naming a different vehicle.** Either the
+  round changed hands during the day or the export mislabels it; the reply does
+  not say. Both the folder plate and the export's own `route_name` ship, as
+  `vehicle` and `routeLabel`, instead of one being picked as the winner.
+- **Ward numbers are half-hidden.** 110 checkpoints name a ward outright
+  (`W6 R9`, `Ward 1 Route 3`) and 350 carry a trailing `A1`–`A6` code. Wherever
+  a row has both they agree, 110 times out of 110, across wards 1, 3, 4 and 6 —
+  good evidence that the A code *is* the ward, and still not something the reply
+  says. So `ward` is only set from an explicit W, and `areaCode` ships beside it
+  unread, for anyone who wants to act on the correlation themselves.
+
+Coordinates arrive at full float precision — `19.99096999999999836` and forty
+more digits — which is the binary expansion of the number, not survey accuracy.
+They are rounded to 6 decimal places, about 0.11 m, finer than any fix in the
+file.
 
 This matters. Two real errors found by cross-checking:
 

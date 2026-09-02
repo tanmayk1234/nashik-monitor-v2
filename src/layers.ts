@@ -69,6 +69,18 @@ export const LAYERS: LayerDef[] = [
   { id: 'car-service-centers', file: 'car-service-centers.geojson', label: 'Car service',         color: '#43955f', group: 'Civic', symbol: 'C' },
   { id: 'two-wheeler-service', file: 'two-wheeler-service.geojson', label: 'Two-wheeler service', color: '#4fa575', group: 'Civic', symbol: 'T' },
 
+  // NMC waste collection, from the 30 Aug 2026 vehicle tracking RTI — see
+  // scripts/build-waste-fleet.mjs. Off by default: 3.1 MB between them, and a
+  // round only means anything zoomed into one neighbourhood.
+  //
+  // These three take the gaps in the Civic ramp rather than extending it. Four
+  // steps already spanned the 0.50-0.66 OKLCH band the families are held to, so
+  // continuing upward would have left the basemap at L 0.71 and above; 0.530,
+  // 0.579 and 0.630 interleave instead and no existing layer changes colour.
+  { id: 'waste-routes',        file: 'waste-routes.geojson',        label: 'Waste routes',        color: '#357e3c', group: 'Civic', symbol: 'WR' },
+  { id: 'waste-zones',         file: 'waste-zones.geojson',         label: 'Waste zones',         color: '#3e8d53', group: 'Civic', symbol: 'WZ' },
+  { id: 'waste-checkpoints',   file: 'waste-checkpoints.geojson',   label: 'Waste checkpoints',   color: '#499d6a', group: 'Civic', symbol: 'CP', labels: true },
+
   { id: 'hotels',              file: 'hotels.geojson',              label: 'Hotels',              color: '#8d4683', group: 'Stay', symbol: 'H' },
   { id: 'guest-houses',        file: 'guest-houses.geojson',        label: 'Guest houses',        color: '#9e558b', group: 'Stay', symbol: 'GH' },
   { id: 'boys-hostels',        file: 'boys-hostels.geojson',        label: 'Boys hostels',        color: '#b06594', group: 'Stay', symbol: '♂' },
