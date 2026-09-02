@@ -3,17 +3,18 @@
 [![CI](https://github.com/tanmayk1234/nashik-monitor-v2/actions/workflows/ci.yml/badge.svg)](https://github.com/tanmayk1234/nashik-monitor-v2/actions/workflows/ci.yml)
 
 Interactive map of Nashik–Trimbakeshwar civic and Kumbh Mela 2027 infrastructure:
-ghats, CCTV, parking, ring road, hospitals, police stations, mandirs and 18 more
-layers. An initiative by **Kumbhathon Innovation Foundation**.
+ghats, CCTV, parking, ring road, hospitals, police stations, bus stops, mandirs
+and 25 more layers. An initiative by **Kumbhathon Innovation Foundation**.
 
-Static site. No backend, no accounts, no API keys.
+Static site. No backend, no accounts. Keyless by default — the optional
+satellite basemap is the one thing that needs an API key, and it is opt-in.
 
 ```bash
 npm install
 npm run dev        # http://localhost:5173
 npm run build      # tsc && vite build
 npm run typecheck
-npm test           # export-format assertions
+npm test           # export-format and confidence-vocabulary assertions
 
 # Browser checks, against a running dev server. Set CHROMIUM_PATH if the
 # installed browser build does not match the one @playwright/test pins.
@@ -35,15 +36,19 @@ Basemap is [OpenFreeMap](https://openfreemap.org) — `positron` for light,
 |---|---|
 | `src/boot.ts` | entry point: splash first, then the map after a painted frame |
 | `src/main.ts` | map, lazy layer loading, sidebar, popups, theme swap |
-| `src/layers.ts` | the 25-layer config table — one row per file in `public/data` |
+| `src/layers.ts` | the 33-layer config table — one row per file in `public/data` |
 | `src/formats.ts` | the five export converters, and the name-key list popups share |
 | `src/download.ts` | the per-layer format menu and the file save |
-| `src/theme.ts` | theme state, basemap URLs, point-halo colour |
+| `src/theme.ts` | theme state, basemap URLs, terrain and point-halo colours |
+| `src/confidence.ts` | the accuracy vocabularies, and what each grade tells a reader |
 | `src/splash.ts` | intro sequence timing and skip |
 | `src/style.css` | design tokens, splash, shell, popup |
 | `scripts/build-datasets.mjs` | splits the master NTKMA KML into per-layer GeoJSON |
+| `scripts/build-mobility.mjs` | splits the administrator's mobility-plan KMZ into layers |
+| `scripts/build-citilink.mjs` | Citilinc bus stops and depots, from the RTI annexure |
 | `scripts/apply-verified-coordinates.mjs` | idempotent coordinate override table |
 | `scripts/test-formats.ts` | asserts each export format; `npm test` |
+| `scripts/test-confidence.ts` | asserts every confidence value in the data has a caveat |
 | `scripts/check-download-ui.mjs` | drives the real page and downloads all five formats |
 | `scripts/check-splash-timing.mjs` | asserts the intro animates before the map chunk lands |
 | `scripts/browser.mjs` | shared Playwright launch for the two checks |
@@ -112,14 +117,31 @@ opaque ground; any other value shows its rectangle as a seam.
 
 ## Data honesty
 
-`public/data/` holds 25 GeoJSON files, 7,806 features, 2.4 MB.
+`public/data/` holds 33 GeoJSON files, 9,913 features, 3.5 MB.
 
-**581 features have no real coordinate.** The 12 "kumbhdoot" source sheets carried
+**579 features have no real coordinate.** The 12 "kumbhdoot" source sheets carried
 names and addresses only, so each point was placed by matching address text to a
-locality centroid plus jitter (`locationConfidence: "locality-match"`, 348) or
-near the city centre when even that failed (`"approximate"`, 233). Popups label
+locality centroid plus jitter (`locationConfidence: "locality-match"`, 350) or
+near the city centre when even that failed (`"approximate"`, 229). Popups label
 both. `"verified"` means confirmed against an independent source and gets a
 checkmark.
+
+**A further 495 hospitals are graded, not surveyed.** That layer arrived with its
+own vocabulary — `geocodeConfidence` HIGH/MEDIUM/LOW, 206/115/174 — and no script
+here produces it, so what the upstream grades mean is recorded nowhere. What is
+measurable is how often a grade stacks several hospitals on one coordinate: LOW
+75%, MEDIUM 60%, HIGH 35%, with 19 piled on the worst single point. The gradient
+is real and none of the three is a surveyed position, so all three say so in the
+popup. `scripts/test-confidence.ts` asserts that every value present in the data
+has something to say for itself — it exists because for a while LOW did not, and
+174 hospitals rendered with no badge at all.
+
+The **1,854 Citilinc bus stops** are the opposite case: geofence centres straight
+out of the operator's own AVL system, every coordinate distinct, and spot checks
+against OSM land 5–20 m out (Tapovan Depot 5 m, Gangapur Dam 17 m, Nashik Road
+railway station 20 m). Six rows of that annexure sit in **Ahmedabad**, 570 km
+away — Iscon Cross Road, Prahladnagar, Karnavati and three more — and are dropped
+by `build-citilink.mjs`, which asserts the count so a seventh has to be looked at.
 
 This matters. Two real errors found by cross-checking:
 
@@ -137,7 +159,13 @@ vector* — mandirs across 382 matches came to 8 m, which is what establishes th
 the pipeline is unbiased and the ghats sheet was uniquely wrong.
 
 The raw survey sources (KML, KMZ, GeoPackage, PDF) are not in the repo — only the
-GeoJSON built from them. `scripts/build-datasets.mjs` takes the KML path as its
+GeoJSON built from them. The one exception is `scripts/source/`: the Citilinc RTI
+reply is a 198-page 300 DPI scan with no text layer, so nothing can parse it. That
+table was read off the page by hand, which makes the transcription itself the
+source — it is committed, and `citilink-routes.json` beside it holds the 51 route
+duty schedules from pages 3–136. Those carry no coordinates in the reply, so they
+stay a reference table rather than a map layer: drawing a line between a route's
+named endpoints would invent a path the document never gives. `scripts/build-datasets.mjs` takes the KML path as its
 first argument, so regenerating the four KML-derived layers needs a local copy of
 the NTKMA master file.
 

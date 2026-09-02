@@ -1,0 +1,1865 @@
+# Citilinc geofenced bus stops, transcribed from the NMPML RTI reply
+# (letter 3120/2026, 17 Aug 2026), annexure pages 137-166 of 198.
+# The PDF is a 300 DPI scan with no text layer, so this table was read
+# off the page rather than parsed. sr is the source table's own row number.
+# sr|depot|city|name|lat|lon
+1|Tapovan Depot|Nashik|Jagdamb Hotel (Kanade Mala)|19.85836|74.01507
+2|Tapovan Depot|Nashik|Sinnar Court (D)|19.84912|74.00465
+3|Tapovan Depot|Nashik|Sinnar Court (U)|19.84946|74.00473
+4|Tapovan Depot|Nashik|Vijay Nagar (Sinner)|19.85598|74.01138
+5|Tapovan Depot|Nashik|Mane Nagar|20.02799|73.82536
+6|Tapovan Depot|Nashik|TDP Nagar (Makhmalabad)|20.04608|73.78470
+7|Tapovan Depot|Nashik|Padma Nagar (Thete Mala)|20.04627|73.78860
+8|Tapovan Depot|Nashik|Muktai Nagar (Rau Hotel)|20.04637|73.79116
+9|Tapovan Depot|Nashik|Chankyapuri (Makhmalabad)|20.04748|73.79551
+10|Tapovan Depot|Nashik|Sai Nagar (RTO Corner)|20.03263|73.80543
+11|Tapovan Depot|Nashik|Baliraja Nagar|20.02948|73.82204
+12|Tapovan Depot|Nashik|Pramod Mahajan Gardan (Bali Mandir)|20.02350|73.83015
+13|Tapovan Depot|Nashik|Mhada colony (Nilgiri Bag)|20.00671|73.83154
+14|Tapovan Depot|Nashik|Jejurkar Mala (Geetai Lawans)|19.99833|73.83091
+15|Tapovan Depot|Nashik|Takali STP Kendra|19.98548|73.82912
+16|Tapovan Depot|Nashik|Anusaya Nagar / Sun City|19.98057|73.82842
+17|Tapovan Depot|Nashik|Panchakrushana colony|19.97854|73.82968
+18|Tapovan Depot|Nashik|Shriram Nagar / Adhav Mala|19.97639|73.83670
+19|Tapovan Depot|Nashik|Awhad Chowk|19.95446|73.76985
+20|Tapovan Depot|Nashik|Paanini Society|19.95540|73.76936
+21|Tapovan Depot|Nashik|Gamane Ground|19.95751|73.76918
+22|Tapovan Depot|Nashik|Krushnai Hotel|19.95990|73.76882
+23|Tapovan Depot|Nashik|Akshar Colony|19.96098|73.76747
+24|Tapovan Depot|Nashik|Gorakshanath Mandir (Sinner)|19.84194|74.00264
+25|Tapovan Depot|Nashik|Tapovan Terminus|20.00788|73.81421
+26|Nashik Road Depot|Nashik|Urdu School (Sarda Circle) (U)|19.99381|73.79044
+27|Nashik Road Depot|Nashik|Urdu School (Sarda Circle) (D)|19.99381|73.79060
+28|Nashik Road Depot|Nashik|DDR Office (Sarda Circle) (U)|19.99142|73.78883
+29|Nashik Road Depot|Nashik|DDR Office (Sarda Circle) (D)|19.99163|73.78914
+30|Nashik Road Depot|Nashik|Waani House/State Bank Colony|19.99106|73.79103
+31|Tapovan Depot|Nashik|AnnaCha Wada (Mungsara)|20.05033|73.72954
+32|Tapovan Depot|Nashik|Gaarewadi|20.04618|73.72878
+33|Tapovan Depot|Nashik|Hagwane Vasti (Chandshi)|20.04436|73.73444
+34|Tapovan Depot|Nashik|Mira Land Empire|20.03970|73.73658
+35|Tapovan Depot|Nashik|Jalalpur Phata|20.03712|73.73837
+36|Tapovan Depot|Nashik|Chandshi Gaon|20.03431|73.74005
+37|Tapovan Depot|Nashik|Yamuna Nagar|20.02995|73.74227
+38|Tapovan Depot|Nashik|Vishwendu Nagar|20.02729|73.74340
+39|Tapovan Depot|Nashik|Nandanvan Nagar|20.02723|73.74722
+40|Tapovan Depot|Nashik|Mandlik Nagar 1 / Alaska Lawns|20.02649|73.75137
+41|Tapovan Depot|Nashik|Hridayaksha Hospital|20.02578|73.75368
+42|Tapovan Depot|Nashik|Gandhari Gaon Chaufuli|20.02510|73.75714
+43|Tapovan Depot|Nashik|Bapu Pul (D)|20.02272|73.75585
+44|Tapovan Depot|Nashik|Bapu Pul (U)|20.02281|73.75577
+45|Tapovan Depot|Nashik|Aasaram Bapu Aasharam|20.02058|73.75513
+46|Tapovan Depot|Nashik|Atharva Colony|20.01836|73.75479
+47|Tapovan Depot|Nashik|Navrachna Vidyalay (Savarkar Nagar)|20.01603|73.75431
+48|Tapovan Depot|Nashik|Narsinha Nagar Auto Stand (D)|20.01469|73.75595
+49|Tapovan Depot|Nashik|Narsinha Nagar Auto Stand (U)|20.01460|73.75592
+50|Tapovan Depot|Nashik|Shanti Niketan Chauk (D)|20.01730|73.76132
+51|Tapovan Depot|Nashik|Shanti Niketan Chauk (U)|20.01720|73.76133
+52|Tapovan Depot|Nashik|Horizon Academy (D)|20.01716|73.76618
+53|Tapovan Depot|Nashik|Mai Lele School (D)|20.01238|73.76987
+54|Tapovan Depot|Nashik|Chopda Lawns (D)|20.00967|73.77169
+55|Tapovan Depot|Nashik|Chopda Lawns (U)|20.00961|73.77154
+56|Tapovan Depot|Nashik|Horizon Academy (U)|20.01706|73.76610
+57|Tapovan Depot|Nashik|Shivkesari Chauk (D)|20.01536|73.76764
+58|Tapovan Depot|Nashik|Shivkesari Chauk (U)|20.01531|73.76755
+59|Nashik Road Depot|Nashik|Digambar Society (Vidi Kamgar) (U)|20.00971|73.82602
+60|Nashik Road Depot|Nashik|Digambar Society (Vidi Kamgar) (D)|20.00938|73.82614
+61|Nashik Road Depot|Nashik|Ghughe Vasti / Jadhav Vasti (Kotam Gaon)|19.96083|73.90761
+62|Tapovan Depot|Nashik|Khloya Ohal / Thube Vasti|20.09291|73.95203
+63|Nashik Road Depot|Nashik|Jawahar Phata (Trimbakeshwar) (D)|19.94053|73.53380
+64|Nashik Road Depot|Nashik|Jawahar Phata (Trimbakeshwar) (U)|19.94040|73.53357
+65|Nashik Road Depot|Nashik|A.D.I Electric Company|19.92895|73.91555
+66|Nashik Road Depot|Nashik|Jakhorigaon|19.95093|73.92158
+67|Nashik Road Depot|Nashik|Kotamgaon Phata / Darana River Bridge|19.94948|73.92024
+68|Nashik Road Depot|Nashik|Saptshrungi Mata Mandir Phata / Mohgaon|19.94650|73.91709
+69|Nashik Road Depot|Nashik|Ghotal Wadi (Chandgiri)|19.94355|73.91793
+70|Nashik Road Depot|Nashik|Katale Vasti (Chandgiri)|19.94066|73.91804
+71|Nashik Road Depot|Nashik|Chandgirigaon|19.93681|73.91715
+72|Nashik Road Depot|Nashik|Shelar Vasti (Chandgiri)|19.93517|73.91684
+73|Nashik Road Depot|Nashik|Gurukul School|19.91797|73.90088
+74|Nashik Road Depot|Nashik|Chakradhar Swami Datta Mandir (Shindegaon)|19.91791|73.89076
+75|Nashik Road Depot|Nashik|Namco Cancer Hospital (D)|20.03401|73.79576
+76|Nashik Road Depot|Nashik|Rashiklal Dhariwal Hospital (D)|20.03411|73.79783
+77|Nashik Road Depot|Nashik|Namco Cancer Hospital (U)|20.03419|73.79572
+78|Nashik Road Depot|Nashik|Rashiklal Dhariwal Hospital (U)|20.03433|73.79771
+79|Nashik Road Depot|Nashik|Dindori / Matoshree Krushi|20.20952|73.82008
+80|Nashik Road Depot|Nashik|Hanuman Nagar (Dindori)|20.20851|73.82431
+81|Nashik Road Depot|Nashik|Nirmal Vihar Colony (Dindori)|20.20758|73.82637
+82|Tapovan Depot|Nashik|Laxmi Lawns (Girnare)|20.07123|73.66734
+83|Tapovan Depot|Nashik|Kadlag Mala (Govardhan)|20.02972|73.70313
+84|Tapovan Depot|Nashik|Radha Krishna Chowk (Chunchale)|19.96631|73.73252
+85|Tapovan Depot|Nashik|Entech Controls|19.99960|73.72295
+86|Tapovan Depot|Nashik|GI Company|20.00001|73.71726
+87|Tapovan Depot|Nashik|Carbon Vegetable|20.00190|73.71752
+88|Tapovan Depot|Nashik|Mahindra Spicer Limited|19.99696|73.71696
+89|Tapovan Depot|Nashik|Mahindra Gate No 1|19.99605|73.71949
+90|Tapovan Depot|Nashik|Mico Gate No 4|19.99592|73.72095
+91|Tapovan Depot|Nashik|Sharda Moters|19.99631|73.72296
+92|Tapovan Depot|Nashik|VIP/ABB|20.00104|73.72884
+93|Tapovan Depot|Nashik|JBM|20.00001|73.73106
+94|Nashik Road Depot|Nashik|Army Public School (D)|19.88793|73.82417
+95|Tapovan Depot|Nashik|Nimani Pass Center 3|20.01243|73.79674
+96|Nashik Road Depot|Nashik|Hanuman Mandir (Sinnar Phata)|19.94696|73.84633
+97|Tapovan Depot|Nashik|CITILINC Office (D)|19.99574|73.77673
+98|Tapovan Depot|Nashik|CITILINC Office (U)|19.99635|73.77743
+99|Tapovan Depot|Nashik|Police Vasahat (Dhatrak Phata)|20.04684|73.83529
+100|Tapovan Depot|Nashik|Alandi Pat (Dhatrak Phata)|20.04285|73.83503
+101|Tapovan Depot|Nashik|Yeshwant Nagar (Dhatrak Phata)|20.04097|73.83493
+102|Tapovan Depot|Nashik|Samaj Kalyan Vastigruh Phata No 1 (Adgaon)|20.03832|73.86722
+103|Tapovan Depot|Nashik|Shikshan Mandal Vibhagiy Karyalay (Adgaon)|20.04536|73.86860
+104|Tapovan Depot|Nashik|Samaj Kalyan Vastigruh (Adgaon)|20.04382|73.86811
+105|Tapovan Depot|Nashik|New English School (Adgaon)|20.04260|73.86767
+106|Tapovan Depot|Nashik|Swapnapurti Society (Adgaon)|20.04121|73.86713
+107|Tapovan Depot|Nashik|Samaj Kalyan Vastigruh Phata (Adgaon)|20.03838|73.86674
+108|Tapovan Depot|Nashik|Datta Mandir (Adgaon)|20.03547|73.86289
+109|Nashik Road Depot|Nashik|Borgad / Santosh Edu Phamacy College|20.06867|73.80120
+110|Nashik Road Depot|Nashik|Borgad|20.05775|73.80079
+111|Nashik Road Depot|Nashik|Varad Nagar|20.05990|73.80158
+112|Nashik Road Depot|Nashik|Adivasi Ashram Shala (Borgad)|20.05433|73.79996
+113|Tapovan Depot|Nashik|Shiv Rasta Oney / Thergaon|20.08052|73.99239
+114|Tapovan Depot|Nashik|Nala (Sayyed Pimpari)|20.04450|73.93902
+115|Tapovan Depot|Nashik|Tarle Construction (Sayyed Pimpari)|20.03840|73.89447
+116|Tapovan Depot|Nashik|Charan Baba Matha (Sayyed Pimpari)|20.03669|73.88574
+117|Tapovan Depot|Nashik|Tapovan Depot (D)|20.00754|73.81478
+118|Tapovan Depot|Nashik|Jwala Mata|19.84616|74.01366
+119|Nashik Road Depot|Nashik|Sanap Farm (Dhakambe)|20.08769|73.80501
+120|Nashik Road Depot|Nashik|Jay Ambe Farm (Dhakambe)|20.10808|73.80734
+121|Nashik Road Depot|Nashik|Hinganwedhe|19.97260|73.92531
+122|Nashik Road Depot|Nashik|Saati Asara Mandir (Hinganvedhe)|19.96147|73.90856
+123|Tapovan Depot|Nashik|More Nagar (Pimpalgaon)|20.17304|73.99290
+124|Tapovan Depot|Nashik|Fire Brigade (Pimpalgaon)|20.16911|73.99251
+125|Tapovan Depot|Nashik|Arunoday Colony|20.03577|73.83480
+126|Tapovan Depot|Nashik|Deen Dayal Garden|20.02410|73.82616
+127|Tapovan Depot|Nashik|Triveni Heights / Mhada|20.03718|73.83975
+128|Tapovan Depot|Nashik|Deshmukh Chowk - Adgaon|20.03860|73.83490
+129|Tapovan Depot|Nashik|Sudarshan Colony / Raut Mala|20.03219|73.83453
+130|Tapovan Depot|Nashik|Ashapuri Colony|20.03011|73.83494
+131|Tapovan Depot|Nashik|Samarth Socity / Sandip Super Market|20.02637|73.83560
+132|Tapovan Depot|Nashik|KK Wagh Agri College|20.02486|73.83255
+133|Tapovan Depot|Nashik|Pramod Mahajan Garden|20.02378|73.83037
+134|Tapovan Depot|Nashik|Saishiv Nagar|20.02460|73.82919
+135|Tapovan Depot|Nashik|Dattatreya Chowk|20.02613|73.82580
+136|Tapovan Depot|Nashik|Trikoni Banglow|20.02563|73.82096
+137|Tapovan Depot|Nashik|Bhargav Ram Society|20.02321|73.82099
+138|Tapovan Depot|Nashik|Ayodhya Nagar|20.02133|73.82118
+139|Tapovan Depot|Nashik|MIDC Mukhed Phata|20.19312|73.98447
+140|Tapovan Depot|Nashik|Devicha Matha|20.18746|73.99028
+141|Nashik Road Depot|Nashik|Manohar Farm / Rashegaon Phata (D)|20.13956|73.81628
+142|Nashik Road Depot|Nashik|Manohar Farm / Rashegaon Phata (U)|20.13939|73.81617
+143|Tapovan Depot|Nashik|Durga Nagar (K.K Wagh) (D)|20.01389|73.81844
+144|Tapovan Depot|Nashik|Durga Nagar (K.K Wagh) (U)|20.01318|73.81540
+145|Tapovan Depot|Nashik|Labhade Nagar Adgaon (D)|20.02859|73.85135
+146|Tapovan Depot|Nashik|Labhade Nagar Adgaon (U)|20.02873|73.85092
+147|Tapovan Depot|Nashik|Shelke Complex|19.88011|73.84129
+148|Tapovan Depot|Nashik|Samrat Hotel|19.88042|73.84293
+149|Tapovan Depot|Nashik|Sainik Society|19.88076|73.84549
+150|Tapovan Depot|Nashik|Yogeshwari Nagar|19.87808|73.84471
+151|Tapovan Depot|Nashik|New Panchaganga Society|19.87803|73.84180
+152|Tapovan Depot|Nashik|Shah Garden|19.87804|73.84054
+153|Tapovan Depot|Nashik|Ahuja Complex|19.87794|73.83835
+154|Tapovan Depot|Nashik|KVN Naik College (Canada Corner) (U)|20.00433|73.77064
+155|Tapovan Depot|Nashik|KVN Naik College (Canada Corner) (D)|20.00436|73.77051
+156|Nashik Road Depot|Nashik|Mhasoba Mandir (Mhada)|19.97154|73.71950
+157|Tapovan Depot|Nashik|Mankar Petrol Pump Makhmalabad|20.04616|73.77827
+158|Tapovan Depot|Nashik|Bhakti Dham (D)|20.01328|73.79318
+159|Tapovan Depot|Nashik|Jamb Ohal (Matori)|20.05191|73.76230
+160|Nashik Road Depot|Nashik|Swpnapurti Nagar (old Po. Lines Vasahat Gaulane)|19.93709|73.75673
+161|Nashik Road Depot|Nashik|Bhima Shankar Nagar / Royal Bekari|19.94965|73.75589
+162|Tapovan Depot|Nashik|Gangotri Farm House (Dugaon)|20.06565|73.69269
+163|Tapovan Depot|Nashik|Dambale Wadi (Dugaon)|20.06112|73.70197
+164|Tapovan Depot|Nashik|Khandoba Tekdi (Dugaon)|20.05545|73.71309
+165|Tapovan Depot|Nashik|Yashwant Nagar (Mungasara)|20.05241|73.71891
+166|Tapovan Depot|Nashik|Surya Academy|20.05387|73.73762
+167|Tapovan Depot|Nashik|Eregation Colony Makhmalabad|20.04600|73.78230
+168|Tapovan Depot|Nashik|Vise Mala (Makhmalabad Link Road)|20.04626|73.78785
+169|Tapovan Depot|Nashik|Rau Hotel Peth Road (Maruti Mandir) (U)|20.04625|73.79197
+170|Tapovan Depot|Nashik|Bhakti Dham (U)|20.01331|73.79302
+171|Nashik Road Depot|Nashik|Bhim Nagar / Central Jail (D)|19.96733|73.83960
+172|Nashik Road Depot|Nashik|Bhim Nagar / Central Jail (U)|19.96715|73.83972
+173|Tapovan Depot|Nashik|Satpur Pass Center 1|19.99506|73.77644
+174|Tapovan Depot|Nashik|KTHM Pass Center 2|20.00755|73.77678
+175|Tapovan Depot|Nashik|KTHM Pass Center 1|20.00757|73.77678
+176|Tapovan Depot|Nashik|Nimani Pass Center 1|19.99507|73.77643
+177|Tapovan Depot|Nashik|Nimani Pass Center 2|19.99508|73.77643
+178|Tapovan Depot|Nashik|Bhairavnath Mandir / ZP School Chandori|20.02814|73.98791
+179|Tapovan Depot|Nashik|Dudh Dairy / Tarle Vasti Chandori|20.03201|73.98590
+180|Tapovan Depot|Nashik|Raundal Vasti / Butti Chinch|20.03714|73.98036
+181|Tapovan Depot|Nashik|Khervadi Datta Mandir|20.04163|73.97505
+182|Tapovan Depot|Nashik|Vanvihar Colony|20.00296|73.75263
+183|Tapovan Depot|Nashik|Bhaji Market (D)|20.00250|73.71501
+184|Tapovan Depot|Nashik|Bhaji Market (U)|20.00273|73.71503
+185|Tapovan Depot|Nashik|Dynamic Company (Carbon)|20.00552|73.71531
+186|Tapovan Depot|Nashik|Dharmaji Colany (Satpur) (D)|20.00631|73.71748
+187|Tapovan Depot|Nashik|Dharmaji Colany (Satpur) (U)|20.00622|73.71750
+188|Tapovan Depot|Nashik|Bhawar Mala (Satpur) (D)|20.00741|73.72120
+189|Tapovan Depot|Nashik|Bhawar Mala (Satpur) (U)|20.00725|73.72096
+190|Tapovan Depot|Nashik|Apna Ghar (D)|20.00872|73.72393
+191|Tapovan Depot|Nashik|Apna Ghar (U)|20.00863|73.72398
+192|Tapovan Depot|Nashik|Sai Nakshatra Apparment (D)|20.01083|73.72600
+193|Tapovan Depot|Nashik|Sai Nakshatra Apparment (U)|20.01085|73.72613
+194|Tapovan Depot|Nashik|Balwant Chowk (Canal Road) (D)|20.01267|73.72619
+195|Tapovan Depot|Nashik|Balwant Chowk (Canal Road) (U)|20.01264|73.72607
+196|Tapovan Depot|Nashik|Tirumala Omkar (D)|20.00928|73.73051
+197|Tapovan Depot|Nashik|Tirumala Omkar (U)|20.00926|73.73017
+198|Tapovan Depot|Nashik|Ishwar Prestrige (Tirumala) (D)|20.00769|73.73466
+199|Tapovan Depot|Nashik|Ishwar Prestrige (Tirumala) (U)|20.00771|73.73441
+200|Tapovan Depot|Nashik|Wisdom School / Gangurde Chowk (D)|20.00718|73.73821
+201|Tapovan Depot|Nashik|Wisdom School / Gangurde Chowk (U)|20.00711|73.73862
+202|Tapovan Depot|Nashik|Canal Jogging Track (Pipe Line Road) (D)|20.00678|73.74197
+203|Tapovan Depot|Nashik|Canal Jogging Track (Pipe Line Road) (U)|20.00691|73.74223
+204|Tapovan Depot|Nashik|Durgamata Mandir (D)|19.97734|73.84042
+205|Nashik Road Depot|Nashik|Shewanta Lawns (D)|20.00257|73.84410
+206|Tapovan Depot|Nashik|Bendkule Nagar (U)|20.01650|73.73593
+207|Tapovan Depot|Nashik|Mauli Lawns (U)|19.97275|73.74729
+208|Tapovan Depot|Nashik|Ayodhya Colony (D)|19.97577|73.74685
+209|Tapovan Depot|Nashik|Balwant Nagar / Kadlak Vasti (D)|20.01378|73.74075
+210|Tapovan Depot|Nashik|Balwant Nagar / Kadlak Vasti (U)|20.01386|73.73992
+211|Tapovan Depot|Nashik|Wavare Nagar (D)|19.97953|73.74719
+212|Tapovan Depot|Nashik|Surbhi Colony (U)|19.98349|73.74866
+213|Tapovan Depot|Nashik|Khuntwad Nagar / CITU Bhavan (D)|19.98623|73.74919
+214|Tapovan Depot|Nashik|Dattir Nagar (Chunchale Gaon) (D)|19.96493|73.72834
+215|Nashik Road Depot|Nashik|Samata Nagar (D) Takali Rd|19.98413|73.81767
+216|Nashik Road Depot|Nashik|Indrayani Society (D)|19.97915|73.81777
+217|Nashik Road Depot|Nashik|Pandurang Chowk (D)|19.94974|73.76251
+218|Nashik Road Depot|Nashik|Wadhane Colony (D)|20.05219|73.80517
+219|Tapovan Depot|Nashik|Iscon Cross Road|23.02634|72.50744
+220|Tapovan Depot|Nashik|Abhishree Complex|23.02632|72.52320
+221|Tapovan Depot|Nashik|Anandnagar|23.01279|72.51707
+222|Tapovan Depot|Nashik|Prahladnagar|23.01187|72.50309
+223|Tapovan Depot|Nashik|Karnavati|23.01988|72.50554
+224|Tapovan Depot|Nashik|Iscon1|23.02250|72.50631
+225|Nashik Road Depot|Nashik|Prabhu Business Park / Vadala|19.96821|73.80052
+226|Nashik Road Depot|Nashik|Vidhate Nagar (Wadala)|19.96932|73.79826
+227|Nashik Road Depot|Nashik|Khode Nagar / Vadala|19.97196|73.79738
+228|Nashik Road Depot|Nashik|Wadala Gaon Chaufuli|19.97266|73.79453
+229|Nashik Road Depot|Nashik|WNS (Wadala)|19.97418|73.79043
+230|Tapovan Depot|Nashik|Chehedi Shiv Road / Bogda (NRD) (U)|19.94130|73.85318
+231|Nashik Road Depot|Nashik|Jadhav Wasti (Pimpalgaon Khamb) (D)|19.92724|73.79143
+232|Nashik Road Depot|Nashik|Mhasoba Mandir 1 (U)|19.92771|73.80692
+233|Nashik Road Depot|Nashik|Bhavani Nagar 1 (D)|19.92678|73.80065
+234|Nashik Road Depot|Nashik|Nashik Road|19.94870|73.84077
+235|Nashik Road Depot|Nashik|Chehdi Pumping / Navmika School (U) 1|19.93613|73.85926
+236|Tapovan Depot|Nashik|Chehdi Pumping / Navmika School (D)|19.93652|73.85853
+237|Nashik Road Depot|Nashik|Nashik Road Tripuli|19.93944|73.84215
+238|Nashik Road Depot|Nashik|Chehadi Pumping|19.93782|73.85597
+239|Nashik Road Depot|Nashik|Bhagava Chowk (D)|19.93598|73.85649
+240|Nashik Road Depot|Nashik|Bhagava Chowk (U)|19.93598|73.85640
+241|Nashik Road Depot|Nashik|Hanuman Chowk|19.93590|73.85489
+242|Nashik Road Depot|Nashik|Shri Krishna Colony|19.93610|73.85153
+243|Nashik Road Depot|Nashik|Maratha Colony|19.93616|73.84992
+244|Nashik Road Depot|Nashik|Kharjul Circle|19.93708|73.84819
+245|Nashik Road Depot|Nashik|Kharjul Mala|19.93780|73.84560
+246|Tapovan Depot|Nashik|Patil Park|19.97586|73.72236
+247|Tapovan Depot|Nashik|Laxmi Mata Chowk (D)|19.98122|73.79271
+248|Tapovan Depot|Nashik|Laxmi Mata Chowk (U)|19.98173|73.79233
+249|Tapovan Depot|Nashik|Kalptaru Nagar No.2|19.98058|73.79903
+250|Tapovan Depot|Nashik|Chaitrapalvi Society|19.98012|73.80378
+251|Tapovan Depot|Nashik|Vijay Mamta (D)|19.97943|73.80662
+252|Tapovan Depot|Nashik|Janta Vidyalay / Vijay Mamata|19.97941|73.80647
+253|Tapovan Depot|Nashik|Mauje Sukhena|20.07474|74.01320
+254|Tapovan Depot|Nashik|Chitrkut Chowk (U)|19.95384|73.77878
+255|Tapovan Depot|Nashik|Sharayu Nagar|19.95383|73.78138
+256|Tapovan Depot|Nashik|Vijay Mamata (D)|19.97993|73.80806
+257|Tapovan Depot|Nashik|Janata Vidyalaya (D)|19.98074|73.80946
+258|Tapovan Depot|Nashik|Metro Mall (D)|19.98226|73.81011
+259|Tapovan Depot|Nashik|Uttara Nagar / Poddar High School (D)|19.98493|73.80991
+260|Tapovan Depot|Nashik|Kathe Galli Corner (D)|19.99005|73.80892
+261|Tapovan Depot|Nashik|Anusaya Nagar / Samarth Nagar (D)|19.99169|73.80903
+262|Tapovan Depot|Nashik|Jay Shankar Garden Chowk (Tapovan) (D)|19.99447|73.80931
+263|Tapovan Depot|Nashik|Tigrania Chowk (D)|19.99720|73.80969
+264|Tapovan Depot|Nashik|Laxmi Narayan Mandir (Tapovan) (D)|20.00230|73.81205
+265|Tapovan Depot|Nashik|Vijay Mamata (U)|19.97973|73.80797
+266|Tapovan Depot|Nashik|Janata Vidyalaya (U)|19.98058|73.80952
+267|Tapovan Depot|Nashik|Metro Mall (U)|19.98175|73.81032
+268|Tapovan Depot|Nashik|Uttara Nagar / Poddar High School (U)|19.98520|73.81002
+269|Tapovan Depot|Nashik|Kathe Galli Corner (U)|19.98957|73.80910
+270|Tapovan Depot|Nashik|Anusaya Nagar / Samarth Nagar (U)|19.99119|73.80912
+271|Tapovan Depot|Nashik|Jay Shankar Garden Chowk (Tapovan) (U)|19.99361|73.80932
+272|Tapovan Depot|Nashik|Tigrania Chowk (U)|19.99726|73.80984
+273|Tapovan Depot|Nashik|Laxmi Narayan Mandir (Tapovan) (U)|20.00225|73.81212
+274|Tapovan Depot|Nashik|P.V.G College / Omkar Bungalow|20.03794|73.79894
+275|Tapovan Depot|Nashik|Dattir Nagar (Chunchale Gaon) (U)|19.96475|73.72874
+276|Nashik Road Depot|Nashik|Late. Dagu Patil Aware Chowk|19.95131|73.86434
+277|Nashik Road Depot|Nashik|Sarvadnya Mala (Mhaisdhune)|20.07059|73.72221
+278|Nashik Road Depot|Nashik|Jalsampada Office (Dari)|20.07732|73.72240
+279|Nashik Road Depot|Nashik|Manoli Phata (Dari Gaon)|20.08951|73.71563
+280|Nashik Road Depot|Nashik|Dari Gaon|20.07991|73.72161
+281|Nashik Road Depot|Nashik|New Dhagur|20.09515|73.71148
+282|Nashik Road Depot|Nashik|Old Dhagur|20.10547|73.70787
+283|Nashik Road Depot|Nashik|Alandi Dam|20.11827|73.69905
+284|Nashik Road Depot|Nashik|Gayachi Whadi (Chaufully)|20.12860|73.70445
+285|Nashik Road Depot|Nashik|Dayachiwadi (Trifuly)|20.13497|73.70458
+286|Nashik Road Depot|Nashik|Rawal Gaon|20.13310|73.69809
+287|Nashik Road Depot|Nashik|Tilloli|20.13576|73.68466
+288|Nashik Road Depot|Nashik|Tilhoali (Small)|20.13785|73.68274
+289|Nashik Road Depot|Nashik|Tilholi (Big)|20.13894|73.68052
+290|Nashik Road Depot|Nashik|Kanya Aasram School (Tilholi)|20.14100|73.67529
+291|Nashik Road Depot|Nashik|SoanGaon Fhata (Umarale Fata)|20.14358|73.66699
+292|Nashik Road Depot|Nashik|Kochar Gaon|20.14381|73.65974
+293|Nashik Road Depot|Nashik|Pul (OM Dery Pharm)|20.06285|73.72146
+294|Nashik Road Depot|Nashik|Pragati Nagar (Boargad)|20.05568|73.79431
+295|Nashik Road Depot|Nashik|Aadarsh Nagar Borgad|20.05548|73.79726
+296|Tapovan Depot|Nashik|Khanderao Mandir (Mukne Gaon)|19.80769|73.65516
+297|Tapovan Depot|Nashik|Raymond Company (Gonde) (D)|19.81931|73.66974
+298|Tapovan Depot|Nashik|Raymond Company (Gonde) (U)|19.81924|73.67005
+299|Tapovan Depot|Nashik|Gonde Fhata (D)|19.82979|73.67503
+300|Tapovan Depot|Nashik|Shiv Mandir (Mukne Gaon)|19.80320|73.66634
+301|Tapovan Depot|Nashik|Trimurti Nagar Bhagur|19.87381|73.83808
+302|Tapovan Depot|Nashik|Pandhurli Gaon|19.82930|73.85526
+303|Tapovan Depot|Nashik|Pandhurli Highway Chowfully|19.83209|73.85541
+304|Tapovan Depot|Nashik|Bhor Mala (Vinchur Dalvi)|19.83913|73.85514
+305|Tapovan Depot|Nashik|Canal Road Bhor Mala|19.84406|73.85465
+306|Tapovan Depot|Nashik|Vinchur Dalvi|19.85299|73.85317
+307|Tapovan Depot|Nashik|Rice Mill Vinchur Dalvi|19.85360|73.84899
+308|Tapovan Depot|Nashik|Rahuri Phata|19.86491|73.83707
+309|Tapovan Depot|Nashik|Matushri Nursery Rahuri|19.85930|73.84274
+310|Tapovan Depot|Nashik|Vijay Nagar / Petrol Pump (Bhagur)|19.87878|73.83775
+311|Tapovan Depot|Nashik|Mukne Gaon|19.81091|73.65344
+312|Tapovan Depot|Nashik|Padli Phata / Mukane Fata|19.80265|73.67087
+313|Tapovan Depot|Nashik|Takali Gaonthan (D)|20.00656|73.96471
+314|Tapovan Depot|Nashik|Takali Gaonthan (U)|20.00665|73.96419
+315|Tapovan Depot|Nashik|TS Digole Petrol Pump (Sinnar) (U)|19.86806|73.95861
+316|Tapovan Depot|Nashik|New CBS / Civil Hospital (U)|19.99613|73.77811
+317|Tapovan Depot|Nashik|M.V.P College (Trimbakeshwar) (D)|19.93953|73.53294
+318|Tapovan Depot|Nashik|M.V.P College (Trimbakeshwar) (U)|19.93929|73.53300
+319|Tapovan Depot|Nashik|Shree Swami Samarth Gurupeeth (D)|19.94208|73.54369
+320|Tapovan Depot|Nashik|Shree Swami Samarth Gurupeeth (U)|19.94190|73.54363
+321|Tapovan Depot|Nashik|Fule Nagar (Palse) (D)|19.93106|73.86528
+322|Tapovan Depot|Nashik|Fule Nagar (Palse) (U)|19.93098|73.86595
+323|Tapovan Depot|Nashik|Udyog Bhavan (Sinnar) (D)|19.85692|73.97887
+324|Tapovan Depot|Nashik|Udyog Bhavan (Sinnar) (U)|19.85694|73.97903
+325|Tapovan Depot|Nashik|ST Colony (Sinnar) (D)|19.85484|73.98118
+326|Tapovan Depot|Nashik|ST Colony (Sinnar) (U)|19.85481|73.98141
+327|Tapovan Depot|Nashik|K T H M College (D)|20.00614|73.77654
+328|Tapovan Depot|Nashik|SamSonight (D)|19.83384|73.67581
+329|Tapovan Depot|Nashik|SamSonight (U)|19.83352|73.67616
+330|Tapovan Depot|Nashik|VIR Company|19.82825|73.68658
+331|Tapovan Depot|Nashik|Bhavani Mata Mandir|19.82855|73.68813
+332|Tapovan Depot|Nashik|Siddhivinayak Jr College|19.82815|73.68584
+333|Tapovan Depot|Nashik|Maruti Mandir (Gonde)|19.82799|73.68265
+334|Tapovan Depot|Nashik|Gas Agency|19.82811|73.67926
+335|Tapovan Depot|Nashik|Gonde Fhata (U)|19.82951|73.67554
+336|Tapovan Depot|Nashik|Lear Company (D)|19.84072|73.67809
+337|Tapovan Depot|Nashik|Lear Company (U)|19.84035|73.67801
+338|Tapovan Depot|Nashik|VTC Company (D)|19.84324|73.68051
+339|Tapovan Depot|Nashik|VTC Company (U)|19.84290|73.68052
+340|Tapovan Depot|Nashik|Darana Fata (D)|19.84756|73.68156
+341|Tapovan Depot|Nashik|Darana Fata (U)|19.84730|73.68184
+342|Tapovan Depot|Nashik|Wadhivare Fata (U)|19.86177|73.68435
+343|Tapovan Depot|Nashik|Maheshwari Bhavan (Jay Bhavani Road) (U)|19.94712|73.82988
+344|Tapovan Depot|Nashik|Maheshwari Bhavan (Jay Bhavani Road) (D)|19.94702|73.82988
+345|Tapovan Depot|Nashik|Gangapur Gaon|20.03154|73.71710
+346|Tapovan Depot|Nashik|Ashok Sthambh|20.00644|73.78470
+347|Tapovan Depot|Nashik|Peth Phata (D)|20.01236|73.79355
+348|Tapovan Depot|Nashik|Peth Phata (U)|20.01236|73.79388
+349|Tapovan Depot|Nashik|Nashik N.M.C Panchwati Office (D)|20.01149|73.78925
+350|Tapovan Depot|Nashik|Nashik N.M.C Panchvati Office (U)|20.01154|73.78913
+351|Tapovan Depot|Nashik|Ramwadi|20.01100|73.78626
+352|Nashik Road Depot|Nashik|Samaj Kalyan Vastigruh (D)|20.03793|73.86694
+353|Nashik Road Depot|Nashik|Samaj Kalyan Vastigruh (U)|20.03809|73.86683
+354|Nashik Road Depot|Nashik|Bhujbal Knowledge City Corner|20.03322|73.85958
+355|Tapovan Depot|Nashik|South Gate Lahvit|19.83190|73.81350
+356|Tapovan Depot|Nashik|Jain Railway Gate|19.82812|73.79343
+357|Tapovan Depot|Nashik|Lohshingave Phata|19.82557|73.79029
+358|Tapovan Depot|Nashik|Vanjarwadi Phata|19.82745|73.80838
+359|Tapovan Depot|Nashik|Lahvit Gaon|19.85287|73.81805
+360|Tapovan Depot|Nashik|Lahavit Gaon|19.85248|73.81614
+361|Tapovan Depot|Nashik|Ashtavinayak Lawns|19.87143|73.82024
+362|Tapovan Depot|Nashik|Railway Gate (Lahvit)|19.87424|73.82642
+363|Tapovan Depot|Nashik|Nutan High School|19.87779|73.82382
+364|Tapovan Depot|Nashik|South Main Gate No.1|19.87722|73.80662
+365|Tapovan Depot|Nashik|Barnes School and Junior College|19.87692|73.80792
+366|Tapovan Depot|Nashik|Barnes School Road|19.87792|73.82855
+367|Nashik Road Depot|Nashik|Audubar Nagar (Lekha Nagar)|19.97218|73.76762
+368|Nashik Road Depot|Nashik|Sanjeevani Nagar (Ozar)|20.08631|73.92060
+369|Nashik Road Depot|Nashik|Poltry Farm (Nagal Wadi)|20.06066|73.63480
+370|Nashik Road Depot|Nashik|Dive Vasti|20.05906|73.62526
+371|Nashik Road Depot|Nashik|Dhondegaon Chowfuli|20.05757|73.62277
+372|Nashik Road Depot|Nashik|Jadhav Wadi|20.04795|73.61176
+373|Tapovan Depot|Nashik|Gangamhalungi|20.04409|73.59851
+374|Tapovan Depot|Nashik|Ozar Khed Gaon|20.04797|73.62295
+375|Tapovan Depot|Nashik|Nagal Vadi Phata|20.06542|73.65007
+376|Tapovan Depot|Nashik|Ozar Khed Phata|20.06878|73.65428
+377|Tapovan Depot|Nashik|Hanuman Mandir (Goulane)|19.90572|73.74087
+378|Tapovan Depot|Nashik|Fheboan Company (Gaulane)|19.91941|73.73947
+379|Tapovan Depot|Nashik|SBI Bank Gavlane|19.91129|73.73916
+380|Tapovan Depot|Nashik|Vitbhatti Gaulane|19.93292|73.73865
+381|Tapovan Depot|Nashik|Surya Steel|19.90656|73.72841
+382|Tapovan Depot|Nashik|Ambebahula Phata|19.90942|73.71851
+383|Tapovan Depot|Nashik|Gavlanegaon|19.90747|73.74121
+384|Tapovan Depot|Nashik|Ambebahula Gaon|19.90765|73.71844
+385|Tapovan Depot|Nashik|Thapekar Vasti|19.90637|73.73238
+386|Tapovan Depot|Nashik|Pandurang Nivas|19.91404|73.73915
+387|Tapovan Depot|Nashik|Virbaba Chaufuli|19.91711|73.73941
+388|Tapovan Depot|Nashik|Kachara Depot|19.93593|73.73654
+389|Nashik Road Depot|Nashik|Gangapur Dam Boat Club|20.05367|73.67870
+390|Tapovan Depot|Nashik|Shivanai Fata (Mohadi)|20.14343|73.88916
+391|Tapovan Depot|Nashik|Shri. Krushan Nagar (Mohadi)|20.13985|73.88574
+392|Tapovan Depot|Nashik|D.Y Chari (Canol Vagad)|20.13351|73.87308
+393|Tapovan Depot|Nashik|Bhavar Vasti (Ambe)|20.12648|73.86698
+394|Tapovan Depot|Nashik|Gaul Vadi Fata (Ambe)|20.12121|73.86094
+395|Tapovan Depot|Nashik|Dadasaheb Gaikwad Nagar (Ambe)|20.11727|73.86093
+396|Tapovan Depot|Nashik|Ambe|20.11505|73.85928
+397|Tapovan Depot|Nashik|New Engish School (Ambe)|20.11604|73.85713
+398|Tapovan Depot|Nashik|Malyacha Mala (Ambe)|20.11239|73.85510
+399|Tapovan Depot|Nashik|Ranmala (Ambe)|20.10740|73.85416
+400|Tapovan Depot|Nashik|Shivnai Gaon|20.10056|73.85108
+401|Tapovan Depot|Nashik|Nimabarkar Vasti|20.09339|73.84722
+402|Tapovan Depot|Nashik|Gatkal Vasti|20.08956|73.84408
+403|Tapovan Depot|Nashik|Fasale Vasti|20.08277|73.83868
+404|Tapovan Depot|Nashik|Varvandi Gaon|20.07791|73.83502
+405|Tapovan Depot|Nashik|Mahavir Polytechanic College|20.07163|73.83373
+406|Tapovan Depot|Nashik|Mhasoba Maharaj Mandir (Varvandi)|20.06794|73.83250
+407|Tapovan Depot|Nashik|Dr. Jadhav Vasti (Varvandi)|20.06564|73.83090
+408|Tapovan Depot|Nashik|Gavle Maharaj Aashram|20.05950|73.82691
+409|Tapovan Depot|Nashik|Analandi Canol (Varvandi)|20.05624|73.82372
+410|Tapovan Depot|Nashik|Patil Nursury|20.05314|73.81834
+411|Tapovan Depot|Nashik|Suryavanshi Mala|20.05125|73.81262
+412|Tapovan Depot|Nashik|Medical Fata (Mhasrul)|20.04778|73.80887
+413|Tapovan Depot|Nashik|Mico Circle|19.99452|73.77224
+414|Tapovan Depot|Nashik|Aakrale Gaon|20.14774|73.84860
+415|Tapovan Depot|Nashik|Company|20.14520|73.87094
+416|Tapovan Depot|Nashik|Vasti (Akrale)|20.14454|73.88459
+417|Tapovan Depot|Nashik|Akrale Phata|20.14469|73.88905
+418|Tapovan Depot|Nashik|Oney / Khervadi Chaufuli|20.04917|73.96795
+419|Tapovan Depot|Nashik|Dikle Vasti (Sayyad Pimpri)|20.04550|73.95010
+420|Tapovan Depot|Nashik|Maruti Mandir (Sayyad Pimpri)|20.04536|73.94719
+421|Tapovan Depot|Nashik|Asaram Bapu Kendra|20.04311|73.93268
+422|Tapovan Depot|Nashik|Vibhagiya Ayukt Karyalay|19.95233|73.84002
+423|Nashik Road Depot|Nashik|Shigve Bahula|19.89554|73.81176
+424|Nashik Road Depot|Nashik|Deolali High School|19.89567|73.81277
+425|Nashik Road Depot|Nashik|Khandobha Tekadi (Dhondi Road)|19.89756|73.82190
+426|Nashik Road Depot|Nashik|Dairy Farm|19.90519|73.82049
+427|Nashik Road Depot|Nashik|Hanuman Madir Pathardi Gaon|19.94238|73.77376
+428|Nashik Road Depot|Nashik|Radha Vitthal Nagar|19.93910|73.76986
+429|Nashik Road Depot|Nashik|Mondhe Nagar|19.93720|73.76828
+430|Nashik Road Depot|Nashik|SSK Club|19.93341|73.76346
+431|Nashik Road Depot|Nashik|Yashwant Nagar|19.93035|73.76048
+432|Nashik Road Depot|Nashik|Vatika Row House|19.92792|73.75630
+433|Nashik Road Depot|Nashik|Vaadiche Raan|19.91997|73.74782
+434|Nashik Road Depot|Nashik|Odha Fata Pool Eklahare|19.99337|73.90803
+435|Nashik Road Depot|Nashik|Ekalhara Village 2|19.99277|73.90571
+436|Nashik Road Depot|Nashik|Ekalhara Village 1|19.98931|73.90352
+437|Nashik Road Depot|Nashik|Cement Factory Eklahara|19.97695|73.89504
+438|Nashik Road Depot|Nashik|Deshmukh Wadi (Ankalahara)|19.97753|73.88604
+439|Nashik Road Depot|Nashik|Indiranagar (Ankalahara)|19.97869|73.88415
+440|Nashik Road Depot|Nashik|Mangir Babar|19.97782|73.88034
+441|Nashik Road Depot|Nashik|Eklahara Gate 2|19.97644|73.87760
+442|Nashik Road Depot|Nashik|Khadi Crusher Eklahara|19.97542|73.86529
+443|Nashik Road Depot|Nashik|Magar Mala|19.95775|73.85222
+444|Nashik Road Depot|Nashik|Shinde Mala (Peth Rd) (D)|20.05138|73.78911
+445|Nashik Road Depot|Nashik|Meherdham (D) Peth Rd|20.04035|73.79430
+446|Nashik Road Depot|Nashik|Shani Mandir U (Peth Rd)|20.01734|73.79378
+447|Tapovan Depot|Nashik|Shivshakti Chowk (U)|19.98796|73.75424
+448|Tapovan Depot|Nashik|Hedgewar Chowk (U)|19.98706|73.75634
+449|Tapovan Depot|Nashik|Ayodhya Colony|19.97637|73.74699
+450|Tapovan Depot|Nashik|Gopal Baba Mandir 1|20.18104|73.98812
+451|Tapovan Depot|Nashik|Niphad Phata 1|20.17361|73.98612
+452|Tapovan Depot|Nashik|Nuri Chowk|19.99413|73.79281
+453|Tapovan Depot|Nashik|Police Chowki (Ashok Nagar)|19.98926|73.71393
+454|Tapovan Depot|Nashik|Nimani 2|20.01125|73.79581
+455|Tapovan Depot|Nashik|Shivshakti Chowk|19.98866|73.75253
+456|Tapovan Depot|Nashik|Shahu Nagar|19.98857|73.75006
+457|Nashik Road Depot|Nashik|K.B.T College|20.01580|73.76155
+458|Nashik Road Depot|Nashik|Sanklecha Society|20.01491|73.84216
+459|Nashik Road Depot|Nashik|Vrindavan Nagar|20.01636|73.84343
+460|Nashik Road Depot|Nashik|Radhakrishna Chowk|20.01634|73.84532
+461|Nashik Road Depot|Nashik|Dutt Nagar|20.01641|73.84762
+462|Nashik Road Depot|Nashik|Rajalakshmi Colony|20.01666|73.85002
+463|Nashik Road Depot|Nashik|Nashik Road Depot|19.94079|73.84220
+464|Nashik Road Depot|Nashik|Kathe Gate|19.88907|73.82993
+465|Nashik Road Depot|Nashik|Premium Market|20.05779|73.88657
+466|Tapovan Depot|Nashik|Deolali Camp (New)|19.90220|73.82958
+467|Nashik Road Depot|Nashik|Krushi Vidyan Kendra|20.02194|73.69097
+468|Nashik Road Depot|Nashik|Y.C.M Mukt Vidyapith|20.02098|73.69297
+469|Tapovan Depot|Nashik|Gangavarhe|20.00586|73.65985
+470|Nashik Road Depot|Nashik|Soma Wine|20.00885|73.66455
+471|Nashik Road Depot|Nashik|Yark Waynary|20.01130|73.67453
+472|Nashik Road Depot|Nashik|Savargoan|20.00930|73.68181
+473|Nashik Road Depot|Nashik|Sula Wines Gate|20.00887|73.68797
+474|Nashik Road Depot|Nashik|MET College (Gangavarhe)|20.00870|73.69182
+475|Nashik Road Depot|Nashik|Sula Wine Phata|20.01407|73.69987
+476|Tapovan Depot|Nashik|Kanetkar Udyan|20.02209|73.70755
+477|Nashik Road Depot|Nashik|Ozar Airforce School|20.10773|73.91501
+478|Nashik Road Depot|Nashik|Ozar Airforce Colony Gate|20.10173|73.92625
+479|Nashik Road Depot|Nashik|Valdevi Army Gate|19.92450|73.81292
+480|Tapovan Depot|Nashik|Army Public School|19.88817|73.82643
+481|Nashik Road Depot|Nashik|Kanchan Tembi|19.84625|73.61319
+482|Nashik Road Depot|Nashik|Grover Zampa Wineyard|19.83890|73.62638
+483|Tapovan Depot|Nashik|Bambale Phata|19.83712|73.63177
+484|Nashik Road Depot|Nashik|Nandu Bodake Mala|19.84829|73.61045
+485|Nashik Road Depot|Nashik|Modala|19.85222|73.61085
+486|Nashik Road Depot|Nashik|Grampanchayt Karyalay|19.85081|73.61097
+487|Nashik Road Depot|Nashik|Hedgewar Chowk|19.98640|73.75615
+488|Nashik Road Depot|Nashik|Vijay Nagar 1|19.96786|73.76017
+489|Nashik Road Depot|Nashik|Central Park|19.96676|73.76195
+490|Nashik Road Depot|Nashik|Kai. Vamnarao Sonwane Chowk|19.96634|73.76612
+491|Nashik Road Depot|Nashik|Rane Nagar|19.96605|73.76934
+492|Nashik Road Depot|Nashik|Pushpanjali Stand|19.96627|73.77239
+493|Tapovan Depot|Nashik|Rajeev Nagar|19.96705|73.77497
+494|Nashik Road Depot|Nashik|Sainath Nagar (Rajeev Nagar)|19.96813|73.77786
+495|Nashik Road Depot|Nashik|Indira Nagar (Old Police Station)|19.96959|73.77938
+496|Tapovan Depot|Nashik|Stop 5 Gas Agency|20.10620|73.95479
+497|Tapovan Depot|Nashik|Stop 4 HAL Hospital|20.10468|73.95120
+498|Tapovan Depot|Nashik|Stop 3 Shopping Center|20.10390|73.94924
+499|Tapovan Depot|Nashik|Stop 2|20.10049|73.94130
+500|Tapovan Depot|Nashik|Stop No 1 / Marimata Gate|20.09854|73.93723
+501|Nashik Road Depot|Nashik|Umrale|20.19448|73.71800
+502|Nashik Road Depot|Nashik|Rasegoan (D)|20.15570|73.74358
+503|Nashik Road Depot|Nashik|Rasegoan (U)|20.15452|73.74430
+504|Tapovan Depot|Nashik|Dhage Vasti|20.14073|73.75357
+505|Nashik Road Depot|Nashik|Pimpalner Fata|20.13269|73.75683
+506|Tapovan Depot|Nashik|Godrej Company|20.12039|73.76237
+507|Nashik Road Depot|Nashik|Tungaldara|20.10820|73.76412
+508|Nashik Road Depot|Nashik|Ramshej Killa|20.10454|73.76689
+509|Nashik Road Depot|Nashik|Ashewadi Goan|20.10092|73.77032
+510|Tapovan Depot|Nashik|Rucha Hotel|20.09705|73.77212
+511|Tapovan Depot|Nashik|Gawalwadi|20.09053|73.77571
+512|Nashik Road Depot|Nashik|Dhumal Company|20.08602|73.77711
+513|Tapovan Depot|Nashik|MaNaPa Kaman Peth Road|20.07989|73.77984
+514|Nashik Road Depot|Nashik|Dhatrak Farm|20.07376|73.77859
+515|Nashik Road Depot|Nashik|Jakat Naka Peth Road|20.06758|73.78029
+516|Nashik Road Depot|Nashik|Dindori Panchayat Samiti (Swami Samarth Kendra)|20.20644|73.82903
+517|Nashik Road Depot|Nashik|Dindori Chofuli|20.20547|73.83152
+518|Nashik Road Depot|Nashik|Canal Kulkarni Farm|20.05627|73.80569
+519|Nashik Road Depot|Nashik|Khatwad Phata|20.12872|73.81292
+520|Nashik Road Depot|Nashik|Shubheccha Lawns|20.06218|73.80558
+521|Nashik Road Depot|Nashik|Kakad Mala|20.05339|73.75743
+522|Tapovan Depot|Nashik|Saikheda Trifuli|20.01921|73.99610
+523|Tapovan Depot|Nashik|H.A.L Main Gate No.2|20.10436|73.93898
+524|Tapovan Depot|Nashik|Canol (Ozar Road)|20.11620|73.95286
+525|Tapovan Depot|Nashik|Kokangaon Fata|20.13005|73.96517
+526|Tapovan Depot|Nashik|Sakore Mig Phata|20.13757|73.96946
+527|Tapovan Depot|Nashik|Pimpalgaon Tolnaka|20.14221|73.97674
+528|Tapovan Depot|Nashik|Market Yard|20.15150|73.98230
+529|Tapovan Depot|Nashik|Pimpalgaon S.T. Depot|20.16540|73.98792
+530|Tapovan Depot|Nashik|Pimpalgaon Bus Stand|20.16804|73.99116
+531|Tapovan Depot|Nashik|Niphad Phata|20.17031|73.99295
+532|Tapovan Depot|Nashik|Gopalbaba Samadhi|20.17706|73.99260
+533|Tapovan Depot|Nashik|Pimpalgaon Baswant / Wani Chaufuli|20.18330|73.99262
+534|Tapovan Depot|Nashik|Tapovan (D)|20.00868|73.81443
+535|Tapovan Depot|Nashik|M.S.E.B Power House (U)|20.01552|73.99057
+536|Tapovan Depot|Nashik|H.P. Petrol Pump (U)|19.99976|73.93135
+537|Tapovan Depot|Nashik|Shilapur (U)|19.99652|73.89924
+538|Nashik Road Depot|Nashik|Trimbkeshwar (Mahadeo Mandir)|19.93422|73.53251
+539|Nashik Road Depot|Nashik|Trimbkeshwar (Khanderao Mandir)|19.93562|73.52976
+540|Tapovan Depot|Nashik|Jagannath Chowk|19.95437|73.77605
+541|Nashik Road Depot|Nashik|Snehnagar|20.04255|73.80530
+542|Tapovan Depot|Nashik|Gharkul Shivar (Chunchale)|19.94191|73.71349
+543|Tapovan Depot|Nashik|Nashik Cluster|19.95963|73.73420
+544|Tapovan Depot|Nashik|Abhishek Bakery|19.95405|73.72662
+545|Tapovan Depot|Nashik|APC Company / Mauli Chowk|19.94713|73.71797
+546|Tapovan Depot|Nashik|Hanuman Mandir (Gharkul Shivar)|19.94663|73.71786
+547|Tapovan Depot|Nashik|Lahuji Nagar (D)|19.94408|73.71524
+548|Tapovan Depot|Nashik|Hanuman Temple (Gharkul)|19.94648|73.71787
+549|Tapovan Depot|Nashik|A.P.C Company / Mauli Chowk|19.94867|73.71998
+550|Tapovan Depot|Nashik|Abhishek Bakery|19.95425|73.72689
+551|Tapovan Depot|Nashik|Maruti Sankul / Kanifnath Nagar|19.95818|73.73099
+552|Tapovan Depot|Nashik|Datir Nagar|19.95869|73.73323
+553|Tapovan Depot|Nashik|Nashik Cluster|19.95986|73.73443
+554|Tapovan Depot|Nashik|Maruti Sankul|19.96171|73.74149
+555|Tapovan Depot|Nashik|Medical Phata 3|20.03125|73.85692
+556|Tapovan Depot|Nashik|Chhatrapati Shivaji Vidyalaya|19.99028|73.72662
+557|Nashik Road Depot|Nashik|Chari (Shindegaon)|19.91839|73.90199
+558|Nashik Road Depot|Nashik|UDL Company (Shinde)|19.91993|73.90599
+559|Nashik Road Depot|Nashik|S.T. Colony|19.92186|73.88148
+560|Nashik Road Depot|Nashik|Mamu Sheth Vasti|20.00580|74.00685
+561|Nashik Road Depot|Nashik|Berwadi Fata|19.99430|74.00589
+562|Nashik Road Depot|Nashik|Chatori Gaon|19.99467|73.99650
+563|Nashik Road Depot|Nashik|Anand Wadi Fata|19.98672|73.99079
+564|Nashik Road Depot|Nashik|Juni Sawali|19.97383|73.97919
+565|Nashik Road Depot|Nashik|Navin Sawali|19.96517|73.98000
+566|Nashik Road Depot|Nashik|Chavan Mala|19.95913|73.97964
+567|Nashik Road Depot|Nashik|Naigaon Market Yard|19.95359|73.97739
+568|Nashik Road Depot|Nashik|Naigaon|19.95316|73.96737
+569|Nashik Road Depot|Nashik|Godavari Agro|19.95230|73.96434
+570|Tapovan Depot|Nashik|Amro College|19.90230|73.69941
+571|Tapovan Depot|Nashik|Canol Ojhar Road|20.13411|73.96733
+572|Tapovan Depot|Nashik|H.A.L Highway Stop|20.11665|73.95289
+573|Tapovan Depot|Nashik|H.A.L Gate A|20.10496|73.93947
+574|Tapovan Depot|Nashik|Gadakh Corner (U)|20.09525|73.92439
+575|Tapovan Depot|Nashik|Milind Nagar|20.09369|73.93163
+576|Tapovan Depot|Nashik|Maharana Pratap Chowk 1|20.09325|73.92990
+577|Tapovan Depot|Nashik|Mahanagar Palika Hadda (Kaman)|20.07578|73.80540
+578|Tapovan Depot|Nashik|Manori Fata|20.08178|73.80402
+579|Tapovan Depot|Nashik|Toll Naka (Dindori)|20.09616|73.80650
+580|Tapovan Depot|Nashik|Dhakambe|20.10370|73.80700
+581|Tapovan Depot|Nashik|Bhagwanrao Bodke Farm|20.11138|73.80837
+582|Tapovan Depot|Nashik|Pimpalnare|20.11696|73.80972
+583|Tapovan Depot|Nashik|LPG Petrol Pump|20.12411|73.81183
+584|Tapovan Depot|Nashik|Kathwad Nagar|20.12822|73.81283
+585|Tapovan Depot|Nashik|Shahid Yashwant Nagar|20.13525|73.81459
+586|Tapovan Depot|Nashik|Talegaon|20.14188|73.81813
+587|Tapovan Depot|Nashik|Datta Mandir 1|20.14360|73.81897
+588|Tapovan Depot|Nashik|Sarkari Dawakhana|20.14593|73.81957
+589|Tapovan Depot|Nashik|Akrale Fata|20.15710|73.82208
+590|Tapovan Depot|Nashik|Bharat Petrol Pump|20.16841|73.82511
+591|Tapovan Depot|Nashik|Poultry Farm|20.17694|73.82642
+592|Tapovan Depot|Nashik|Vanarwadi Fata|20.18519|73.82741
+593|Tapovan Depot|Nashik|Raje Vasti|20.18795|73.82812
+594|Tapovan Depot|Nashik|Padekar Nagar|20.19733|73.83130
+595|Tapovan Depot|Nashik|Dindori Bus Stand|20.20164|73.83071
+596|Tapovan Depot|Nashik|Shinde Vasti / Kadam Vasti|20.09022|73.93169
+597|Tapovan Depot|Nashik|ITI (Ozar)|20.08492|73.93398
+598|Tapovan Depot|Nashik|Sonewadi Fata|20.08623|73.92671
+599|Tapovan Depot|Nashik|Saikheda Chaufuli Ozar|20.08929|73.92356
+600|Tapovan Depot|Nashik|Gadakh Corner (D)|20.09540|73.92495
+601|Tapovan Depot|Nashik|H.A.L Main Gate 1|20.10403|73.93754
+602|Tapovan Depot|Nashik|Chandori Choufuli|20.02403|73.99555
+603|Tapovan Depot|Nashik|Virat Nagar|19.97215|73.72658
+604|Nashik Road Depot|Nashik|Lakhalgaon|20.00015|73.92277
+605|Nashik Road Depot|Nashik|Sinner Phata 1|19.94711|73.84755
+606|Nashik Road Depot|Nashik|Garware|19.94322|73.74296
+607|Tapovan Depot|Nashik|Sarul Fata (U)|19.92147|73.71490
+608|Tapovan Depot|Nashik|Jain Mandir (U)|19.93000|73.72200
+609|Tapovan Depot|Nashik|Dongar Baba Mandir (U)|19.93211|73.72512
+610|Tapovan Depot|Nashik|Gaulane Fata (U)|19.93656|73.73599
+611|Nashik Road Depot|Nashik|Jai Shankar Garden (D)|19.99418|73.80881
+612|Nashik Road Depot|Nashik|Kathe Galli Signal|19.99053|73.79984
+613|Nashik Road Depot|Nashik|Trikoni Garden|19.99021|73.80473
+614|Tapovan Depot|Nashik|Ganesh Nagar 1|19.99190|73.80555
+615|Nashik Road Depot|Nashik|Geetai Nagar|19.99224|73.81334
+616|Tapovan Depot|Nashik|Samata Nagar (U) Takali Rd|19.98353|73.81766
+617|Tapovan Depot|Nashik|Pandit Nagar|19.96907|73.75804
+618|Tapovan Depot|Nashik|Kalbhairav Chowk|19.97398|73.75915
+619|Tapovan Depot|Nashik|Mahalakshmi Chowk|19.97684|73.75978
+620|Tapovan Depot|Nashik|Gargi College|19.98161|73.76005
+621|Tapovan Depot|Nashik|Patil Nagar Graound|19.98383|73.76052
+622|Tapovan Depot|Nashik|Wani Clinic|19.98440|73.76309
+623|Tapovan Depot|Nashik|Rugn Imperia|19.98423|73.76593
+624|Tapovan Depot|Nashik|Raje Sambhaji Vyayam Shala|19.98617|73.76606
+625|Tapovan Depot|Nashik|Papaya Nursary / Ambad Phata|19.98625|73.72423
+626|Tapovan Depot|Nashik|Jadhav Sankul Gate / Amrut Garden 1|19.98445|73.72020
+627|Tapovan Depot|Nashik|Sanskruti Hotel (D)|19.97198|73.67988
+628|Tapovan Depot|Nashik|Sandip Foundation Admin Gate (D)|19.96898|73.66983
+629|Tapovan Depot|Nashik|Sandip Foundation Main Gate (D)|19.96757|73.66617
+630|Tapovan Depot|Nashik|Anjneri Phata|19.95471|73.59173
+631|Tapovan Depot|Nashik|Gajanan Maharaj Mandir (U)|19.93782|73.53682
+632|Tapovan Depot|Nashik|Water Park|19.95770|73.60808
+633|Tapovan Depot|Nashik|Sandip Foundation Main Gate (U)|19.96746|73.66624
+634|Tapovan Depot|Nashik|Belgaon Dhaga Phata (D)|19.97373|73.68559
+635|Tapovan Depot|Nashik|Jadhav Sankul Gate / Amrut Garden|19.98308|73.71812
+636|Tapovan Depot|Nashik|Papaya Nursary / Ambad Phata 1 (U)|19.98535|73.72283
+637|Nashik Road Depot|Nashik|Dwarka 3|19.99414|73.79770
+638|Nashik Road Depot|Nashik|Dwarka|19.99456|73.79762
+639|Nashik Road Depot|Nashik|Sharanpur Police Chowki|19.99471|73.76980
+640|Nashik Road Depot|Nashik|Mane Nagar / Gajanan Colony|20.02700|73.82718
+641|Nashik Road Depot|Nashik|Gadkari Chowk|19.99347|73.78375
+642|Nashik Road Depot|Nashik|Nirmal Nagar Police Chowki|20.02495|73.82926
+643|Nashik Road Depot|Nashik|Gayatri Nagar / Rajmata|20.03229|73.80884
+644|Tapovan Depot|Nashik|Goraksh Nagar Corner|20.03404|73.79896
+645|Nashik Road Depot|Nashik|Pethroad Chowfulli|20.02777|73.79525
+646|Tapovan Depot|Nashik|Tuljabhavani Nagar|20.02711|73.79049
+647|Nashik Road Depot|Nashik|Samarth Nagar 1|20.02649|73.78755
+648|Nashik Road Depot|Nashik|Makhmalabad Chowfulii|20.02554|73.78544
+649|Nashik Road Depot|Nashik|Hanumanwadi|20.01781|73.78567
+650|Nashik Road Depot|Nashik|Raka Nursary|20.01593|73.78358
+651|Tapovan Depot|Nashik|Koshire Chowk / Ramwadi|20.01200|73.77725
+652|Nashik Road Depot|Nashik|Canada Corner|20.00272|73.77012
+653|Nashik Road Depot|Nashik|Tibetian Market|19.99883|73.76893
+654|Tapovan Depot|Nashik|Sharanpur Police Chowki (U)|19.99505|73.76932
+655|Nashik Road Depot|Nashik|Chhatrapati Shivaji Maharaj Nagar (Nashik Road) 1|19.97402|73.84104
+656|Nashik Road Depot|Nashik|Narayan Bapu Nagar 1 (D)|19.97579|73.83664
+657|Tapovan Depot|Nashik|Narayan Bapu Nagar 1 (U)|19.97628|73.83521
+658|Tapovan Depot|Nashik|Takli Phata / Filter Plant 1|19.98320|73.82885
+659|Nashik Road Depot|Nashik|Mahamrutyunjay Mahadev Mandir|19.98991|73.83009
+660|Nashik Road Depot|Nashik|Sidhivinayak Lawans 1|20.00189|73.83126
+661|Nashik Road Depot|Nashik|Sidhivinayak Lawans|20.00278|73.83134
+662|Nashik Road Depot|Nashik|RTO Corner|20.03295|73.80245
+663|Nashik Road Depot|Nashik|Goraksh Nagar|20.03451|73.79904
+664|Nashik Road Depot|Nashik|Jui Nagar|20.04064|73.79894
+665|Nashik Road Depot|Nashik|Omkar Nagar|20.04613|73.79925
+666|Nashik Road Depot|Nashik|Kansara Mata Chowk (D)|20.04838|73.79927
+667|Nashik Road Depot|Nashik|Kansara Mata Chowk (U)|20.04946|73.79911
+668|Nashik Road Depot|Nashik|Ganraj Colony|19.94178|73.80606
+669|Tapovan Depot|Nashik|Rajput Colony|19.94190|73.80542
+670|Nashik Road Depot|Nashik|L & T Gate|19.94304|73.79425
+671|Nashik Road Depot|Nashik|Vedner Gate|19.94146|73.81039
+672|Nashik Road Depot|Nashik|Kendriya Vidyalay (Vadner)|19.94053|73.81059
+673|Tapovan Depot|Nashik|Maruti Mandir|19.96160|73.74426
+674|Tapovan Depot|Nashik|Sai Vijay Hotel|19.96184|73.75008
+675|Tapovan Depot|Nashik|Symbiosis Chaufulli|19.95900|73.75555
+676|Nashik Road Depot|Nashik|Silver Oak School|20.06603|73.68377
+677|Nashik Road Depot|Nashik|Ranmala|20.03259|73.69517
+678|Nashik Road Depot|Nashik|Mico Hall|19.96155|73.75867
+679|Nashik Road Depot|Nashik|Ganesh Chauk|19.96953|73.76645
+680|Nashik Road Depot|Nashik|Ganesh Nagar|19.93192|73.78968
+681|Tapovan Depot|Nashik|Jadhav Wasti (Pimpalgaon Khamb) (U)|19.92721|73.79174
+682|Nashik Road Depot|Nashik|Bhavani Nagar 1 (U)|19.92675|73.80120
+683|Tapovan Depot|Nashik|Mhasoba Mandir 1 (D)|19.92792|73.80717
+684|Nashik Road Depot|Nashik|Vihit Gaon 1|19.93731|73.83068
+685|Nashik Road Depot|Nashik|Vihit Gaon Phata|19.93729|73.83393
+686|Tapovan Depot|Nashik|Upnagar 1|19.96934|73.81931
+687|Nashik Road Depot|Nashik|Echhamani|19.97109|73.82254
+688|Nashik Road Depot|Nashik|Narayan Bapu Nagar (D)|19.97557|73.83510
+689|Nashik Road Depot|Nashik|Sailani Baba 1 (D)|19.97908|73.84314
+690|Nashik Road Depot|Nashik|Rajrajeshwari (D)|19.97923|73.84792
+691|Nashik Road Depot|Nashik|Prakash Borade Chowk (D)|19.97801|73.85371
+692|Nashik Road Depot|Nashik|Bharat Bhushan Society (D)|19.97777|73.85791
+693|Nashik Road Depot|Nashik|Bhairavnath Nagar 1|19.97735|73.86257
+694|Nashik Road Depot|Nashik|Bharat Bhushan Society|19.97792|73.85792
+695|Nashik Road Depot|Nashik|Prakash Borade Chowk|19.97816|73.85371
+696|Nashik Road Depot|Nashik|Rajrajeshwari (U)|19.97937|73.84787
+697|Nashik Road Depot|Nashik|Sailani Baba 1 (U)|19.97920|73.84310
+698|Nashik Road Depot|Nashik|Upnagar Colony (U)|19.97334|73.82547
+699|Nashik Road Depot|Nashik|City Center Mall (U)|19.99049|73.76303
+700|Nashik Road Depot|Nashik|Tidke Nagar Chowk / Rushi Hotel (U)|19.98910|73.76678
+701|Nashik Road Depot|Nashik|Bhabha Nagar / Dadasaheb Gaikwad Sabhagruh|19.98739|73.78917
+702|Nashik Road Depot|Nashik|Nagji Hospital|19.98881|73.79368
+703|Nashik Road Depot|Nashik|Indigo Park (D)|19.98420|73.77487
+704|Nashik Road Depot|Nashik|Keval Park (U)|19.97465|73.73274
+705|Tapovan Depot|Nashik|Panchavati Depot Corner 1 (U)|20.00893|73.80570
+706|Nashik Road Depot|Nashik|Panchavati College (U)|20.00457|73.80303
+707|Nashik Road Depot|Nashik|10va Mail Janori Phata 1 (D)|20.07192|73.90379
+708|Nashik Road Depot|Nashik|10va Mail Janori Phata 1|20.07228|73.90379
+709|Nashik Road Depot|Nashik|Tilak Nagar (D)|20.07820|73.91265
+710|Nashik Road Depot|Nashik|Renuka Nagar (Ozer) (D)|20.08397|73.91841
+711|Nashik Road Depot|Nashik|Khanderao Mandir (U)|20.09043|73.92320
+712|Tapovan Depot|Nashik|Janshanti Dham (10va Mail)|20.07567|73.90887
+713|Tapovan Depot|Nashik|Dargah|20.07940|73.99618
+714|Tapovan Depot|Nashik|Oney (D)|20.07858|74.00119
+715|Tapovan Depot|Nashik|New CBS / Civil Hospital (D)|19.99693|73.77944
+716|Nashik Road Depot|Nashik|Wadala Naka|19.99401|73.79337
+717|Nashik Road Depot|Nashik|Ashirwad|19.95875|73.83150
+718|Tapovan Depot|Nashik|K.R.T Highschool (U)|20.14282|73.89033
+719|Tapovan Depot|Nashik|Samata Nagar (U)|20.12315|73.88916
+720|Tapovan Depot|Nashik|Vasti (Mohadi) (U)|20.11684|73.88915
+721|Tapovan Depot|Nashik|Ozar Phata (U)|20.11019|73.89126
+722|Tapovan Depot|Nashik|Janori (U)|20.10565|73.89010
+723|Tapovan Depot|Nashik|Shreeniwas Nursary (U)|20.09522|73.89002
+724|Tapovan Depot|Nashik|Bhangadwadi (U)|20.09203|73.89221
+725|Tapovan Depot|Nashik|Fruit Company (U)|20.08789|73.89392
+726|Tapovan Depot|Nashik|10 No. Chari (U)|20.08422|73.89658
+727|Tapovan Depot|Nashik|Mathura Nagar (U)|20.07975|73.90003
+728|Tapovan Depot|Nashik|Ware House / Kaliya Company (U)|20.06512|73.89385
+729|Tapovan Depot|Nashik|Garware (Ozar Road) (U)|20.06192|73.89042
+730|Tapovan Depot|Nashik|Viman Tal Gate (D)|20.11373|73.89084
+731|Tapovan Depot|Nashik|Mahadeo Mandir (Mohadi Road) (D)|20.12995|73.89031
+732|Tapovan Depot|Nashik|Vitthai Lawns (D)|20.13646|73.89060
+733|Tapovan Depot|Nashik|Ingole Society (U)|19.96974|73.71851
+734|Tapovan Depot|Nashik|Mhada Corner (U)|19.97151|73.72204
+735|Tapovan Depot|Nashik|Jadhav Sankul (U)|19.97342|73.72214
+736|Tapovan Depot|Nashik|Jadhav Township (U)|19.97607|73.72385
+737|Tapovan Depot|Nashik|Datta Mandir (Mhada Road) (U)|19.97690|73.72682
+738|Tapovan Depot|Nashik|Kandam Van (U)|19.98068|73.72524
+739|Tapovan Depot|Nashik|Papaya Nursery / Ambad Phata (U)|19.98592|73.72406
+740|Tapovan Depot|Nashik|Manpa Davakhana / Maharashtra Housing Colony Phata|19.98919|73.72867
+741|Nashik Road Depot|Nashik|Khandoba Mandir / Mankar Mala (U)|20.04685|73.77642
+742|Nashik Road Depot|Nashik|Gamne Mala (U)|20.04553|73.77811
+743|Nashik Road Depot|Nashik|Ghadge Mala (U)|20.04017|73.78098
+744|Nashik Road Depot|Nashik|Vadjaimata Nagar (U)|20.03329|73.78297
+745|Nashik Road Depot|Nashik|Mahadev Baug / VNP Soc. (U)|20.02917|73.78356
+746|Nashik Road Depot|Nashik|Peth Road Link Road (U)|20.02541|73.78465
+747|Nashik Road Depot|Nashik|Shinde Nagar (U)|20.02329|73.78489
+748|Nashik Road Depot|Nashik|Rukhmini Mangal Karyalaya (U)|20.02009|73.78638
+749|Nashik Road Depot|Nashik|Madhuban Colony (U)|20.01609|73.78757
+750|Nashik Road Depot|Nashik|Kranti Nagar (U)|20.01368|73.78840
+751|Nashik Road Depot|Nashik|Makhmalabad Naka (D)|20.01182|73.79059
+752|Nashik Road Depot|Nashik|Peth Road Link Road (D)|20.02467|73.78484
+753|Nashik Road Depot|Nashik|Mahadev Mala / VNP Soc. (D)|20.02947|73.78351
+754|Nashik Road Depot|Nashik|Vadjaimata Mandir (D)|20.03301|73.78306
+755|Nashik Road Depot|Nashik|Ghadge Mala (D)|20.03529|73.78288
+756|Nashik Road Depot|Nashik|Gamne Mala (D)|20.04560|73.77824
+757|Tapovan Depot|Nashik|Manpa Davakhana / Maharashtra Housing Colony (D)|19.98920|73.72832
+758|Tapovan Depot|Nashik|Saikheda Chofulli (U)|20.01176|74.00855
+759|Tapovan Depot|Nashik|Amruta Tarle Vasti (Saikheda) (U)|20.01351|73.99895
+760|Tapovan Depot|Nashik|Saikheda Phata (D)|20.01970|73.99588
+761|Tapovan Depot|Nashik|Nagapur Phata (U)|20.01166|73.98365
+762|Tapovan Depot|Nashik|Janaki Mangal Karyalaya (U)|20.00951|73.97829
+763|Tapovan Depot|Nashik|Chitegaon Phata (U)|20.00489|73.95531
+764|Tapovan Depot|Nashik|H.P. Petrol Pump (U)|19.99993|73.93212
+765|Tapovan Depot|Nashik|Hinganavedhe Phata Pune Bypass (U)|19.99974|73.92503
+766|Tapovan Depot|Nashik|Odha Railway Station (U)|19.99778|73.91271
+767|Tapovan Depot|Nashik|Odha (U)|19.99711|73.90768
+768|Tapovan Depot|Nashik|Aazad Nagar (U)|19.99982|73.89008
+769|Tapovan Depot|Nashik|Mandsangavi Toll Naka (U)|20.00183|73.87961
+770|Tapovan Depot|Nashik|Madsangavi Gaon (U)|20.00083|73.87368
+771|Tapovan Depot|Nashik|Mandsangavi (U)|20.00091|73.87029
+772|Tapovan Depot|Nashik|Vetalbaba Mandir (6 no chari) (U)|19.99865|73.85454
+773|Tapovan Depot|Nashik|Manur Phata (U)|19.99801|73.84964
+774|Tapovan Depot|Nashik|Nandur Naka 1 (U)|19.99726|73.84489
+775|Tapovan Depot|Nashik|Seva Society (U)|20.00592|73.82374
+776|Tapovan Depot|Nashik|Seva Society (D)|20.00595|73.82331
+777|Tapovan Depot|Nashik|Nandur Naka 1 (D)|19.99672|73.84322
+778|Tapovan Depot|Nashik|Dongre Vasti Gruha (U)|20.00530|73.77086
+779|Tapovan Depot|Nashik|Vidya Vikas Circle (U)|20.00937|73.76634
+780|Tapovan Depot|Nashik|Thatte Nagar (U)|20.01059|73.76305
+781|Tapovan Depot|Nashik|S.T. Colony (Gangapur Road) (U)|20.01189|73.75896
+782|Tapovan Depot|Nashik|Jehan Circle (U)|20.01194|73.75528
+783|Tapovan Depot|Nashik|Aanandavalli (U)|20.01213|73.74804
+784|Tapovan Depot|Nashik|Navsha Ganpati (U)|20.01299|73.74325
+785|Tapovan Depot|Nashik|Shirin Colony (U)|20.01476|73.73771
+786|Tapovan Depot|Nashik|Balaji Mandir (U)|20.02598|73.71957
+787|Tapovan Depot|Nashik|Gangapur Gaon (U)|20.02987|73.71577
+788|Tapovan Depot|Nashik|Govardhan (D)|20.02981|73.71257
+789|Tapovan Depot|Nashik|Shalimar 1 (U)|20.00084|73.78646
+790|Tapovan Depot|Nashik|Ch. Sambhaji Maharaj Naka 2 (D)|20.01079|73.81064
+791|Tapovan Depot|Nashik|Aadgaon (D)|20.01465|73.81948
+792|Tapovan Depot|Nashik|Bendkule Nagar (D)|20.01698|73.73547
+793|Tapovan Depot|Nashik|Valmik Nagar Phata (D)|20.03890|73.91448
+794|Tapovan Depot|Nashik|Vinchurgavli Phata (D)|20.03503|73.87584
+795|Tapovan Depot|Nashik|Canal Road (D)|20.04150|73.92271
+796|Tapovan Depot|Nashik|Nutan Vidyalay (D)|20.04224|73.92639
+797|Tapovan Depot|Nashik|Ujjwal Agency (D)|19.99245|73.74549
+798|Tapovan Depot|Nashik|Ujjwal Agency (U)|19.99229|73.74559
+799|Nashik Road Depot|Nashik|Bhawar Tower|20.00985|73.71394
+800|Tapovan Depot|Nashik|Lokmat (U)|19.94937|73.75053
+801|Tapovan Depot|Nashik|Meltron / Express Inn Hotel (U)|19.95260|73.75474
+802|Tapovan Depot|Nashik|Civil Hospital 1 (U)|19.99599|73.77894
+803|Tapovan Depot|Nashik|Civil Hospital 1 (D)|19.99579|73.77789
+804|Tapovan Depot|Nashik|Carbon Naka 1 (D)|20.00249|73.71179
+805|Tapovan Depot|Nashik|Carbon Naka 1 (U)|20.00237|73.71230
+806|Tapovan Depot|Nashik|Nagji Hospital (D)|19.98925|73.79285
+807|Nashik Road Depot|Nashik|Godavari River|19.99126|73.89615
+808|Tapovan Depot|Nashik|Mahendra House (U)|19.96271|73.76451
+809|Tapovan Depot|Nashik|Ashwin Nagar (U)|19.95888|73.76053
+810|Tapovan Depot|Nashik|CIDCO Office (D)|19.97117|73.77117
+811|Tapovan Depot|Nashik|State Bank (U)|19.96924|73.76943
+812|Tapovan Depot|Nashik|Rane Nagar 1 (U)|19.96589|73.76720
+813|Tapovan Depot|Nashik|Dipali Nagar|19.98414|73.78323
+814|Tapovan Depot|Nashik|Indira Nagar 1 (U)|19.97909|73.77974
+815|Tapovan Depot|Nashik|Lekha Nagar 2 (D)|19.97278|73.77424
+816|Tapovan Depot|Nashik|Ayodhya Nagar 1 (D)|19.96138|73.76397
+817|Tapovan Depot|Nashik|Wasan Nagar (D)|19.95864|73.76094
+818|Tapovan Depot|Nashik|Pathardi Phata 2 (D)|19.95664|73.75878
+819|Tapovan Depot|Nashik|Dyaneshwar Nagar (D)|19.95213|73.76872
+820|Tapovan Depot|Nashik|Sawant Chowk (D)|19.94974|73.77063
+821|Tapovan Depot|Nashik|Jain Bhavan (U)|19.94740|73.83354
+822|Tapovan Depot|Nashik|Mahalakshmi Nagar (D)|19.96742|73.74121
+823|Tapovan Depot|Nashik|DGP Nagar 1 (D)|19.97001|73.74428
+824|Tapovan Depot|Nashik|Shankar Chowk (D)|19.97956|73.75360
+825|Tapovan Depot|Nashik|Uttam Nagar 1 (D)|19.96926|73.75538
+826|Tapovan Depot|Nashik|Uttam Nagar 1 (U)|19.96938|73.75504
+827|Nashik Road Depot|Nashik|Kala Nagar 1 (D)|19.96942|73.78253
+828|Nashik Road Depot|Nashik|Kala Nagar 1 (U)|19.96936|73.78269
+829|Nashik Road Depot|Nashik|Wadala Naka (U)|19.99431|73.79538
+830|Nashik Road Depot|Nashik|Ganjmal (D)|19.99553|73.78845
+831|Tapovan Depot|Nashik|Aayesha Nagar 1 (D)|19.99158|73.79346
+832|Tapovan Depot|Nashik|Shalimar (D)|20.00039|73.78635
+833|Tapovan Depot|Nashik|Gauri Shankar Mangal Karyalaya (D)|19.96772|73.75328
+834|Tapovan Depot|Nashik|Bharat Nagar 1|19.98409|73.79222
+835|Nashik Road Depot|Nashik|Z.P. Office|19.99784|73.78344
+836|Nashik Road Depot|Nashik|Rajratna Nagar (D)|19.97250|73.75547
+837|Nashik Road Depot|Nashik|Rajratna Nagar (U)|19.97115|73.75401
+838|Nashik Road Depot|Nashik|Garware (Ambad Road) (D)|19.94444|73.74441
+839|Nashik Road Depot|Nashik|Siemens (D)|19.95607|73.73519
+840|Nashik Road Depot|Nashik|Nashik Cluster (D)|19.95980|73.73520
+841|Nashik Road Depot|Nashik|Vinay Nagar (D)|19.98214|73.78222
+842|Nashik Road Depot|Nashik|Kamod Nagar (D)|19.97634|73.77740
+843|Nashik Road Depot|Nashik|Rajiv Nagar (D)|19.96875|73.77010
+844|Tapovan Depot|Nashik|Sinnar Phata (D)|19.94725|73.84668
+845|Tapovan Depot|Nashik|Bangali Baba (D)|19.92014|73.88405
+846|Tapovan Depot|Nashik|Shinde Gaon (D)|19.91486|73.89843
+847|Tapovan Depot|Nashik|Toll Naka (D)|19.90929|73.90650
+848|Tapovan Depot|Nashik|Chincholi Phata (D)|19.90244|73.91635
+849|Tapovan Depot|Nashik|Vikhe Patil Engg. College (D)|19.89083|73.93306
+850|Tapovan Depot|Nashik|L&T Phata / Malegaon Phata (D)|19.86480|73.96535
+851|Tapovan Depot|Nashik|Jindal Phata / MIDC Phata No.2|19.86270|73.97022
+852|Tapovan Depot|Nashik|MIDC Phata (Sarda) (D)|19.85947|73.97630
+853|Tapovan Depot|Nashik|Sinnar Mahavidyalaya (D)|19.85104|73.98543
+854|Nashik Road Depot|Nashik|Paste Phata (Aadva Phata) (D)|19.84752|73.98939
+855|Tapovan Depot|Nashik|Sinnar Bus Stand (D)|19.84401|73.99346
+856|Tapovan Depot|Nashik|Jetvan Nagar (D)|19.96376|73.82100
+857|Tapovan Depot|Nashik|Gaikwad Mala (D)|19.95757|73.82399
+858|Tapovan Depot|Nashik|Tulja Bhawani Mandir (D)|19.95407|73.82467
+859|Tapovan Depot|Nashik|Lavhate Nagar (D)|19.95086|73.82551
+860|Tapovan Depot|Nashik|Artilari Centre (D)|19.94664|73.82650
+861|Tapovan Depot|Nashik|Abhiyanta Nagar (D)|19.97702|73.75023
+862|Tapovan Depot|Nashik|Kamatwada (D)|19.97432|73.74886
+863|Tapovan Depot|Nashik|Ambad Jalkumbh (U)|19.96315|73.73876
+864|Tapovan Depot|Nashik|XLO Point (D)|19.96319|73.73594
+865|Tapovan Depot|Nashik|Ram Krishna Nagar (D)|19.96416|73.73121
+866|Tapovan Depot|Nashik|CBS / Mela Stand (D)|20.00077|73.78105
+867|Tapovan Depot|Nashik|Rajiv Gandhi Bhavan (D)|20.00141|73.77619
+868|Tapovan Depot|Nashik|Kulkarni Garden (D)|20.00222|73.77330
+869|Tapovan Depot|Nashik|Canada Corner (D)|20.00283|73.77159
+870|Tapovan Depot|Nashik|Ashavari Chambers (D)|20.00517|73.76776
+871|Tapovan Depot|Nashik|Yewalekar Mala (D)|20.00583|73.76401
+872|Tapovan Depot|Nashik|HPT College (D)|20.00689|73.76043
+873|Tapovan Depot|Nashik|Bhosla College / Model Colony (D)|20.00825|73.75647
+874|Tapovan Depot|Nashik|Samarth Nagar (D)|20.00694|73.75479
+875|Tapovan Depot|Nashik|Parijat Nagar (D)|20.00248|73.75423
+876|Tapovan Depot|Nashik|Indian Tool (D)|19.99555|73.73063
+877|Tapovan Depot|Nashik|Glaxo Company (D)|19.94927|73.73878
+878|Nashik Road Depot|Nashik|Power House (D)|19.95155|73.73656
+879|Tapovan Depot|Nashik|Kadve Naagr (U)|19.95458|73.76485
+880|Tapovan Depot|Nashik|Saptshrungi Hospital (U)|19.95530|73.76279
+881|Nashik Road Depot|Nashik|Bytco 3 (U)|19.95529|73.83793
+882|Nashik Road Depot|Nashik|GymKhana Road (Kanya Vidhyalai) (D)|19.95845|73.83868
+883|Nashik Road Depot|Nashik|Jail Taki (U)|19.97081|73.84014
+884|Tapovan Depot|Nashik|Chhatrapati Shivaji Maharaj Nagar (U)|19.97407|73.84089
+885|Nashik Road Depot|Nashik|Sailani Baba (U)|19.97930|73.84262
+886|Nashik Road Depot|Nashik|Dasak (U)|19.98340|73.84461
+887|Nashik Road Depot|Nashik|Laxmi Nagar (U)|19.98672|73.84512
+888|Nashik Road Depot|Nashik|Nandur Goan (U)|19.99259|73.84418
+889|Nashik Road Depot|Nashik|Nandur Naka (U)|19.99614|73.84375
+890|Nashik Road Depot|Nashik|Kapaleswar Nagar (U)|20.00701|73.82110
+891|Tapovan Depot|Nashik|Vavi Ves (Shirdi Phata) (U)|19.84522|74.00267
+892|Tapovan Depot|Nashik|Press Gate (U)|19.96646|73.83949
+893|Tapovan Depot|Nashik|Pathardi Phata 1 (U)|19.95627|73.75798
+894|Tapovan Depot|Nashik|Indira Nagar 1 (D)|19.97865|73.77938
+895|Nashik Road Depot|Nashik|Lekha Nagar 2 (U)|19.97249|73.77393
+896|Tapovan Depot|Nashik|Rane Nagar (U)|19.96573|73.76773
+897|Nashik Road Depot|Nashik|Ayodhya Nagar 1 (U)|19.96110|73.76373
+898|Nashik Road Depot|Nashik|Pathardi Gaon|19.94449|73.77425
+899|Tapovan Depot|Nashik|Pathardi Gaon 1 (U)|19.94453|73.77366
+900|Tapovan Depot|Nashik|Lekha Nagar 1 (U)|19.97295|73.77325
+901|Tapovan Depot|Nashik|CBS 2 (D)|20.00263|73.78307
+902|Nashik Road Depot|Nashik|Old Adgaon Naka (D)|20.00927|73.80243
+903|Nashik Road Depot|Nashik|Bane Chal (D)|19.89308|73.83323
+904|Tapovan Depot|Nashik|Sainath Nagar (U)|19.97811|73.79021
+905|Tapovan Depot|Nashik|Bapu Bangla (U)|19.97353|73.78626
+906|Tapovan Depot|Nashik|Pandav Nagari (D)|19.96071|73.77777
+907|Tapovan Depot|Nashik|Guru Govindsingh College (U)|19.95864|73.77740
+908|Tapovan Depot|Nashik|Park Side (U)|19.95164|73.77561
+909|Tapovan Depot|Nashik|Pathardi Gaon (D)|19.94478|73.77396
+910|Nashik Road Depot|Nashik|Suryosoham Society (U)|20.05338|73.79969
+911|Nashik Road Depot|Nashik|Mahadev Mandir (Mhasrul Road) (D)|20.04911|73.80121
+912|Nashik Road Depot|Nashik|Makhamalabad Link Road (D)|20.05026|73.80535
+913|Nashik Road Depot|Nashik|Mhasrul (D)|20.04878|73.80625
+914|Nashik Road Depot|Nashik|Adivasi Sankul (D)|20.05489|73.79960
+915|Nashik Road Depot|Nashik|Reliance Petrol Pump (U)|20.03529|73.80353
+916|Nashik Road Depot|Nashik|R.T.O Corner (U)|20.03227|73.80272
+917|Nashik Road Depot|Nashik|Meri Colony (U)|20.03022|73.80200
+918|Tapovan Depot|Nashik|Tarwala Nagar (U)|20.02617|73.80060
+919|Tapovan Depot|Nashik|Vidhyut Nagar (D)|20.02048|73.79845
+920|Tapovan Depot|Nashik|Panchavati Karanja 2 (U)|20.01005|73.79410
+921|Tapovan Depot|Nashik|CBS 1 (D)|20.00391|73.78373
+922|Tapovan Depot|Nashik|Ashok Stambh (U)|20.00658|73.78458
+923|Tapovan Depot|Nashik|Adivasi Bhawan (D)|19.99658|73.78151
+924|Tapovan Depot|Nashik|Kalika Mandir (U)|19.99147|73.78302
+925|Tapovan Depot|Nashik|Mahamarg 2 (D)|19.98717|73.78366
+926|Tapovan Depot|Nashik|Mahamarg 1 (U)|19.98760|73.78375
+927|Tapovan Depot|Nashik|Prakash Petrol Pump (D)|19.98403|73.78263
+928|Tapovan Depot|Nashik|Govind Nagar (D)|19.98260|73.78194
+929|Tapovan Depot|Nashik|Symbiosis College (D)|19.96145|73.75436
+930|Tapovan Depot|Nashik|Bhujbal Farm (U)|19.97880|73.77901
+931|Tapovan Depot|Nashik|Deccan Petrol Pump (D)|19.97690|73.77708
+932|Tapovan Depot|Nashik|Lekha Nagar (D)|19.97348|73.77305
+933|Tapovan Depot|Nashik|Shopping Centre (D)|19.97487|73.77154
+934|Tapovan Depot|Nashik|Chhatrapati Shivaji Maharaj Chowk (D)|19.97651|73.76964
+935|Tapovan Depot|Nashik|Maharana Pratap Chowk (D)|19.97353|73.76583
+936|Tapovan Depot|Nashik|Dutt Chowk (D)|19.97126|73.76353
+937|Tapovan Depot|Nashik|Vijay Nagar (D)|19.96809|73.76032
+938|Tapovan Depot|Nashik|Savata Nagar (D)|19.97961|73.75650
+939|Tapovan Depot|Nashik|Raigad Chowk (D)|19.97721|73.75613
+940|Tapovan Depot|Nashik|Uttam Nagar (D)|19.96976|73.75508
+941|Tapovan Depot|Nashik|Atul Dairy (D)|19.96532|73.75338
+942|Tapovan Depot|Nashik|Upendra Nagar (D)|19.96334|73.75384
+943|Tapovan Depot|Nashik|Trimurti Chowk (D)|19.98422|73.75663
+944|Tapovan Depot|Nashik|Datta Mandir (Pavan Nagar Road) (U)|19.98646|73.75790
+945|Tapovan Depot|Nashik|Untwadi (D)|19.98867|73.76037
+946|Tapovan Depot|Nashik|Raviwar Karanja (D)|20.00707|73.78786
+947|Tapovan Depot|Nashik|Satpur Bus Stand (D)|19.99067|73.73194
+948|Tapovan Depot|Nashik|Dhruv Nagar (D)|20.01374|73.71594
+949|Tapovan Depot|Nashik|Motiwala College (U)|20.01768|73.71793
+950|Tapovan Depot|Nashik|Bardan Phata (D)|20.02485|73.72123
+951|Tapovan Depot|Nashik|Chhatrapati Shivaji Maharaj Nagar (Bardan Phata Road) (D)|20.00521|73.71154
+952|Tapovan Depot|Nashik|Carbon Naka (D)|20.00199|73.71150
+953|Tapovan Depot|Nashik|Shramik Nagar (D)|19.99564|73.71165
+954|Tapovan Depot|Nashik|New Mahindra Gate (D)|19.99409|73.71149
+955|Tapovan Depot|Nashik|Ashok Nagar (U)|19.99088|73.71246
+956|Tapovan Depot|Nashik|Ashok Nagar (D)|19.99045|73.71283
+957|Tapovan Depot|Nashik|Rajya Karmachari Society (U)|19.98959|73.71691
+958|Tapovan Depot|Nashik|ESI Hospital (D)|19.99106|73.73417
+959|Tapovan Depot|Nashik|Satpur Manpa Vibhagiya Karyalaya (U)|19.99119|73.73752
+960|Tapovan Depot|Nashik|ITI (Satpur) (U)|19.99271|73.74843
+961|Tapovan Depot|Nashik|A.B.B Circle (D)|19.99375|73.75278
+962|Tapovan Depot|Nashik|Dudh Dairy (U)|19.99456|73.76531
+963|Tapovan Depot|Nashik|Panchayat Samiti (D)|19.99476|73.76825
+964|Tapovan Depot|Nashik|Ved Mandir (D)|19.99516|73.77399
+965|Tapovan Depot|Nashik|Panchavati Depot (D)|20.00933|73.80454
+966|Tapovan Depot|Nashik|Malegaon Stand (U)|20.00926|73.79144
+967|Nashik Road Depot|Nashik|Nehru Nagar (U)|19.96476|73.82377
+968|Tapovan Depot|Nashik|Upnagar Police Station (D)|19.96606|73.82181
+969|Nashik Road Depot|Nashik|Upnagar Police Station (U)|19.96588|73.82232
+970|Nashik Road Depot|Nashik|Upnagar (D)|19.96997|73.81716
+971|Nashik Road Depot|Nashik|Gandhi Nagar (U)|19.97356|73.81335
+972|Nashik Road Depot|Nashik|Ambedkar Nagar 1 (D)|19.97674|73.81003
+973|Nashik Road Depot|Nashik|Ambedkar Nagar 1 (U)|19.97679|73.81027
+974|Tapovan Depot|Nashik|Bodhale Nagar (D)|19.98082|73.80615
+975|Tapovan Depot|Nashik|Siddharth Hotel (D)|19.98474|73.80261
+976|Tapovan Depot|Nashik|Purnima (U)|19.98892|73.80003
+977|Nashik Road Depot|Nashik|Dwarka 2 (U)|19.99279|73.79805
+978|Nashik Road Depot|Nashik|Shalimar (U)|20.00049|73.78675
+979|Nashik Road Depot|Nashik|Ayodhya Nagar (U)|20.02082|73.82088
+980|Nashik Road Depot|Nashik|S.S.D Nagar (U)|20.02215|73.81791
+981|Nashik Road Depot|Nashik|Hirawadi Fata (D)|20.02235|73.81537
+982|Nashik Road Depot|Nashik|Kamal Nagar (U)|20.01921|73.81465
+983|Nashik Road Depot|Nashik|Lathe Nagar (U)|20.01862|73.81281
+984|Nashik Road Depot|Nashik|Hirawadi (D)|20.01715|73.80926
+985|Nashik Road Depot|Nashik|Trimurti Nagar (D)|20.01429|73.80650
+986|Nashik Road Depot|Nashik|Khode Nagar / Hirawadi (U)|20.01177|73.80432
+987|Nashik Road Depot|Nashik|Ayesha Nagar (D)|19.99286|73.79433
+988|Nashik Road Depot|Nashik|State Bank Colony (D)|19.99066|73.79024
+989|Nashik Road Depot|Nashik|Mahamarg (D)|19.98764|73.78490
+990|Nashik Road Depot|Nashik|Vadala Chowk (U)|19.96815|73.79932
+991|Nashik Road Depot|Nashik|Kala Nagar (D)|19.96958|73.78336
+992|Nashik Road Depot|Nashik|Mhada Colony (D)|19.96826|73.78980
+993|Nashik Road Depot|Nashik|Vadala Gaon (U)|19.96782|73.79438
+994|Nashik Road Depot|Nashik|Ganapati Mandir (U)|19.96863|73.80443
+995|Nashik Road Depot|Nashik|DGP Nagar (D)|19.96996|73.80562
+996|Nashik Road Depot|Nashik|Ambedkar Nagar (D)|19.97542|73.81023
+997|Nashik Road Depot|Nashik|Ambedkar Nagar (U)|19.97546|73.81045
+998|Tapovan Depot|Nashik|Bhatia (D)|19.92114|73.83346
+999|Tapovan Depot|Nashik|Barn School Phata (D)|19.88224|73.83317
+1000|Tapovan Depot|Nashik|Kendriya Vidhyalaya (D)|19.88582|73.83311
+1001|Tapovan Depot|Nashik|Devi Mandir (U)|19.88899|73.83273
+1002|Tapovan Depot|Nashik|Workshop (U)|19.89713|73.83184
+1003|Tapovan Depot|Nashik|Deolali Railway Station (U)|19.89892|73.83266
+1004|Tapovan Depot|Nashik|Deolali Naka (U)|19.90453|73.83293
+1005|Tapovan Depot|Nashik|Sansari Gaon|19.90653|73.83290
+1006|Tapovan Depot|Nashik|Sansari Naka (U)|19.90695|73.83257
+1007|Tapovan Depot|Nashik|Jamal (U)|19.91352|73.83308
+1008|Tapovan Depot|Nashik|Kothari (D)|19.91695|73.83326
+1009|Tapovan Depot|Nashik|6 No Naka (D)|19.92660|73.83379
+1010|Tapovan Depot|Nashik|Saubhagya Nagar (U)|19.92969|73.83418
+1011|Tapovan Depot|Nashik|Maharaja (D)|19.93378|73.83424
+1012|Nashik Road Depot|Nashik|Sathe Nagar (D)|19.94051|73.83525
+1013|Nashik Road Depot|Nashik|Bytco (D)|19.95229|73.83732
+1014|Tapovan Depot|Nashik|Andhshala (D)|19.96174|73.82740
+1015|Nashik Road Depot|Nashik|Gramin Police Vasahat (U)|20.04128|73.84708
+1016|Nashik Road Depot|Nashik|Mhasrul Fata (D)|20.03473|73.85169
+1017|Nashik Road Depot|Nashik|Medical Phata 1 (D)|20.03142|73.85586
+1018|Nashik Road Depot|Nashik|Konark Nagar (U)|20.02716|73.84575
+1019|Nashik Road Depot|Nashik|Swami Samarth Nagar (U)|20.02481|73.84011
+1020|Nashik Road Depot|Nashik|Dhatrak Phata (U)|20.02242|73.83607
+1021|Nashik Road Depot|Nashik|Hanuman Nagar (U)|20.01946|73.83125
+1022|Tapovan Depot|Nashik|Bafna Bajar / Laxmi Nagar (U)|20.01824|73.82885
+1023|Nashik Road Depot|Nashik|Amrut Dham 2 (D)|20.01686|73.82505
+1024|Nashik Road Depot|Nashik|Ganesh Mandir (D)|20.01887|73.82354
+1025|Nashik Road Depot|Nashik|Mathura Nagar (D)|20.08021|73.89986
+1026|Nashik Road Depot|Nashik|Fruit Company (D)|20.08741|73.89411
+1027|Nashik Road Depot|Nashik|Bhangadwadi (D)|20.09212|73.89193
+1028|Nashik Road Depot|Nashik|Shreeniwas Nursary (D)|20.09800|73.89002
+1029|Nashik Road Depot|Nashik|Janori (D)|20.10525|73.89019
+1030|Nashik Road Depot|Nashik|Ozar Phata (D)|20.10984|73.89136
+1031|Nashik Road Depot|Nashik|Viman Tal Gate (U)|20.11289|73.89103
+1032|Nashik Road Depot|Nashik|Vasti (Mohadi) (D)|20.11694|73.88911
+1033|Nashik Road Depot|Nashik|Samata Nagar (D)|20.12361|73.88933
+1034|Nashik Road Depot|Nashik|Mahadeo Mandir (Mohadi Road) (U)|20.13040|73.89034
+1035|Nashik Road Depot|Nashik|Vitthai Lawns (U)|20.13673|73.89060
+1036|Nashik Road Depot|Nashik|K.R.T Highschool (D)|20.14234|73.89036
+1037|Nashik Road Depot|Nashik|Rajwada (D)|20.14195|73.89260
+1038|Nashik Road Depot|Nashik|Mohadi Stand|20.14421|73.89413
+1039|Nashik Road Depot|Nashik|10 No. Chari (D)|20.08378|73.89697
+1040|Nashik Road Depot|Nashik|10 vha Mail (Janori Phata) (U)|20.07276|73.90383
+1041|Nashik Road Depot|Nashik|Mungasara Fata|20.05242|73.72703
+1042|Nashik Road Depot|Nashik|Ayush Farm|19.91678|73.68991
+1043|Nashik Road Depot|Nashik|R.P.F Center|19.95118|73.86689
+1044|Nashik Road Depot|Nashik|Mungasara Gaon|20.05976|73.72237
+1045|Nashik Road Depot|Nashik|Municipal Command|20.07494|73.80553
+1046|Nashik Road Depot|Nashik|JaiBhavani Krushi Seva|20.05458|73.73353
+1047|Nashik Road Depot|Nashik|Munjaba Mandir|20.03485|73.78295
+1048|Nashik Road Depot|Nashik|Tourists Baba|19.97743|73.83968
+1049|Nashik Road Depot|Nashik|Jayalakshmi Mata Chowk|19.98110|73.79284
+1050|Nashik Road Depot|Nashik|Jaulke Phata (D)|20.06921|73.89973
+1051|Nashik Road Depot|Nashik|Muralidhar City|19.95560|73.76148
+1052|Nashik Road Depot|Nashik|Toyota Showroom|19.95837|73.76063
+1053|Nashik Road Depot|Nashik|Jaulke Phata (U)|20.06960|73.89980
+1054|Nashik Road Depot|Nashik|Jawahar Phata|19.93756|73.53597
+1055|Nashik Road Depot|Nashik|Murambi Phata|19.84727|73.64563
+1056|Nashik Road Depot|Nashik|Tractor House|19.99765|73.80242
+1057|Nashik Road Depot|Nashik|Jatra Hotel 2|20.02482|73.84198
+1058|Nashik Road Depot|Nashik|Jatra Hotel (Nandur)|20.02508|73.84200
+1059|Nashik Road Depot|Nashik|Murambi|19.84968|73.64350
+1060|Nashik Road Depot|Nashik|Civil Hospital (D)|19.99614|73.77965
+1061|Nashik Road Depot|Nashik|Jatra Hotel (D)|20.02552|73.84242
+1062|Nashik Road Depot|Nashik|Jatra Hotel (U)|20.02592|73.84221
+1063|Nashik Road Depot|Nashik|Vrundavan Nagar (Jatra Hotel)|20.01612|73.84315
+1064|Nashik Road Depot|Nashik|Jategaon|19.92266|73.64938
+1065|Nashik Road Depot|Nashik|Geetai Lawns|19.99894|73.83095
+1066|Tapovan Depot|Nashik|Dakshin Mukhi Hanuman Mandir (U)|19.99345|73.76929
+1067|Nashik Road Depot|Nashik|Nagapur Phata (D)|20.01171|73.98409
+1068|Nashik Road Depot|Nashik|Nandur Gaon (D)|19.99238|73.84441
+1069|Nashik Road Depot|Nashik|Ayodhya Nagar (D)|20.02071|73.82084
+1070|Tapovan Depot|Nashik|Janshanti Dham (10va Mail) (D)|20.07513|73.90862
+1071|Nashik Road Depot|Nashik|Trimbak Vidhya Mandir|19.97736|73.69382
+1072|Nashik Road Depot|Nashik|Janardan Swami Mandir (Khervadi)|20.03995|73.97712
+1073|Nashik Road Depot|Nashik|Nandur Naka Jatra Hotel|19.99762|73.84432
+1074|Nashik Road Depot|Nashik|Nandur Naka (D)|19.99656|73.84387
+1075|Nashik Road Depot|Nashik|Narayan Bapu Nagar|19.97566|73.83502
+1076|Nashik Road Depot|Nashik|Adganv Police Station Fata|20.01499|73.82563
+1077|Nashik Road Depot|Nashik|Janaki Mangal Karyalaya (D)|20.00911|73.97705
+1078|Tapovan Depot|Nashik|Ambad Jalkumbh (D)|19.96319|73.73963
+1079|Nashik Road Depot|Nashik|Narayan Nagar|20.02778|73.82572
+1080|Nashik Road Depot|Nashik|Ayodhya Colony|19.97732|73.74697
+1081|Nashik Road Depot|Nashik|Jakhori Phata|19.94940|73.91984
+1082|Nashik Road Depot|Nashik|Jakhori Fata|19.92245|73.91301
+1083|Nashik Road Depot|Nashik|Narhari Nagar|19.94958|73.76598
+1084|Nashik Road Depot|Nashik|Narsingh Nagar|20.01659|73.75655
+1085|Nashik Road Depot|Nashik|Nashik Cluster (U)|19.95976|73.73504
+1086|Nashik Road Depot|Nashik|Jakat Naka|20.06678|73.80560
+1087|Nashik Road Depot|Nashik|Nashik Road Railway Station|19.94819|73.84135
+1088|Nashik Road Depot|Nashik|Renuka Nagar (Ozer)|20.08446|73.91841
+1089|Nashik Road Depot|Nashik|Jain Mandir|19.93042|73.72216
+1090|Nashik Road Depot|Nashik|New Jakat Naka (U)|20.04661|73.87609
+1091|Nashik Road Depot|Nashik|Aviskar|19.98782|73.79051
+1092|Tapovan Depot|Nashik|Jain Bhavan (D)|19.94744|73.83384
+1093|Nashik Road Depot|Nashik|New Jakat Naka (D)|20.04817|73.87779
+1094|Tapovan Depot|Nashik|New Mahindra Gate (U)|19.99468|73.71136
+1095|Nashik Road Depot|Nashik|Jail Taki (D)|19.96979|73.84015
+1096|Nashik Road Depot|Nashik|Navin Tidke Colony|19.99049|73.77148
+1097|Nashik Road Depot|Nashik|Navrachna School|20.01496|73.75441
+1098|Tapovan Depot|Nashik|Navsha Ganpati (D)|20.01267|73.74381
+1099|Nashik Road Depot|Nashik|Yash Lawns|20.00799|73.83156
+1100|Nashik Road Depot|Nashik|Jailroad Bytco|19.95521|73.83816
+1101|Nashik Road Depot|Nashik|Jadhav Wasti Pimpalgaon Khamb|19.93430|73.78973
+1102|Nashik Road Depot|Nashik|Nayagaon|19.95326|73.96839
+1103|Nashik Road Depot|Nashik|Ch. Sambhaji Maharaj Naka 2 (U)|20.01112|73.81047
+1104|Nashik Road Depot|Nashik|Jadhav Wasti|19.95178|73.87295
+1105|Nashik Road Depot|Nashik|Jadhav Vasti MBA College|20.09304|73.94983
+1106|Nashik Road Depot|Nashik|Nehru Nagar (D)|19.96460|73.82371
+1107|Nashik Road Depot|Nashik|Jadhav Township (D)|19.97610|73.72383
+1108|Nashik Road Depot|Nashik|Jadhav Sankul (D)|19.97328|73.72202
+1109|Nashik Road Depot|Nashik|Nehru Nagar|20.00252|73.78690
+1110|Tapovan Depot|Nashik|Ch. Sambhaji Maharaj Naka (U)|20.01039|73.81069
+1111|Nashik Road Depot|Nashik|Jadhav Packages Gate|19.98374|73.71901
+1112|Nashik Road Depot|Nashik|Neva Hospital|20.04348|73.77912
+1113|Nashik Road Depot|Nashik|Jamal (D)|19.91396|73.83309
+1114|Tapovan Depot|Nashik|Trimurti Chowk (U)|19.98473|73.75707
+1115|Nashik Road Depot|Nashik|I.T.I. Signal|19.99235|73.74970
+1116|Nashik Road Depot|Nashik|Nimani Stop|20.01116|73.79635
+1117|Tapovan Depot|Nashik|Nimani|20.01178|73.79683
+1118|Nashik Road Depot|Nashik|Nimse Bungla (D)|19.99909|73.83660
+1119|Nashik Road Depot|Nashik|Adarsh|19.97109|73.76881
+1120|Nashik Road Depot|Nashik|ITI (Satpur) (D)|19.99287|73.74811
+1121|Nashik Road Depot|Nashik|Ingole Society (D)|19.96999|73.71859
+1122|Nashik Road Depot|Nashik|Nimse Bungla (U)|19.99925|73.83668
+1123|Nashik Road Depot|Nashik|Ch. Sambhaji Maharaj Naka (D)|20.01038|73.81129
+1124|Nashik Road Depot|Nashik|Indrayani Society (U)|19.97951|73.81763
+1125|Nashik Road Depot|Nashik|Nirmala Convent School|20.01914|73.76171
+1126|Nashik Road Depot|Nashik|Nirmal Ashram (D)|19.90901|73.70329
+1127|Nashik Road Depot|Nashik|Indraprasth Nagar Peth Rd|20.05744|73.78550
+1128|Nashik Road Depot|Nashik|Nirmal Ashram (U)|19.90891|73.70353
+1129|Nashik Road Depot|Nashik|Amruta Tarle Vasti (Saikheda) (D)|20.01373|73.99876
+1130|Nashik Road Depot|Nashik|Indian Petrol Pump|19.97302|73.72822
+1131|Nashik Road Depot|Nashik|Satpur Manpa Vibhagiya Karyalaya (D)|19.99134|73.73710
+1132|Nashik Road Depot|Nashik|Aurangabad Naka CBS. Road|20.01060|73.80991
+1133|Nashik Road Depot|Nashik|Indiranagar Bogda|19.98164|73.78161
+1134|Nashik Road Depot|Nashik|Trimurti Nagar (U)|20.01411|73.80626
+1135|Nashik Road Depot|Nashik|Aayesha Nagar 1 (U)|19.99154|73.79364
+1136|Nashik Road Depot|Nashik|Odha (D)|19.99702|73.90681
+1137|Nashik Road Depot|Nashik|Indiranagar|19.98358|73.89693
+1138|Nashik Road Depot|Nashik|Indigo Park (U)|19.98470|73.77398
+1139|Nashik Road Depot|Nashik|Old Gangapur Naka|20.00890|73.77209
+1140|Nashik Road Depot|Nashik|Audumber Nagar|19.97177|73.76801
+1141|Tapovan Depot|Nashik|Indian Tool (U)|19.99604|73.73051
+1142|Nashik Road Depot|Nashik|Ichhamani Mandir|19.97084|73.82232
+1143|Nashik Road Depot|Nashik|Oney (U)|20.07846|74.00141
+1144|Nashik Road Depot|Nashik|Trimbakeshwar (Police Station)|19.93694|73.53270
+1145|Nashik Road Depot|Nashik|ESI Hospital (U)|19.99087|73.73402
+1146|Nashik Road Depot|Nashik|Harianand City|19.94265|73.77714
+1147|Nashik Road Depot|Nashik|Upnagar Colony (D)|19.97328|73.82522
+1148|Nashik Road Depot|Nashik|Other Police Checkpoint|19.96807|73.81947
+1149|Nashik Road Depot|Nashik|Ozar Airforce Gate|20.09901|73.92776
+1150|Nashik Road Depot|Nashik|Tulja Bhawani Mandir (U)|19.95357|73.82495
+1151|Nashik Road Depot|Nashik|HPT College (U)|20.00679|73.76005
+1152|Nashik Road Depot|Nashik|Ozar Stand|20.09645|73.92706
+1153|Tapovan Depot|Nashik|Pavan Nagar (D)|19.97447|73.75573
+1154|Nashik Road Depot|Nashik|H.P. Petrol Pump (D)|19.99975|73.93177
+1155|Nashik Road Depot|Nashik|Palade Mala|19.92889|73.80843
+1156|Tapovan Depot|Nashik|Palse (U)|19.92607|73.87664
+1157|Tapovan Depot|Nashik|Palse (D)|19.92593|73.87643
+1158|Nashik Road Depot|Nashik|Wavare Nagar (U)|19.98001|73.74743
+1159|Nashik Road Depot|Nashik|Hotel Sai Surya|19.87963|73.94508
+1160|Nashik Road Depot|Nashik|Panchakarma Residence|19.94634|73.75636
+1161|Nashik Road Depot|Nashik|Panchakarma Residency|19.94426|73.75660
+1162|Nashik Road Depot|Nashik|Panchavati College|20.00511|73.80356
+1163|Nashik Road Depot|Nashik|H.A.L. Gate|20.10304|73.93729
+1164|Nashik Road Depot|Nashik|Panchavati Depot (U)|20.00911|73.80458
+1165|Nashik Road Depot|Nashik|Panchavati Karanja 1 (U)|20.00979|73.79463
+1166|Nashik Road Depot|Nashik|Audumber Lawns|20.03201|73.81130
+1167|Nashik Road Depot|Nashik|Hirawadi Fata (U)|20.02252|73.81539
+1168|Nashik Road Depot|Nashik|Panchavati Karanja (D)|20.01006|73.79376
+1169|Tapovan Depot|Nashik|Panchayat Samiti (U)|19.99458|73.76850
+1170|Nashik Road Depot|Nashik|Panchkrushan Lawns (U)|20.02387|73.84660
+1171|Nashik Road Depot|Nashik|United Weigh Bridge|19.92065|73.90826
+1172|Nashik Road Depot|Nashik|Hirawadi (U)|20.01722|73.80922
+1173|Tapovan Depot|Nashik|Hinganavedhe Phata Pune Bypass (D)|19.99960|73.92494
+1174|Nashik Road Depot|Nashik|Panchkrushan Lawns|20.02406|73.84655
+1175|Tapovan Depot|Nashik|Untwadi (U)|19.98825|73.76010
+1176|Nashik Road Depot|Nashik|Hinganweda|19.97322|73.92597
+1177|Nashik Road Depot|Nashik|Hindustan Nagar|20.03788|73.90054
+1178|Nashik Road Depot|Nashik|Panchavati Depot Corner (D)|20.00946|73.80583
+1179|Nashik Road Depot|Nashik|Upnagar (U)|19.96869|73.81897
+1180|Nashik Road Depot|Nashik|Prathamik Arogya Kendra / Belgoan Dhaga|19.96590|73.69025
+1181|Tapovan Depot|Nashik|Panchavati Depot Corner (U)|20.00921|73.80553
+1182|Nashik Road Depot|Nashik|Falke Smarak (U)|19.94615|73.74693
+1183|Nashik Road Depot|Nashik|Hanuman Nagar (D)|20.01900|73.83131
+1184|Nashik Road Depot|Nashik|Garware (Ambad Road) (U)|19.94405|73.74451
+1185|Nashik Road Depot|Nashik|Pandav Nagari (U)|19.96047|73.77791
+1186|Nashik Road Depot|Nashik|Pandurang Chowk (U)|19.94963|73.76251
+1187|Nashik Road Depot|Nashik|Hanuman Nagar (Mhasrul Rd)|20.01988|73.83149
+1188|Tapovan Depot|Nashik|Atul Dairy (U)|19.96487|73.75355
+1189|Nashik Road Depot|Nashik|Hanuman Nagar (Kherwadi Rd)|20.04891|73.96581
+1190|Nashik Road Depot|Nashik|Pani Tanki|20.00076|73.75380
+1191|Nashik Road Depot|Nashik|Paper Machine|20.00050|73.73062
+1192|Nashik Road Depot|Nashik|Parekh Farm|19.97186|73.68636
+1193|Nashik Road Depot|Nashik|Hanuman Nagar 1|20.01896|73.83172
+1194|Nashik Road Depot|Nashik|Wear House / Kaliya Company|20.06353|73.89226
+1195|Tapovan Depot|Nashik|Dakshin Mukhi Hanuman Mandir (D)|19.99347|73.76878
+1196|Tapovan Depot|Nashik|Parijat Nagar (U)|20.00306|73.75449
+1197|Nashik Road Depot|Nashik|Dyaneshwar Nagar (U)|19.95197|73.76856
+1198|Nashik Road Depot|Nashik|Ashwin Nagar (D)|19.95915|73.76084
+1199|Nashik Road Depot|Nashik|Guru Govindsingh College (D)|19.95884|73.77725
+1200|Nashik Road Depot|Nashik|Park Side (Hanuman Nagar)|20.01613|73.83205
+1201|Nashik Road Depot|Nashik|Park Side Aurangabad Road|20.01648|73.83190
+1202|Nashik Road Depot|Nashik|Park Side (D)|19.95215|73.77554
+1203|Tapovan Depot|Nashik|Upendra Nagar (U)|19.96364|73.75385
+1204|Nashik Road Depot|Nashik|Gupta Hospital|19.92824|73.87137
+1205|Nashik Road Depot|Nashik|Canol (Mukt Vidyapeeth)|20.02568|73.69762
+1206|Nashik Road Depot|Nashik|Paste Phata (Aadva Phata) (U)|19.84773|73.98941
+1207|Nashik Road Depot|Nashik|AMRO College (D)|19.90264|73.69933
+1208|Nashik Road Depot|Nashik|Pathardi Phata 2 (U)|19.95714|73.75926
+1209|Nashik Road Depot|Nashik|Urdu Shalaa|19.99002|73.81520
+1210|Tapovan Depot|Nashik|Govind Nagar (U)|19.98228|73.78174
+1211|Nashik Road Depot|Nashik|Government Polytechnic|19.95143|73.86211
+1212|Nashik Road Depot|Nashik|Pathardi Gaon (U)|19.94426|73.77484
+1213|Nashik Road Depot|Nashik|Usmaniya Chowk|19.98988|73.79699
+1214|Nashik Road Depot|Nashik|Govardhan|20.02965|73.71216
+1215|Nashik Road Depot|Nashik|Kaman (No. 6 Chari) (U)|19.99944|73.85911
+1216|Nashik Road Depot|Nashik|Goti Phata|19.84238|73.99561
+1217|Nashik Road Depot|Nashik|Pathardi Phata (D)|19.95724|73.75857
+1218|Nashik Road Depot|Nashik|Gopal Temple|19.99013|73.79762
+1219|Nashik Road Depot|Nashik|Ashok Stambh / Gole Colony|20.00600|73.78200
+1220|Nashik Road Depot|Nashik|Govind City|19.93137|73.81124
+1221|Nashik Road Depot|Nashik|Mate Mala|19.85011|73.65186
+1222|Tapovan Depot|Nashik|Pavan Nagar (U)|19.97422|73.75475
+1223|Nashik Road Depot|Nashik|Tale / Pahine Phata (U)|19.94480|73.55122
+1224|Nashik Road Depot|Nashik|Glaxo Company (U)|19.94923|73.73858
+1225|Nashik Road Depot|Nashik|Gite Mala|19.93028|73.93529
+1226|Nashik Road Depot|Nashik|Tale / Pahine Phata (D)|19.94492|73.55117
+1227|Nashik Road Depot|Nashik|Takali Goan|19.98766|73.81752
+1228|Tapovan Depot|Nashik|Ashokstambh (D)|20.00605|73.78434
+1229|Nashik Road Depot|Nashik|Girnare|20.07140|73.66347
+1230|Nashik Road Depot|Nashik|Perfect Circle|20.00312|73.74052
+1231|Tapovan Depot|Nashik|Uttam Nagar (U)|19.96998|73.75379
+1232|Nashik Road Depot|Nashik|GymKhana Road (Kanya Vidhyalai) (U)|19.95869|73.83852
+1233|Tapovan Depot|Nashik|Abhiyanta Nagar (U)|19.97735|73.75089
+1234|Nashik Road Depot|Nashik|Gholap Mala|19.92015|73.66491
+1235|Nashik Road Depot|Nashik|Peth Fata|20.01309|73.79300
+1236|Nashik Road Depot|Nashik|Gharkul Shivar|19.94624|73.71772
+1237|Tapovan Depot|Nashik|Savarkar Nagar (D)|19.98863|73.71909
+1238|Nashik Road Depot|Nashik|Gayatri Traders|20.07082|73.67160
+1239|Nashik Road Depot|Nashik|P. F. Office|19.98974|73.74944
+1240|Tapovan Depot|Nashik|Gaikwad Mala (U)|19.95757|73.82413
+1241|Tapovan Depot|Nashik|Gauri Shankar Mangal Karyalaya (U)|19.96758|73.75343
+1242|Nashik Road Depot|Nashik|Phule Nagar|19.92977|73.86786
+1243|Nashik Road Depot|Nashik|Phule Nagar Nashik Road|19.92998|73.86742
+1244|Nashik Road Depot|Nashik|Phule Nagar D (Peth Rd)|20.02053|73.79424
+1245|Nashik Road Depot|Nashik|Gaulane Fata (D)|19.93677|73.73585
+1246|Nashik Road Depot|Nashik|Phule Nagar (Peth Rd)|20.02055|73.79412
+1247|Nashik Road Depot|Nashik|Ram Mandir|19.93147|73.86467
+1248|Nashik Road Depot|Nashik|Ashoka School|19.98092|73.79608
+1249|Nashik Road Depot|Nashik|Garware (Ozar Road)|20.06125|73.88991
+1250|Nashik Road Depot|Nashik|Pimpalad|19.92102|73.67537
+1251|Nashik Road Depot|Nashik|Vadala Chowk (D)|19.96838|73.79932
+1252|Nashik Road Depot|Nashik|Garware (U)|19.94326|73.74389
+1253|Nashik Road Depot|Nashik|Pimpalgaon Bahula (U)|19.98036|73.71089
+1254|Nashik Road Depot|Nashik|Garjai Mata|19.91949|73.66855
+1255|Nashik Road Depot|Nashik|Mhada / Ashirwad Nagar|19.96759|73.71800
+1256|Nashik Road Depot|Nashik|Ganapati Mandir (D)|19.96865|73.80429
+1257|Nashik Road Depot|Nashik|Pimpalgaon Bahula|19.98068|73.71110
+1258|Nashik Road Depot|Nashik|Pimpalgaon Khamb|19.92811|73.79006
+1259|Nashik Road Depot|Nashik|Pimpalgaon Khamb Phata|19.94242|73.78933
+1260|Nashik Road Depot|Nashik|Ganjmal (U)|19.99598|73.78807
+1261|Nashik Road Depot|Nashik|Sayyad Pimpri Stand (D)|20.04242|73.92842
+1262|Nashik Road Depot|Nashik|Pokar Colony|20.03269|73.80519
+1263|Nashik Road Depot|Nashik|Vadala Gaon (D)|19.96805|73.79439
+1264|Nashik Road Depot|Nashik|Gangotri Vihar|20.01380|73.82568
+1265|Nashik Road Depot|Nashik|Police Commissioner (U)|20.00596|73.78003
+1266|Nashik Road Depot|Nashik|Krantiveer Vasantrao Naik Chowk (D)|20.00704|73.77174
+1267|Tapovan Depot|Nashik|Wadala Naka (D)|19.99402|73.79394
+1268|Nashik Road Depot|Nashik|Gangapur Gaon (D)|20.03001|73.71581
+1269|Nashik Road Depot|Nashik|Police Parade Grounds Snehbndn|20.00076|73.78018
+1270|Nashik Road Depot|Nashik|Gangapur Dam|20.05351|73.68434
+1271|Nashik Road Depot|Nashik|Gangapadli|19.99495|73.92543
+1272|Nashik Road Depot|Nashik|Gramin Police Vasahat (D)|20.04134|73.84714
+1273|Nashik Road Depot|Nashik|Ganesh Nagar Pimpalgaon Khamb|19.94013|73.78951
+1274|Nashik Road Depot|Nashik|Power House (U)|19.95144|73.73640
+1275|Nashik Road Depot|Nashik|M.S.E.B Power House (D)|20.01582|73.99112
+1276|Nashik Road Depot|Nashik|Ashavari Chambers (U)|20.00510|73.76749
+1277|Nashik Road Depot|Nashik|Ganesh Mandir (U)|20.01898|73.82368
+1278|Nashik Road Depot|Nashik|Prakash Petrol Pump (U)|19.98410|73.78278
+1279|Tapovan Depot|Nashik|Krantiveer Vasantrao Naik Chowk (U)|20.00743|73.77093
+1280|Nashik Road Depot|Nashik|Maharashtra Police Academy (M.P.A) (D)|19.99461|73.76048
+1281|Nashik Road Depot|Nashik|Vadholi Pata (U)|19.95857|73.61297
+1282|Nashik Road Depot|Nashik|Gandhi Nagar (D)|19.97336|73.81323
+1283|Nashik Road Depot|Nashik|ABB VIP (D)|20.00115|73.72769
+1284|Nashik Road Depot|Nashik|Gajpnth Fata|20.05460|73.78717
+1285|Nashik Road Depot|Nashik|Gajpanth (U)|20.04419|73.80551
+1286|Nashik Road Depot|Nashik|Artilari Centre (U)|19.94691|73.82642
+1287|Nashik Road Depot|Nashik|Gajpanth (D)|20.04418|73.80568
+1288|Nashik Road Depot|Nashik|Vidya Vikas Circle (D)|20.00922|73.76723
+1289|Nashik Road Depot|Nashik|Gajanan Maharaj Mandir (D)|19.93793|73.53668
+1290|Nashik Road Depot|Nashik|Pune Road Fata|19.99933|73.92463
+1291|Nashik Road Depot|Nashik|Purnima (D)|19.98895|73.79979
+1292|Nashik Road Depot|Nashik|Meltron (D)|19.95276|73.75326
+1293|Nashik Road Depot|Nashik|Gaikwad Wasti|20.00822|73.84391
+1294|Nashik Road Depot|Nashik|Pushkrnagr|19.97823|73.83033
+1295|Nashik Road Depot|Nashik|Gade Vasti (Sayyad Pimpri)|20.04583|73.95491
+1296|Nashik Road Depot|Nashik|Kala Nagar (U)|19.96940|73.78334
+1297|Nashik Road Depot|Nashik|Fravashi School|20.05751|73.68338
+1298|Tapovan Depot|Nashik|Raigad Chowk (U)|19.97671|73.75498
+1299|Nashik Road Depot|Nashik|Vadholi Phata|19.96034|73.64138
+1300|Nashik Road Depot|Nashik|Fortuna|19.95237|73.72920
+1301|Nashik Road Depot|Nashik|8 wa Mile Agra Road|19.91630|73.71117
+1302|Nashik Road Depot|Nashik|Flora Town|19.96099|73.75178
+1303|Nashik Road Depot|Nashik|Raigad Nagar|19.89072|73.69520
+1304|Nashik Road Depot|Nashik|Odha Railway Station (D)|19.99770|73.91256
+1305|Nashik Road Depot|Nashik|Railway Traction|19.96454|73.85779
+1306|Nashik Road Depot|Nashik|FAB Company|19.87088|73.68889
+1307|Nashik Road Depot|Nashik|Arogya Vidnyan Vidyapeeth 1|20.07869|73.80513
+1308|Tapovan Depot|Nashik|Rajiv Gandhi Bhavan (U)|20.00143|73.77575
+1309|Nashik Road Depot|Nashik|TS Digole Petrol Pump (Sinnar) (D)|19.86895|73.95666
+1310|Nashik Road Depot|Nashik|Rajiv Nagar (U)|19.96840|73.76981
+1311|Nashik Road Depot|Nashik|RajSarathi|19.97092|73.78385
+1312|Nashik Road Depot|Nashik|Espalier School|19.97639|73.69208
+1313|Nashik Road Depot|Nashik|Rajurbahula|19.91620|73.70043
+1314|Nashik Road Depot|Nashik|Ramdas Swami Math|19.98853|73.81664
+1315|Nashik Road Depot|Nashik|Ramdas Swami Nagar|19.97662|73.81786
+1316|Tapovan Depot|Nashik|Anand Chhaya (D)|19.98944|73.72162
+1317|Nashik Road Depot|Nashik|Wadivarhe Prathamik Arogya Kendra|19.85875|73.67418
+1318|Tapovan Depot|Nashik|Ram Krishna Nagar (U)|19.96398|73.73158
+1319|Nashik Road Depot|Nashik|Vadner|19.93392|73.81101
+1320|Nashik Road Depot|Nashik|Electric Board|20.08768|73.96987
+1321|Nashik Road Depot|Nashik|Ayesha Nagar (U)|19.99172|73.79318
+1322|Nashik Road Depot|Nashik|Electo Company|19.94758|73.72265
+1323|Nashik Road Depot|Nashik|Ramkund|20.00763|73.78996
+1324|Nashik Road Depot|Nashik|Ektara|20.05430|73.75495
+1325|Nashik Road Depot|Nashik|Aringlae Mlaa|19.95440|73.84894
+1326|Nashik Road Depot|Nashik|Eklahre Krida Sankul|19.97973|73.87662
+1327|Nashik Road Depot|Nashik|Rane Nagar 1 (D)|19.96564|73.76698
+1328|Nashik Road Depot|Nashik|Eklahra Post Office|19.98162|73.87619
+1329|Nashik Road Depot|Nashik|Valmik Nagar|20.03899|73.91464
+1330|Nashik Road Depot|Nashik|Eklahera Gaon|19.99101|73.90110
+1331|Nashik Road Depot|Nashik|Rathi Amrai|20.01052|73.77113
+1332|Nashik Road Depot|Nashik|Eklahare Dawakhana|19.97980|73.87796
+1333|Nashik Road Depot|Nashik|Ravivar Karanja Gangapur Road|20.00634|73.78881
+1334|Tapovan Depot|Nashik|Raviwar Karanja (U)|20.00531|73.78762
+1335|Nashik Road Depot|Nashik|Vanvaibhav|19.96420|73.77930
+1336|Nashik Road Depot|Nashik|Dwarka (D)|19.99334|73.79742
+1337|Nashik Road Depot|Nashik|Raviwar Karanja 1 (U)|20.00566|73.78805
+1338|Nashik Road Depot|Nashik|Datta Mandir (Nashik Road) (U)|19.95600|73.83500
+1339|Nashik Road Depot|Nashik|Datta Mandir (Nashik Road) (D)|19.95676|73.83379
+1340|Nashik Road Depot|Nashik|R.D. Circle (D)|19.98647|73.77147
+1341|Nashik Road Depot|Nashik|Datta Mandir (Mhada Road) (D)|19.97645|73.72643
+1342|Nashik Road Depot|Nashik|Anuradha (U)|19.94696|73.83684
+1343|Nashik Road Depot|Nashik|Dutta Mandir Hinganveda Rd|19.96754|73.91744
+1344|Nashik Road Depot|Nashik|Reliance Petrol Pump (D)|20.03608|73.80394
+1345|Nashik Road Depot|Nashik|Vasali Gaon|19.98250|73.68423
+1346|Nashik Road Depot|Nashik|Uddoji Maratha Campus|20.01933|73.76477
+1347|Nashik Road Depot|Nashik|Durgamata Mandir (U)|19.97746|73.84040
+1348|Nashik Road Depot|Nashik|Rishirup Polymers|20.00480|73.73499
+1349|Nashik Road Depot|Nashik|Vasali Gaon Phata|19.97538|73.68983
+1350|Nashik Road Depot|Nashik|Dugaon Phata|20.06981|73.68355
+1351|Nashik Road Depot|Nashik|R.T.O Corner (D)|20.03251|73.80302
+1352|Nashik Road Depot|Nashik|R.T.O Corner Towards Agra Road|20.03285|73.80381
+1353|Tapovan Depot|Nashik|Dudh Dairy (D)|19.99483|73.76532
+1354|Nashik Road Depot|Nashik|R.T.O. Office|20.03248|73.79535
+1355|Nashik Road Depot|Nashik|Mahamarg / Bhagvat Nagar|19.98690|73.78652
+1356|Tapovan Depot|Nashik|Dsouza Colony (U)|20.00734|73.75856
+1357|Tapovan Depot|Nashik|Dsouza Colony (D)|20.00745|73.75873
+1358|Nashik Road Depot|Nashik|Rukhmini Lawns|20.01107|73.83185
+1359|Nashik Road Depot|Nashik|Sadashiv Nagar|19.98277|73.77582
+1360|Nashik Road Depot|Nashik|Sadhna Shala|19.96170|73.85577
+1361|Nashik Road Depot|Nashik|Dongar Baba Mandir|19.93231|73.72516
+1362|Nashik Road Depot|Nashik|Anuradha (D)|19.94699|73.83663
+1363|Nashik Road Depot|Nashik|Dikshi|20.08916|73.96662
+1364|Nashik Road Depot|Nashik|Sagar Hardware|20.06657|73.68402
+1365|Nashik Road Depot|Nashik|Divya Adlas|19.98178|73.75619
+1366|Nashik Road Depot|Nashik|Vinay Nagar (U)|19.98252|73.78244
+1367|Nashik Road Depot|Nashik|Sahadev Nagar|20.01788|73.76552
+1368|Nashik Road Depot|Nashik|Dindori Naka Peth Road|20.01189|73.79518
+1369|Nashik Road Depot|Nashik|Annapurna|20.00170|73.72120
+1370|Tapovan Depot|Nashik|Nagji Hospital (U)|19.98891|73.79298
+1371|Nashik Road Depot|Nashik|Wasan Nagar (U)|19.95796|73.76018
+1372|Tapovan Depot|Nashik|Dindori Naka (U)|20.01247|73.79579
+1373|Tapovan Depot|Nashik|Dindori Naka (D)|20.01238|73.79598
+1374|Nashik Road Depot|Nashik|Sahyadri Nagar|19.96244|73.76484
+1375|Nashik Road Depot|Nashik|Vasant Market|20.00466|73.77072
+1376|Nashik Road Depot|Nashik|DGP Nagar 1 (U)|19.96991|73.74441
+1377|Tapovan Depot|Nashik|Dhruv Nagar (U)|20.01378|73.71572
+1378|Nashik Road Depot|Nashik|Sai Mandir|19.97287|73.80760
+1379|Nashik Road Depot|Nashik|Dr. Vasantrao Pawar House|20.02955|73.70432
+1380|Nashik Road Depot|Nashik|Dhatrak Wasti|19.97813|73.92585
+1381|Nashik Road Depot|Nashik|Anand Chhaya (U)|19.98900|73.72153
+1382|Tapovan Depot|Nashik|Samta Nagar (U)|19.98939|73.72471
+1383|Nashik Road Depot|Nashik|Ashirwad (D)|19.95954|73.83026
+1384|Nashik Road Depot|Nashik|Dhatrak Phata (D)|20.02171|73.83584
+1385|Nashik Road Depot|Nashik|Saidip Workshop|19.97311|73.81814
+1386|Nashik Road Depot|Nashik|DGP Nagar (U)|19.96975|73.80559
+1387|Nashik Road Depot|Nashik|Anjaneri|19.95331|73.58534
+1388|Nashik Road Depot|Nashik|DGP|19.97143|73.74608
+1389|Nashik Road Depot|Nashik|Saikheda|20.01508|74.00764
+1390|Nashik Road Depot|Nashik|Saikheda Phata (U)|20.01994|73.99590
+1391|Nashik Road Depot|Nashik|Sailani Baba (D)|19.97928|73.84277
+1392|Nashik Road Depot|Nashik|Devi Mandir (D)|19.88955|73.83274
+1393|Nashik Road Depot|Nashik|Vasti Naugaon Rd|19.93065|73.93547
+1394|Nashik Road Depot|Nashik|Devaki Nandan Lawns|19.99828|73.89375
+1395|Nashik Road Depot|Nashik|Sai Lawns|19.93614|73.82126
+1396|Nashik Road Depot|Nashik|Aazad Nagar (D)|19.99982|73.88978
+1397|Nashik Road Depot|Nashik|Ved Mandir (U)|19.99498|73.77401
+1398|Nashik Road Depot|Nashik|Departmental Office CIDCO|19.96333|73.76549
+1399|Nashik Road Depot|Nashik|Sainath Nagar (D)|19.97818|73.79009
+1400|Nashik Road Depot|Nashik|Sathe Nagar (U)|19.94094|73.83542
+1401|Nashik Road Depot|Nashik|Workshop (D)|19.89712|73.83165
+1402|Nashik Road Depot|Nashik|Deolali Gaon (U)|19.94416|73.83574
+1403|Nashik Road Depot|Nashik|Jogging Track|19.97640|73.78904
+1404|Nashik Road Depot|Nashik|Deolali Gaon (D)|19.94471|73.83571
+1405|Nashik Road Depot|Nashik|Anjaneri Phata (U)|19.95459|73.59171
+1406|Nashik Road Depot|Nashik|Deolali Naka (D)|19.90449|73.83271
+1407|Nashik Road Depot|Nashik|Sai Shradha Petrol Pump|19.92301|73.91856
+1408|Nashik Road Depot|Nashik|Vednagari|20.05303|73.78803
+1409|Nashik Road Depot|Nashik|Deolali Camp (Old)|19.90585|73.82576
+1410|Nashik Road Depot|Nashik|Sai Vishwa Society|19.94902|73.84972
+1411|Nashik Road Depot|Nashik|Samaj Mandir|19.96898|73.75693
+1412|Nashik Road Depot|Nashik|Maharaja (U)|19.93376|73.83443
+1413|Nashik Road Depot|Nashik|Saman Gaon|19.95247|73.88373
+1414|Nashik Road Depot|Nashik|Deolali Railway Station (D)|19.89925|73.83268
+1415|Tapovan Depot|Nashik|Andhshala (U)|19.96199|73.82739
+1416|Tapovan Depot|Nashik|Deccan Petrol Pump (U)|19.97680|73.77715
+1417|Nashik Road Depot|Nashik|Samarth Nagar (U)|20.00675|73.75494
+1418|Tapovan Depot|Nashik|Chhatrapati Sambhaji Maharaj Chowk (U)|19.99181|73.76555
+1419|Tapovan Depot|Nashik|Chhatrapati Sambhaji Maharaj Chowk (D)|19.99204|73.76576
+1420|Tapovan Depot|Nashik|Datta Mandir (Pavan Nagar Road) (D)|19.98665|73.75781
+1421|Nashik Road Depot|Nashik|Chhatrapati Sambhaji Maharaj Stadium|19.96078|73.75693
+1422|Nashik Road Depot|Nashik|Sandip Foundation Admin Gate (U)|19.96879|73.66964
+1423|Tapovan Depot|Nashik|Sangamner Phata (U)|19.84023|74.00158
+1424|Tapovan Depot|Nashik|Sangamner Phata (D)|19.84016|74.00173
+1425|Nashik Road Depot|Nashik|Vidhyut Nagar (U)|20.02091|73.79843
+1426|Nashik Road Depot|Nashik|Datt Mandir (Satpur Mhada Rd)|19.97639|73.72701
+1427|Nashik Road Depot|Nashik|Sangle Khadi Crusher|19.88253|73.94341
+1428|Nashik Road Depot|Nashik|Datt Mandir Naygaon Rd|19.93456|73.93709
+1429|Nashik Road Depot|Nashik|Vihit Gaon (U)|19.93664|73.83464
+1430|Nashik Road Depot|Nashik|Datt Mandir (Morambi Rd)|19.85489|73.66307
+1431|Nashik Road Depot|Nashik|Sanjiv Nagar|19.97002|73.73052
+1432|Nashik Road Depot|Nashik|Shanti Nagar / Sanap Dairy (U)|20.04172|73.78023
+1433|Nashik Road Depot|Nashik|Sansari Naka (D)|19.90721|73.83293
+1434|Nashik Road Depot|Nashik|Datt Mandir (Konark Nagar)|20.02010|73.84696
+1435|Nashik Road Depot|Nashik|Datt Mandir (Jategaon Rd)|19.92137|73.68238
+1436|Nashik Road Depot|Nashik|Sanskruti Hotel (U)|19.97186|73.67994
+1437|Tapovan Depot|Nashik|Dutt Chowk (U)|19.97126|73.76339
+1438|Nashik Road Depot|Nashik|Santoshi Mata Mandir|20.09585|73.93446
+1439|Nashik Road Depot|Nashik|Saptrang Society|20.03663|73.79467
+1440|Tapovan Depot|Nashik|Aanandavalli (D)|20.01229|73.74785
+1441|Nashik Road Depot|Nashik|Dasak (D)|19.98349|73.84476
+1442|Nashik Road Depot|Nashik|Saptshrungi Hospital (D)|19.95508|73.76305
+1443|Nashik Road Depot|Nashik|Sarswati Nagar Agra Road|20.02385|73.82995
+1444|Nashik Road Depot|Nashik|Saraswati Nagar (U)|20.06658|73.89577
+1445|Nashik Road Depot|Nashik|Vihit Gaon (D)|19.93664|73.83443
+1446|Nashik Road Depot|Nashik|Laxmi Nagar (D)|19.98625|73.84522
+1447|Nashik Road Depot|Nashik|Ashirwad (U)|19.95924|73.83095
+1448|Nashik Road Depot|Nashik|Dak Bangla (Guest House)|19.94116|73.54190
+1449|Nashik Road Depot|Nashik|Saraswati Nagar (D)|20.06629|73.89568
+1450|Nashik Road Depot|Nashik|Dak Bangla (Guest House) (D)|19.94075|73.54117
+1451|Nashik Road Depot|Nashik|Anand Baxi School|19.94714|73.83047
+1452|Nashik Road Depot|Nashik|Dadasaheb Hall|19.98766|73.78996
+1453|Nashik Road Depot|Nashik|Sarswati Nagar R.T.O Corner Road|20.02365|73.83005
+1454|Nashik Road Depot|Nashik|Dadaji Kondev Nagar|20.01778|73.76154
+1455|Nashik Road Depot|Nashik|Cynus Hospital|19.95338|73.76668
+1456|Nashik Road Depot|Nashik|Sarul Fata|19.92161|73.71467
+1457|Nashik Road Depot|Nashik|Satpur Bus Stand (U)|19.99050|73.73196
+1458|Nashik Road Depot|Nashik|Satpur Colony (D)|19.99047|73.72494
+1459|Nashik Road Depot|Nashik|Press Gate (D)|19.96556|73.83949
+1460|Nashik Road Depot|Nashik|Khuntwad Nagar / CITU Bhavan (U)|19.98615|73.74939
+1461|Nashik Road Depot|Nashik|Falke Smarak (D)|19.94665|73.74672
+1462|Tapovan Depot|Nashik|Manpa Davakhana / Maharashtra Housing Colony Phata (D)|19.98970|73.72842
+1463|Tapovan Depot|Nashik|Vijay Nagar (U)|19.96813|73.76018
+1464|Nashik Road Depot|Nashik|R.D. Circle (U)|19.98633|73.77135
+1465|Nashik Road Depot|Nashik|Police Commissioner (D)|20.00612|73.78114
+1466|Tapovan Depot|Nashik|Satpur Police Station / Sakal Office (D)|19.99200|73.74291
+1467|Tapovan Depot|Nashik|Ashok Sthambh|20.00622|73.78241
+1468|Tapovan Depot|Nashik|Satpur Police Station / Sakal Office (U)|19.99160|73.74128
+1469|Nashik Road Depot|Nashik|Sawant Chowk (U)|19.94944|73.77054
+1470|Nashik Road Depot|Nashik|Amrutdham (D)|20.01613|73.82568
+1471|Nashik Road Depot|Nashik|Civil Hospital (U)|19.99519|73.77902
+1472|Nashik Road Depot|Nashik|Savarkar Chowk|19.97231|73.78504
+1473|Tapovan Depot|Nashik|Savarkar Nagar (U)|19.98863|73.71934
+1474|Nashik Road Depot|Nashik|Savarkar Nagar / Asaram Bapu Aashram|20.01882|73.75487
+1475|Nashik Road Depot|Nashik|City Centre Mall|19.99044|73.76405
+1476|Nashik Road Depot|Nashik|CIDCO Office (U)|19.97135|73.77139
+1477|Nashik Road Depot|Nashik|Savarkar Nagar 1 (U)|20.01203|73.75341
+1478|Nashik Road Depot|Nashik|Church|19.96735|73.78110
+1479|Tapovan Depot|Nashik|Savarkar Nagar 1 (D)|20.01219|73.75324
+1480|Tapovan Depot|Nashik|Savata Nagar (U)|19.98054|73.75533
+1481|Nashik Road Depot|Nashik|AmrutDham (U)|20.01694|73.82600
+1482|Nashik Road Depot|Nashik|Chunchale Fata|19.96813|73.73152
+1483|Nashik Road Depot|Nashik|Shalimar (D)|19.99884|73.78601
+1484|Tapovan Depot|Nashik|Vikhe Patil Engg. College (U)|19.89125|73.93318
+1485|Nashik Road Depot|Nashik|Choudhary Builder|19.92309|73.88019
+1486|Nashik Road Depot|Nashik|Aarti Company|19.95050|73.72658
+1487|Nashik Road Depot|Nashik|Choudhary Buider ST Colony 2|19.92391|73.87874
+1488|Nashik Road Depot|Nashik|Shani Mandir (Peth Rd)|20.01777|73.79370
+1489|Tapovan Depot|Nashik|Shankar Chowk (U)|19.97948|73.75382
+1490|Nashik Road Depot|Nashik|Shankar Nagar|19.99458|73.80557
+1491|Nashik Road Depot|Nashik|Chitegaon Phata (D)|20.00477|73.95527
+1492|Nashik Road Depot|Nashik|Chintamani Lowns|20.01485|73.76792
+1493|Nashik Road Depot|Nashik|Shanti Nagar / Sanap Dairy (D)|20.04140|73.78035
+1494|Nashik Road Depot|Nashik|Pushpak Nagar|20.05061|73.79927
+1495|Nashik Road Depot|Nashik|Shewanta Lawns (U)|20.00281|73.84402
+1496|Tapovan Depot|Nashik|Chincholi Phata (U)|19.90232|73.91698
+1497|Tapovan Depot|Nashik|Xlo Point (U)|19.96318|73.73637
+1498|Nashik Road Depot|Nashik|Chinchole Navin Gaon|19.96493|73.72732
+1499|Tapovan Depot|Nashik|Shilapur (D)|19.99634|73.89894
+1500|Tapovan Depot|Nashik|Chunchale Gaon|19.96540|73.72602
+1501|Nashik Road Depot|Nashik|Chetna Nagar|19.96391|73.76623
+1502|Nashik Road Depot|Nashik|Shiledar Wadi|20.09016|73.96273
+1503|Nashik Road Depot|Nashik|Vikhe Patil Shala|19.97204|73.74151
+1504|Nashik Road Depot|Nashik|Chemri No|19.97568|73.86791
+1505|Nashik Road Depot|Nashik|6 No Naka (U)|19.92615|73.83394
+1506|Nashik Road Depot|Nashik|Chehedi Shiv Road / Bogda (NRD) (D)|19.94106|73.85285
+1507|Tapovan Depot|Nashik|Shinde Gaon (U)|19.91512|73.89854
+1508|Nashik Road Depot|Nashik|Chehdi Pumping / Navmika School (U)|19.93680|73.85886
+1509|Nashik Road Depot|Nashik|Amruta Nagar / Mauli Nagar|19.94223|73.75701
+1510|Nashik Road Depot|Nashik|Chehdi Gaon|19.93523|73.86077
+1511|Nashik Road Depot|Nashik|Shinde Mala (Peth Rd) (U)|20.05134|73.78900
+1512|Tapovan Depot|Nashik|Chehedi (D)|20.00090|73.93701
+1513|Nashik Road Depot|Nashik|Chehedi (U)|20.00102|73.93686
+1514|Nashik Road Depot|Nashik|Shinde Nagar (D)|20.02299|73.78524
+1515|Nashik Road Depot|Nashik|Chari (Chandgiri)|19.93241|73.91624
+1516|Nashik Road Depot|Nashik|Vavi Ves (Shirdi Phata) (D)|19.84532|74.00290
+1517|Nashik Road Depot|Nashik|Khode Nagar / Hirawadi (D)|20.01168|73.80437
+1518|Tapovan Depot|Nashik|Chhatrapati Shivaji Maharaj Chowk (U)|19.97672|73.76941
+1519|Nashik Road Depot|Nashik|Chhatrpati Shivaji Maharaj Nagar (D)|19.97460|73.84123
+1520|Tapovan Depot|Nashik|Samta Nagar (D)|19.98942|73.72420
+1521|Nashik Road Depot|Nashik|Saikheda Chofulli (D)|20.01164|74.00794
+1522|Tapovan Depot|Nashik|Chhatrapati Shivaji Maharaj Nagar (Bardan Phata Road) (U)|20.00578|73.71162
+1523|Nashik Road Depot|Nashik|Vikrikar Bhavan|19.94986|73.75862
+1524|Nashik Road Depot|Nashik|Chhatrapati Shivaji Maharaj Putla|19.95157|73.84025
+1525|Nashik Road Depot|Nashik|Shivkrupa Nagar (Khervadi)|20.04765|73.95898
+1526|Nashik Road Depot|Nashik|Chandashi Fata|20.05426|73.74367
+1527|Nashik Road Depot|Nashik|Shivrsta|19.92251|73.65720
+1528|Nashik Road Depot|Nashik|Vilholi Gaon (D)|19.92491|73.71651
+1529|Nashik Road Depot|Nashik|Chandak Circle|19.99304|73.77631
+1530|Nashik Road Depot|Nashik|Chaitra Palvi Society|19.97977|73.80551
+1531|Tapovan Depot|Nashik|Shopping Centre (U)|19.97505|73.77133
+1532|Nashik Road Depot|Nashik|Vilholi Gaon (U)|19.92423|73.71653
+1533|Nashik Road Depot|Nashik|Chade Gaon|19.95215|73.88064
+1534|Nashik Road Depot|Nashik|Shubhechha Lawns|20.06175|73.80556
+1535|Nashik Road Depot|Nashik|Siddheshwar Mandir|19.93693|73.82505
+1536|Nashik Road Depot|Nashik|Aamrapali Lawns|19.97317|73.74624
+1537|Nashik Road Depot|Nashik|Kapaleswar Nagar (D)|20.00712|73.82038
+1538|Nashik Road Depot|Nashik|Nilgiri Bag (Siddhi Vinayak) (D)|20.00228|73.83098
+1539|Nashik Road Depot|Nashik|Ceat (D)|20.00153|73.72361
+1540|Nashik Road Depot|Nashik|Ambad Police Station|19.96577|73.76285
+1541|Tapovan Depot|Nashik|Ceat (U)|20.00144|73.72358
+1542|Nashik Road Depot|Nashik|Nilgiri Bag (Siddhi Vinayak) (U)|20.00204|73.83178
+1543|Nashik Road Depot|Nashik|Siddhivinayak Service Station|20.05412|73.74068
+1544|Nashik Road Depot|Nashik|Siddharth Hotel (U)|19.98447|73.80307
+1545|Nashik Road Depot|Nashik|C.C.A. Nagar|20.03825|73.89240
+1546|Nashik Road Depot|Nashik|Vinay Nagar|19.98031|73.79133
+1547|Tapovan Depot|Nashik|CBS 2 (U)|20.00284|73.78337
+1548|Nashik Road Depot|Nashik|Siemens (U)|19.95663|73.73502
+1549|Nashik Road Depot|Nashik|CBS 1 (U)|20.00080|73.78304
+1550|Nashik Road Depot|Nashik|Vincent School|19.97707|73.68820
+1551|Tapovan Depot|Nashik|CBS 3 (U)|20.00322|73.78327
+1552|Nashik Road Depot|Nashik|Sinhastha Nagar|19.96313|73.76068
+1553|Tapovan Depot|Nashik|Carbon Vegetable Market (U)|20.00199|73.71712
+1554|Nashik Road Depot|Nashik|Cement Factory|19.98639|73.89730
+1555|Tapovan Depot|Nashik|Sinnar Bus Stand (U)|19.84429|73.99325
+1556|Tapovan Depot|Nashik|Carbon Naka (U)|20.00235|73.71134
+1557|Tapovan Depot|Nashik|Sinnar Mahavidyalaya (U)|19.85108|73.98565
+1558|Nashik Road Depot|Nashik|Carbon Vegetable Market (D)|20.00209|73.71736
+1559|Nashik Road Depot|Nashik|Satpur Colony (D)|19.98608|73.72407
+1560|Nashik Road Depot|Nashik|Canal Chari No.14|20.04512|73.94269
+1561|Tapovan Depot|Nashik|Sinnar Phata (U)|19.94768|73.84684
+1562|Nashik Road Depot|Nashik|Vinchur Gavali Fata|20.03511|73.87619
+1563|Nashik Road Depot|Nashik|Canal Sukena Road|20.09425|73.93960
+1564|Tapovan Depot|Nashik|Yewalekar Mala (U)|20.00566|73.76451
+1565|Nashik Road Depot|Nashik|Canal (Saiyad Pimpri)|20.04158|73.92284
+1566|Nashik Road Depot|Nashik|Sinnar Stop|19.84363|73.99412
+1567|Nashik Road Depot|Nashik|Canal Naygaon|19.94964|73.95652
+1568|Nashik Road Depot|Nashik|Sinnar Phata|19.94996|73.84066
+1569|Tapovan Depot|Nashik|Shirin Colony (D)|20.01434|73.73878
+1570|Nashik Road Depot|Nashik|Ambad Gaon|19.96170|73.74324
+1571|Nashik Road Depot|Nashik|Canal (Makhmalabad Rd)|20.02787|73.78358
+1572|Nashik Road Depot|Nashik|Smashanbhumi|19.96127|73.74639
+1573|Nashik Road Depot|Nashik|Snehvandan Park|20.00084|73.77906
+1574|Nashik Road Depot|Nashik|Someshwar (D)|20.02169|73.72667
+1575|Nashik Road Depot|Nashik|Canal (Jatra Hotel Rd)|20.01115|73.84380
+1576|Nashik Road Depot|Nashik|Songiri Phata|19.94612|73.94567
+1577|Nashik Road Depot|Nashik|Saubhagya Nagar (D)|19.92986|73.83399
+1578|Nashik Road Depot|Nashik|ABB VIP (U)|20.00101|73.72810
+1579|Tapovan Depot|Nashik|Canada Corner (U)|20.00285|73.77103
+1580|Nashik Road Depot|Nashik|Saptashrungi Nagar|19.97502|73.83347
+1581|Nashik Road Depot|Nashik|Sreeram Nagar|20.01933|73.84283
+1582|Nashik Road Depot|Nashik|S.S.D. Nagar (D)|20.02192|73.81806
+1583|Nashik Road Depot|Nashik|Bytco 1 (D)|19.95427|73.83713
+1584|Nashik Road Depot|Nashik|Standing Kreshn|19.97468|73.86237
+1585|Nashik Road Depot|Nashik|State Bank Colony (U)|19.99013|73.79018
+1586|Nashik Road Depot|Nashik|Vishwas Bank|20.01758|73.75460
+1587|Nashik Road Depot|Nashik|Bytco 2 (U)|19.95328|73.83759
+1588|Nashik Road Depot|Nashik|State Bank (D)|19.96902|73.76924
+1589|Nashik Road Depot|Nashik|Bridge River|19.98219|73.68434
+1590|Nashik Road Depot|Nashik|Bridge|19.98825|73.74991
+1591|Tapovan Depot|Nashik|Rajya Karmachari Society (D)|19.98957|73.71728
+1592|Nashik Road Depot|Nashik|Bramha Valley College|19.95229|73.57727
+1593|Nashik Road Depot|Nashik|Pappaya Nursery / Ambad Phata (D)|19.98479|73.72385
+1594|Nashik Road Depot|Nashik|Brahmawade|19.92432|73.92986
+1595|Nashik Road Depot|Nashik|ST Colony|19.85375|73.98240
+1596|Nashik Road Depot|Nashik|Kaman (No. 6 Chari) (D)|19.99929|73.85912
+1597|Nashik Road Depot|Nashik|Bramha Valley College 1|19.95243|73.57749
+1598|Nashik Road Depot|Nashik|Vithoba Niwas|19.92137|73.67774
+1599|Nashik Road Depot|Nashik|Borgad Air Force|20.05746|73.79883
+1600|Nashik Road Depot|Nashik|ST Colony - Gangapur Rd (D)|20.01150|73.75993
+1601|Tapovan Depot|Nashik|Aakash Petrol Pump (D)|20.03941|73.80474
+1602|Nashik Road Depot|Nashik|Bodle City|19.97938|73.80758
+1603|Nashik Road Depot|Nashik|Stop No. 1|20.09884|73.93308
+1604|Nashik Road Depot|Nashik|Saint Filomina (D)|19.96141|73.83914
+1605|Nashik Road Depot|Nashik|Bodhale Nagar (U)|19.98098|73.80630
+1606|Nashik Road Depot|Nashik|Saint Filomina (U)|19.96152|73.83895
+1607|Nashik Road Depot|Nashik|S. T. Workshop|20.04354|73.79345
+1608|Nashik Road Depot|Nashik|Sukhena Stand|20.07837|74.01295
+1609|Nashik Road Depot|Nashik|Aligned Society|20.01955|73.75534
+1610|Nashik Road Depot|Nashik|Blue Cross|19.94705|73.74076
+1611|Nashik Road Depot|Nashik|Blairaj City|20.02063|73.83361
+1612|Nashik Road Depot|Nashik|Surbhi Colony (D)|19.98380|73.74857
+1613|Nashik Road Depot|Nashik|Rukhmini Mangal Karyalaya (D)|20.02026|73.78644
+1614|Nashik Road Depot|Nashik|Bytco 1 (U)|19.95368|73.83812
+1615|Nashik Road Depot|Nashik|Bijnes Center|19.98455|73.77441
+1616|Nashik Road Depot|Nashik|Suryasoham Society (D)|20.05318|73.79968
+1617|Nashik Road Depot|Nashik|Suryavanshi Colony|20.01470|73.83192
+1618|Nashik Road Depot|Nashik|Wadhane Colony|20.05257|73.80476
+1619|Nashik Road Depot|Nashik|Manapa Shala|20.01116|73.82901
+1620|Nashik Road Depot|Nashik|Swami Jananardan Math|20.00831|73.81635
+1621|Nashik Road Depot|Nashik|Swami Janardan Math|20.00849|73.81620
+1622|Nashik Road Depot|Nashik|Bidi Kamgar Chowk|20.01123|73.82592
+1623|Nashik Road Depot|Nashik|Swami Samarth Nagar (D)|20.02351|73.83880
+1624|Nashik Road Depot|Nashik|Xlo Point Satpur Road|19.96283|73.73513
+1625|Nashik Road Depot|Nashik|Bhujbal Knowledge City|20.04222|73.84948
+1626|Tapovan Depot|Nashik|Symbiosis College|19.96024|73.75458
+1627|Nashik Road Depot|Nashik|Akshata Lawns|20.03129|73.81571
+1628|Tapovan Depot|Nashik|Bhujbal Farm (D)|19.97911|73.77911
+1629|Nashik Road Depot|Nashik|Wadivarhe Phata|19.86208|73.68411
+1630|Nashik Road Depot|Nashik|Bhor Mala|19.95001|73.85453
+1631|Nashik Road Depot|Nashik|Tadge Vasti / Mamacha Mala|20.05013|73.76662
+1632|Nashik Road Depot|Nashik|Bhavani Nagar|19.93284|73.78974
+1633|Nashik Road Depot|Nashik|Takli Phata (D)|20.00816|73.97313
+1634|Nashik Road Depot|Nashik|Takli Phata (U)|20.00812|73.97237
+1635|Nashik Road Depot|Nashik|Bhatia (U)|19.92087|73.83355
+1636|Nashik Road Depot|Nashik|Nandur Shiv Road / Pawar Chowk|19.99505|73.83075
+1637|Nashik Road Depot|Nashik|Aklhra Gate 2|19.97829|73.87770
+1638|Nashik Road Depot|Nashik|Bharat Petrol Shinde|19.91865|73.88811
+1639|Nashik Road Depot|Nashik|Bharat Petrol Pump Trimbak Road|19.97865|73.70052
+1640|Nashik Road Depot|Nashik|Takli Village|19.98488|73.81754
+1641|Nashik Road Depot|Nashik|Bharat Petrol Pump Sinnar Road|19.91894|73.88801
+1642|Nashik Road Depot|Nashik|Bharat Petrol Pump Gangapur Road|20.03235|73.69642
+1643|Nashik Road Depot|Nashik|Talegaon Phata|19.96198|73.64409
+1644|Nashik Road Depot|Nashik|Tanhaji Nagar Bhor Mala|19.95130|73.85926
+1645|Tapovan Depot|Nashik|Tapovan (U)|20.00871|73.81506
+1646|Nashik Road Depot|Nashik|Akashwani Kendra|20.01498|73.75624
+1647|Nashik Road Depot|Nashik|Bharat Nagar (U)|19.98446|73.78337
+1648|Nashik Road Depot|Nashik|Wadivarhe Gaon|19.86216|73.67622
+1649|Nashik Road Depot|Nashik|Bhairavnath Nagar|19.93509|73.81694
+1650|Nashik Road Depot|Nashik|Tapovan Depot (U)|20.00691|73.81381
+1651|Nashik Road Depot|Nashik|8 wa Mile Mumbai Road|19.91613|73.71128
+1652|Nashik Road Depot|Nashik|Bhairavnath Mandir|20.02913|73.98718
+1653|Nashik Road Depot|Nashik|Bhagwat Mala Kanol|19.91922|73.90387
+1654|Nashik Road Depot|Nashik|Tarwala Nagar (D)|20.02588|73.80073
+1655|Nashik Road Depot|Nashik|Aakash Petrol Pump (U)|20.03884|73.80439
+1656|Nashik Road Depot|Nashik|Bhagwat Mala|19.94675|73.91696
+1657|Nashik Road Depot|Nashik|Maharashtra Bank|19.97193|73.82081
+1658|Tapovan Depot|Nashik|Maharana Pratap Chowk (U)|19.97381|73.76598
+1659|Tapovan Depot|Nashik|Satpur Colony (U)|19.99061|73.72520
+1660|Nashik Road Depot|Nashik|Mahamarg (U)|19.98728|73.78514
+1661|Nashik Road Depot|Nashik|Mahale Petrol Pump|19.95894|73.75620
+1662|Nashik Road Depot|Nashik|Maharashtra Police Academy (M.P.A) (U)|19.99437|73.76015
+1663|Nashik Road Depot|Nashik|Bhagur|19.87971|73.83304
+1664|Nashik Road Depot|Nashik|Savarkar Chowk 1|19.97509|73.76733
+1665|Nashik Road Depot|Nashik|Tata Motors|19.94904|73.74935
+1666|Tapovan Depot|Nashik|Mico Davakhana (D)|20.01603|73.79675
+1667|Nashik Road Depot|Nashik|Mahatmanagar (U)|19.99716|73.75416
+1668|Tapovan Depot|Nashik|Mahalakshmi Nagar (U)|19.96753|73.74153
+1669|Nashik Road Depot|Nashik|Canol Road / Mahadevpur|20.04202|73.68853
+1670|Tapovan Depot|Nashik|Mahatmanagar (D)|19.99736|73.75403
+1671|Tapovan Depot|Nashik|A.B.B Circle (U)|19.99350|73.75243
+1672|Tapovan Depot|Nashik|Shramik Nagar (U)|19.99636|73.71148
+1673|Nashik Road Depot|Nashik|Bhagavantha City|19.98706|73.78814
+1674|Nashik Road Depot|Nashik|Mahadev Mandir (Mhasrul Road) (U)|20.04901|73.80099
+1675|Nashik Road Depot|Nashik|Mahendra House (D)|19.96101|73.76293
+1676|Nashik Road Depot|Nashik|Mahiravani (U)|19.96585|73.65999
+1677|Nashik Road Depot|Nashik|Madsangavi Gaon (D)|20.00067|73.87349
+1678|Nashik Road Depot|Nashik|Mahiravani (D)|19.96596|73.66003
+1679|Nashik Road Depot|Nashik|Mohdari (D)|19.88544|73.94117
+1680|Tapovan Depot|Nashik|Mico (U)|19.99329|73.73023
+1681|Nashik Road Depot|Nashik|Tawali Fata|20.06105|73.78342
+1682|Nashik Road Depot|Nashik|Madsangavi (D)|20.00069|73.86900
+1683|Nashik Road Depot|Nashik|Madhuban Colony (D)|20.01633|73.78771
+1684|Tapovan Depot|Nashik|Mico Davakhana (U)|20.01720|73.79697
+1685|Nashik Road Depot|Nashik|TDK Company|20.00446|73.73789
+1686|Nashik Road Depot|Nashik|Lokmat (D)|19.95189|73.75057
+1687|Nashik Road Depot|Nashik|Mai Lele School (U)|20.01233|73.76971
+1688|Nashik Road Depot|Nashik|Makhamalabad (D)|20.04796|73.77366
+1689|Nashik Road Depot|Nashik|Dongare Vastigrah / Lokmanya Nagar|20.00674|73.77336
+1690|Nashik Road Depot|Nashik|Makhamalabad Link Road Dindori Road|20.05059|73.80551
+1691|Nashik Road Depot|Nashik|Lokhande Mala / Mhasoba Mandir|19.97411|73.82983
+1692|Nashik Road Depot|Nashik|Lilawati Hospital|20.03729|73.78214
+1693|Nashik Road Depot|Nashik|Makhamalabad Link Road (U)|20.05017|73.80524
+1694|Nashik Road Depot|Nashik|Makhamalabad Link Road Panchwati Road|20.05062|73.80575
+1695|Nashik Road Depot|Nashik|Makhamalabad Naka Maturi Road|20.04677|73.79163
+1696|Nashik Road Depot|Nashik|Beze Phata|19.95552|73.60101
+1697|Tapovan Depot|Nashik|Lekha Nagar (U)|19.97329|73.77325
+1698|Nashik Road Depot|Nashik|Sinnar (Tahsil Karyalaya Awar)|19.84804|74.00383
+1699|Nashik Road Depot|Nashik|Laxtara Petrol Pump|20.07040|73.67848
+1700|Nashik Road Depot|Nashik|Rau Hotel Peth Road (Maruti Mandir) (D)|20.04620|73.79222
+1701|Nashik Road Depot|Nashik|Makhmalabad Naka (U)|20.01201|73.79002
+1702|Tapovan Depot|Nashik|L&T Phata / Malegaon Phata (U)|19.86507|73.96489
+1703|Tapovan Depot|Nashik|Adivasi Bhawan (U)|19.99617|73.78202
+1704|Tapovan Depot|Nashik|Bafna Bajar / Laxmi Nagar (D)|20.01764|73.82860
+1705|Nashik Road Depot|Nashik|Laxman Township|19.97308|73.73780
+1706|Nashik Road Depot|Nashik|Malegaon Stand (D)|20.00995|73.79160
+1707|Nashik Road Depot|Nashik|Bengaon Dhanaga Phata|19.97384|73.68592
+1708|Tapovan Depot|Nashik|Lavhate Nagar (U)|19.95119|73.82542
+1709|Nashik Road Depot|Nashik|Manapa Shala No 79|19.94231|73.71390
+1710|Nashik Road Depot|Nashik|Mangir Baba Temple|19.97792|73.89264
+1711|Nashik Road Depot|Nashik|Lathe Nagar (D)|20.01844|73.81245
+1712|Nashik Road Depot|Nashik|Mankar Mala|19.95264|73.87675
+1713|Nashik Road Depot|Nashik|Wadivarhe Police Station|19.86168|73.67927
+1714|Nashik Road Depot|Nashik|Lalapadi Phata (D)|20.00172|73.94225
+1715|Nashik Road Depot|Nashik|Lalapadi Phata (U)|20.00178|73.94172
+1716|Nashik Road Depot|Nashik|Maniyar Baba (D)|20.03782|73.90526
+1717|Nashik Road Depot|Nashik|More Vasti (D)|19.96125|73.82221
+1718|Nashik Road Depot|Nashik|Indiranagar Bogda (D)|19.98008|73.77888
+1719|Nashik Road Depot|Nashik|Belgaon Dhaga Phata|19.97356|73.68547
+1720|Tapovan Depot|Nashik|Lakhalgaon (D)|20.00000|73.92266
+1721|Nashik Road Depot|Nashik|Telephone Exchange|20.02247|73.84228
+1722|Nashik Road Depot|Nashik|Lahuji Nagar|19.94433|73.71536
+1723|Nashik Road Depot|Nashik|Manudevi (U)|20.05334|73.88228
+1724|Nashik Road Depot|Nashik|Kumbharwadi|20.05021|73.68510
+1725|Tapovan Depot|Nashik|Kulkarni Garden (U)|20.00199|73.77366
+1726|Nashik Road Depot|Nashik|Manudevi (D)|20.05305|73.88227
+1727|Nashik Road Depot|Nashik|Manur Phata (D)|19.99785|73.84966
+1728|Nashik Road Depot|Nashik|Mari Mata Gate Sukena Phata|20.09834|73.93620
+1729|Nashik Road Depot|Nashik|Belgaon Dhaga|19.96486|73.69296
+1730|Nashik Road Depot|Nashik|Kulkarni Farm|20.05672|73.80573
+1731|Nashik Road Depot|Nashik|Market Committee Nashik Road|20.01149|74.00611
+1732|Nashik Road Depot|Nashik|Market Committee Saikheda Gaon|20.01158|74.00619
+1733|Nashik Road Depot|Nashik|K T H M College (U)|20.00588|73.77750
+1734|Nashik Road Depot|Nashik|Market Gate Ekalhara Road|19.95133|73.84795
+1735|Nashik Road Depot|Nashik|Krushna Nagar|19.96754|73.74104
+1736|Nashik Road Depot|Nashik|Krishna Sweets / Sawant College Phata|19.95024|73.77038
+1737|Tapovan Depot|Nashik|Market Gate (D)|20.01484|73.79647
+1738|Nashik Road Depot|Nashik|Matoshri Nagar|19.96829|73.68884
+1739|Nashik Road Depot|Nashik|Govinda Nagar Corner|19.98221|73.77624
+1740|Nashik Road Depot|Nashik|Thatte Nagar (D)|20.01016|73.76446
+1741|Nashik Road Depot|Nashik|Tupadevi / Talwade Phata|19.95055|73.56401
+1742|Tapovan Depot|Nashik|Market Gate (U)|20.01501|73.79625
+1743|Nashik Road Depot|Nashik|Adivasi Sankul (U)|20.05519|73.79950
+1744|Nashik Road Depot|Nashik|Kranti Nagar (D)|20.01400|73.78831
+1745|Nashik Road Depot|Nashik|Kothule Mala|20.03135|73.78334
+1746|Nashik Road Depot|Nashik|Sharad Pawar Market|20.02950|73.79536
+1747|Nashik Road Depot|Nashik|Maruti Showroom|20.00190|73.73406
+1748|Nashik Road Depot|Nashik|Matale Tue Office|19.98141|73.75459
+1749|Nashik Road Depot|Nashik|Barn School Phata (U)|19.88201|73.83317
+1750|Nashik Road Depot|Nashik|Kothari (U)|19.91653|73.83324
+1751|Nashik Road Depot|Nashik|Kotam Gaon|19.95572|73.89944
+1752|Nashik Road Depot|Nashik|Matori|20.05625|73.75156
+1753|Nashik Road Depot|Nashik|Konark Nagar (D)|20.02676|73.84583
+1754|Nashik Road Depot|Nashik|Matori Gaon|20.05607|73.75099
+1755|Nashik Road Depot|Nashik|Matoshri College|19.99080|73.90961
+1756|Nashik Road Depot|Nashik|Balaji Chowk|20.02002|73.85052
+1757|Nashik Road Depot|Nashik|Matoshri Sweets|20.00246|73.74969
+1758|Tapovan Depot|Nashik|Bardan Phata|20.02406|73.72143
+1759|Nashik Road Depot|Nashik|K.K. Wagh College (U)|20.01538|73.82140
+1760|Nashik Road Depot|Nashik|Thergaon|20.08161|73.98839
+1761|Nashik Road Depot|Nashik|K.K. Wagh College (D)|20.01501|73.82188
+1762|Nashik Road Depot|Nashik|Mauli Bunglow|19.91590|73.69568
+1763|Nashik Road Depot|Nashik|Mauli Chowk|19.94840|73.71970
+1764|Nashik Road Depot|Nashik|Mauli Lawns (D)|19.97234|73.74686
+1765|Nashik Road Depot|Nashik|Waldevi Dharan Fata|19.91971|73.68621
+1766|Nashik Road Depot|Nashik|Kirloskar|19.96894|73.86021
+1767|Nashik Road Depot|Nashik|Medical Phata 1 (U)|20.03097|73.85639
+1768|Nashik Road Depot|Nashik|Medical Phata (U)|20.03149|73.85546
+1769|Nashik Road Depot|Nashik|Kherwadi Fata|20.04933|73.96762
+1770|Nashik Road Depot|Nashik|Medical Phata 2 (D)|20.03091|73.85698
+1771|Nashik Road Depot|Nashik|Bapu Bangla (D)|19.97353|73.78608
+1772|Nashik Road Depot|Nashik|Khervadi Gaon|20.04670|73.97114
+1773|Nashik Road Depot|Nashik|Meher|20.00489|73.78407
+1774|Nashik Road Depot|Nashik|Meherdham|20.04038|73.79415
+1775|Nashik Road Depot|Nashik|Khandoba Mandir / Mankar Mala (D)|20.04696|73.77626
+1776|Nashik Road Depot|Nashik|Meher Signal|20.00691|73.78482
+1777|Nashik Road Depot|Nashik|Tidke Colony Square Navin|19.99144|73.77411
+1778|Nashik Road Depot|Nashik|Khanderav Nagar|19.94808|73.75612
+1779|Nashik Road Depot|Nashik|Khanderav Mandir Saman Gaon Rd|19.95755|73.90316
+1780|Tapovan Depot|Nashik|CBS / Mela Stand (U)|20.00065|73.78103
+1781|Nashik Road Depot|Nashik|Meri Colony (D)|20.03012|73.80218
+1782|Nashik Road Depot|Nashik|Mhada Colony (U)|19.96809|73.78949
+1783|Nashik Road Depot|Nashik|Tidke Nagar Chowk (D)|19.98944|73.76641
+1784|Nashik Road Depot|Nashik|Khanderao Mandir (D)|20.08901|73.92325
+1785|Nashik Road Depot|Nashik|Khambhale Phata|19.95980|73.63048
+1786|Nashik Road Depot|Nashik|Mhada Corner (D)|19.97159|73.72204
+1787|Nashik Road Depot|Nashik|Khambale Phata|19.95971|73.62985
+1788|Nashik Road Depot|Nashik|Khadi Crasher|19.91764|73.70563
+1789|Nashik Road Depot|Nashik|Vetalbaba Mandir (6 no chari) (D)|19.99848|73.85448
+1790|Tapovan Depot|Nashik|Bangali Baba (U)|19.92049|73.88409
+1791|Nashik Road Depot|Nashik|Keval Park (D)|19.97472|73.73257
+1792|Nashik Road Depot|Nashik|Tilak Nagar (U)|20.07839|73.91225
+1793|Nashik Road Depot|Nashik|Kendriya Vidyalaya (U)|19.88551|73.83314
+1794|Nashik Road Depot|Nashik|Mhasoba Mandir|20.03377|73.98440
+1795|Nashik Road Depot|Nashik|Wasali Phata|19.97499|73.68934
+1796|Nashik Road Depot|Nashik|Karan Farm|19.95373|73.88755
+1797|Nashik Road Depot|Nashik|Kanol Road|20.03839|73.68917
+1798|Nashik Road Depot|Nashik|Mhasoba Mandir Vadner Rd|19.94302|73.79874
+1799|Nashik Road Depot|Nashik|Bandawane Wasti|19.97364|73.73587
+1800|Nashik Road Depot|Nashik|Kanol Chaufuli|20.00739|73.83156
+1801|Nashik Road Depot|Nashik|Kangane Nursery|19.98248|73.92507
+1802|Nashik Road Depot|Nashik|Mhasrul (U)|20.04833|73.80613
+1803|Nashik Road Depot|Nashik|Dwarka 1 (U)|19.99297|73.79555
+1804|Nashik Road Depot|Nashik|Kamathvade|19.97607|73.74975
+1805|Nashik Road Depot|Nashik|Mhasrul Fata (U)|20.03495|73.85139
+1806|Nashik Road Depot|Nashik|Bane Chal (U)|19.89260|73.83318
+1807|Nashik Road Depot|Nashik|Kamod Nagar (U)|19.97607|73.77716
+1808|Nashik Road Depot|Nashik|Tilakwadi / Rajiv Gandhi Bhavan|20.00089|73.77745
+1809|Nashik Road Depot|Nashik|Kamgar Nagar|20.00277|73.74686
+1810|Nashik Road Depot|Nashik|Mhasoba Temple|19.98781|73.90002
+1811|Nashik Road Depot|Nashik|Mico (D)|19.99358|73.73041
+1812|Tapovan Depot|Nashik|Jindal Phata / MIDC Phata No.2 (U)|19.86278|73.97037
+1813|Nashik Road Depot|Nashik|Kamal Nagar (D)|20.01912|73.81453
+1814|Nashik Road Depot|Nashik|Amrapali Tawar|19.98033|73.80278
+1815|Tapovan Depot|Nashik|MIDC Phata (Sarda) (U)|19.85973|73.97627
+1816|Nashik Road Depot|Nashik|Balaji Mandir (D)|20.02622|73.71949
+1817|Nashik Road Depot|Nashik|Kalika Mandir (D)|19.99210|73.78281
+1818|Nashik Road Depot|Nashik|Kalanagar|20.00382|73.74065
+1819|Nashik Road Depot|Nashik|M.I.D.C Unit|19.95386|73.73124
+1820|Tapovan Depot|Nashik|Meenatai Thakre Statdium (U)|20.01248|73.81380
+1821|Nashik Road Depot|Nashik|Meenatai Thakre Statdium (D)|20.01217|73.81419
+1822|Nashik Road Depot|Nashik|Tirupati Nagar|19.98373|73.82893
+1823|Nashik Road Depot|Nashik|Kalaskar Mala|20.03004|73.82021
+1824|Nashik Road Depot|Nashik|Kale Nagar (Kamgar Nagar)|20.00267|73.74876
+1825|Tapovan Depot|Nashik|Kamatwada (U)|19.97421|73.74908
+1826|Nashik Road Depot|Nashik|Aanand Nagar / Modern Market|20.01708|73.75905
+1827|Nashik Road Depot|Nashik|Kailas Nagar (U)|20.00460|73.82678
+1828|Nashik Road Depot|Nashik|Kailash Nagar (D)|20.00442|73.82676
+1829|Nashik Road Depot|Nashik|Miradwar Lawns|20.02610|73.82805
+1830|Nashik Road Depot|Nashik|Kadve Nagar (D)|19.95469|73.76439
+1831|Nashik Road Depot|Nashik|Madsangavi Toll Naka (D)|20.00167|73.87948
+1832|Nashik Road Depot|Nashik|Manpa Davakhana / Maharashtra Housing Colony Phata (U)|19.98972|73.72818
+1833|Nashik Road Depot|Nashik|Kandam Van (D)|19.98029|73.72520
+1834|Tapovan Depot|Nashik|Bhosla College / Model Colony (U)|20.00852|73.75539
+1835|Nashik Road Depot|Nashik|Bajrang Nagar (D)|19.97773|73.72643
+1836|Nashik Road Depot|Nashik|Old Jakat Naka (U)|20.03935|73.86879
+1837|Tapovan Depot|Nashik|Toll Naka (U)|19.91151|73.90404
+1838|Nashik Road Depot|Nashik|Old Jakat Naka (D)|20.03873|73.86847
+1839|Nashik Road Depot|Nashik|Mohadari|19.88529|73.94182
+1840|Nashik Road Depot|Nashik|Aadgaon|20.03520|73.86549
+1841|Nashik Road Depot|Nashik|Old Adgaon Naka (U)|20.00924|73.80252
+1842|Nashik Road Depot|Nashik|Old Adgaon Naka 1 (U)|20.00909|73.80401
+1843|Nashik Road Depot|Nashik|Mohadi Fata|20.07286|73.90204
+1844|Nashik Road Depot|Nashik|Baji Town|19.99098|73.77228
+1845|Nashik Road Depot|Nashik|Old Adgaon Naka 1 (D)|20.00893|73.80252
+1846|Nashik Road Depot|Nashik|Urdu Shala|19.99346|73.81188
+1847|Tapovan Depot|Nashik|More Vasti (U)|19.96148|73.82220
+1848|Nashik Road Depot|Nashik|Wasti Eklahara Phata|19.95562|73.89307
+1849|Nashik Road Depot|Nashik|Jivhale Datane|20.08316|73.98099
+1850|Nashik Road Depot|Nashik|JIT College|20.03341|73.69002
+1851|Tapovan Depot|Nashik|Motiwala College (D)|20.01720|73.71784
+1852|Nashik Road Depot|Nashik|Baburao Dhikale Wasti|20.04541|73.94822
+1853|Tapovan Depot|Nashik|Jetvan Nagar (U)|19.96430|73.82146
+1854|Nashik Road Depot|Nashik|Jelrod Fata|19.97989|73.82833
+1855|Nashik Road Depot|Nashik|Mte Mlaa|19.85215|73.65821
+1856|Nashik Road Depot|Nashik|Mukt Vidhyapeeth Gate|20.02301|73.69306
+1857|Nashik Road Depot|Nashik|Mukt Vidhyapeeth Phata|20.02922|73.70825
+1858|Nashik Road Depot|Nashik|8 Wa Mile|19.91599|73.71049
+1859|Nashik Road Depot|Nashik|Jehan Circle (D)|20.01216|73.75651
+1860|Nashik Road Depot|Nashik|Jay Malhar Pathardi|19.94193|73.77895

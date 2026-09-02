@@ -54,6 +54,8 @@ export const LAYERS: LayerDef[] = [
   { id: 'vip-routes',          file: 'vip-routes.geojson',          label: 'VIP routes',          color: '#0480e1', group: 'Mobility', symbol: 'VIP' , labels: true },
   { id: 'emergency-routes',    file: 'emergency-routes.geojson',    label: 'Emergency routes',    color: '#3088eb', group: 'Mobility', symbol: 'E' , labels: true },
   { id: 'movement-routes',     file: 'movement-routes.geojson',     label: 'Movement routes',     color: '#4890f3', group: 'Mobility', symbol: 'MV' , labels: true },
+  { id: 'bus-depots',          file: 'bus-depots.geojson',          label: 'Bus depots',          color: '#046eae', group: 'Mobility', symbol: 'BD' , labels: true },
+  { id: 'bus-stops',           file: 'bus-stops.geojson',           label: 'Bus stops',           color: '#1a86e6', group: 'Mobility', symbol: 'B' },
 
   { id: 'hospitals',           file: 'hospitals.geojson',           label: 'Hospitals',           color: '#b81d2c', group: 'Emergency', symbol: '+',  on: true },
   { id: 'police-stations',     file: 'police-stations.geojson',     label: 'Police stations',     color: '#c12e2f', group: 'Emergency', symbol: '★', on: true },

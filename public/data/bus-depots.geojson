@@ -1,0 +1,45 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.81478,
+     20.00754
+    ]
+   },
+   "properties": {
+    "Name": "Tapovan Depot",
+    "buses": 150,
+    "cngBuses": 120,
+    "dieselBuses": 30,
+    "electricBuses": 0,
+    "stopsServed": 787,
+    "locationConfidence": "verified",
+    "locationSource": "NMPML (Citilinc) RTI reply 3120/2026, 17 Aug 2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     73.8422,
+     19.94079
+    ]
+   },
+   "properties": {
+    "Name": "Nashik Road Depot",
+    "buses": 100,
+    "cngBuses": 80,
+    "dieselBuses": 20,
+    "electricBuses": 0,
+    "stopsServed": 1067,
+    "locationConfidence": "verified",
+    "locationSource": "NMPML (Citilinc) RTI reply 3120/2026, 17 Aug 2026"
+   }
+  }
+ ]
+}

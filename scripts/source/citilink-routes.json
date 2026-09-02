@@ -1,0 +1,407 @@
+{
+  "source": "Nashik Mahanagar Parivahan Mahamandal Ltd (Citilinc) RTI reply, letter 3120/2026 dated 17 Aug 2026",
+  "note": "Route duty schedules, pages 3-136 of the 198-page scan. These rows carry no coordinates in the source, so they are a reference table rather than a map layer.",
+  "fleet": {
+    "buses_total": 250,
+    "cng": 200,
+    "cng_capacity": 38,
+    "diesel": 50,
+    "diesel_capacity": 28,
+    "electric": 0,
+    "depots": {
+      "Tapovan Depot": {
+        "buses": 150,
+        "cng": 120,
+        "diesel": 30
+      },
+      "Nashik Road Depot": {
+        "buses": 100,
+        "cng": 80,
+        "diesel": 20
+      }
+    },
+    "passengers_per_day": "70,000-75,000",
+    "trips_per_day": 2300,
+    "office": "Citilinc Bhavan, opposite Veer Savarkar swimming pool, Trimbak Road, Nashik 422002",
+    "cin": "U60100MH2019PLC324953"
+  },
+  "routes": [
+    {
+      "route": "2011",
+      "first_page": 3,
+      "description_mr": "नाशिकरोड ते बारदानफाटा मार्गे इंदिरा नगर, अशोका मार्ग, मुंबई नाका",
+      "buses": 11,
+      "total_km": 2725.5,
+      "effective_from": "10.08.2026"
+    },
+    {
+      "route": "2021",
+      "first_page": 7,
+      "description_mr": "नाशिक रोड ते बारदान फाटा मार्गे इंदिरा नगर, मुंबई नाका, शालीमार, राजीव गांधी भवन, एच.पी.टी कॉलेज",
+      "total_km": 1600.3
+    },
+    {
+      "route": "2031",
+      "first_page": 11,
+      "description_mr": "नाशिकरोड डेपो - सिम्बॉयसेस कॉलेज मार्गे अशोका मार्ग, मुंबई नाका, सि.बी.एस, पवन नगर, उत्तम नगर",
+      "buses": 9,
+      "total_km": 2048,
+      "effective_from": "02.08.2026"
+    },
+    {
+      "route": "207A",
+      "first_page": 17,
+      "description_mr": "नाशिकरोड ते अंबड गाव मार्गे अशोका मार्ग, मुंबई नाका, गोविंद नगर, लेखा नगर",
+      "buses": 5,
+      "total_km": 1244.6,
+      "effective_from": "15.06.2026"
+    },
+    {
+      "route": "2061",
+      "first_page": 21,
+      "description_mr": "नाशिकरोड ते ओझर गाव मार्गे अशोका मार्ग, इंदिरा नगर, सि.बी.एस, आडगाव",
+      "total_km": 1167,
+      "effective_from": "15.06.2026"
+    },
+    {
+      "route": "2101",
+      "first_page": 23,
+      "description_mr": "नाशिकरोड रेल्वेस्टेशन ते दिंडोरी (स्वामी समर्थ केंद्र) मार्गे द्वारका, निमाणी, म्हसरूळ, तळेगांव",
+      "total_km": 3822.3,
+      "effective_from": "08.08.2026",
+      "fuel": "CNG"
+    },
+    {
+      "route": "210J",
+      "first_page": 29,
+      "description_mr": "नाशिकरोड रेल्वेस्टेशन ते दिंडोरी (स्वामी समर्थ केंद्र) मार्गे जेल रोड, नांदूर नाका",
+      "total_km": 500.2,
+      "effective_from": "29.06.2026",
+      "fuel": "CNG"
+    },
+    {
+      "route": "220",
+      "first_page": 31,
+      "description_mr": "नाशिक रोड ते मातोश्री कॉलेज मार्गे सिन्नर फाटा, एकलहरे",
+      "buses": 1,
+      "total_km": 148.8,
+      "effective_from": "06.12.2024"
+    },
+    {
+      "route": "2191",
+      "first_page": 33,
+      "description_mr": "नाशिकरोड ते म्हाडा मार्गे अशोका, मुंबई नाका, सिव्हिल, सातपूर",
+      "buses": 3,
+      "total_km": 648.2,
+      "effective_from": "15.06.2026"
+    },
+    {
+      "route": "221",
+      "first_page": 35,
+      "description_mr": "नाशिक रोड ते शिंगवे बहुला मार्गे संसरी गाव",
+      "buses": 1,
+      "total_km": 112.3,
+      "effective_from": "09.08.2026",
+      "fuel": "DIESEL"
+    },
+    {
+      "route": "222",
+      "first_page": 37,
+      "description_mr": "नाशिकरोड डेपो ते शिंगवे बहुला मार्गे वीट भट्टी, वाडीचे रान, पाथर्डी गाव, वडनेर",
+      "buses": 1,
+      "total_km": 178.1,
+      "effective_from": "09.08.2026"
+    },
+    {
+      "route": "223",
+      "first_page": 39,
+      "description_mr": "नाशिकरोड डेपो ते शिंगवे बहुला मार्गे पिंपळगाव खांब",
+      "buses": 1,
+      "total_km": 186.7,
+      "effective_from": "15.06.2026"
+    },
+    {
+      "route": "2391",
+      "first_page": 41,
+      "description_mr": "नाशिकरोड ते गिरणारे मार्गे अशोका मार्ग, महामार्ग, सिव्हील, सातपुर, अशोकनगर, जे.आय.टी. कॉलेज",
+      "buses": 1,
+      "total_km": 219.9,
+      "effective_from": "09.08.2026"
+    },
+    {
+      "route": "240",
+      "first_page": 43,
+      "description_mr": "नाशिकरोड ते ओझर गाव मार्गे जेलरोड, जत्रा हॉटेल, आडगाव",
+      "trips": 10,
+      "total_km": 243.4,
+      "effective_from": "06.07.2026"
+    },
+    {
+      "route": "242A",
+      "first_page": 45,
+      "description_mr": "नाशिकरोड ते गंगापूर गाव मार्गे अशोका, अशोकस्तंभ, गंगापूर रोड",
+      "buses": 1,
+      "effective_from": "09.08.2026"
+    },
+    {
+      "route": "2431",
+      "first_page": 47,
+      "description_mr": "नाशिक रोड ते बोरगड मार्गे इंदिरा नगर, अशोका नामको हॉस्पिटल, जुई नगर",
+      "total_km": 135.2,
+      "effective_from": "11.08.2026"
+    },
+    {
+      "route": "245",
+      "first_page": 49,
+      "description_mr": "नाशिकरोड ते त्र्यंबकेश्वर मार्गे बिटको, जेलटाकी, नांदुरनाका, निमाणी, सिव्हिल हॉस्पिटल, सातपुर",
+      "total_km": 370.9,
+      "effective_from": "26.07.2026"
+    },
+    {
+      "route": "2471",
+      "first_page": 57,
+      "description_mr": "नाशिकरोड ते मोहाडी मार्गे वरवंडी, शिवनई, आंबे",
+      "buses": 1,
+      "total_km": 219.8,
+      "effective_from": "01.04.2026",
+      "bus_type": "Midi bus"
+    },
+    {
+      "route": "2481",
+      "first_page": 59,
+      "description_mr": "नाशिकरोड रेल्वेस्टेशन ते भैरवनाथ नगर मार्गे जेलटाकी",
+      "total_km": 398.8,
+      "effective_from": "01.04.2026"
+    },
+    {
+      "route": "2598",
+      "first_page": 61,
+      "description_mr": "नाशिकरोड डेपो ते तपोवन मार्गे टाकळी, गीताई नगर, नागजी हॉस्पिटल",
+      "total_km": 369,
+      "effective_from": "09.08.2026",
+      "bus_type": "Midi bus"
+    },
+    {
+      "route": "265",
+      "first_page": 63,
+      "description_mr": "नाशिकरोड ते भुजबळ नॉलेज सिटी मार्गे जत्रा हॉटेल",
+      "total_km": 204.4,
+      "effective_from": "15.06.2026"
+    },
+    {
+      "route": "2981",
+      "first_page": 65,
+      "description_mr": "नाशिकरोड रेल्वेस्टेशन ते बोरगड मार्गे अशोका, मेरी, रीलायंस पेट्रोल पंप, म्हसरूळ",
+      "total_km": 229.3,
+      "effective_from": "02.04.2026"
+    },
+    {
+      "route": "256",
+      "first_page": 67,
+      "description_mr": "नाशिकरोड ते लाखलगांव मार्गे गव्हरमेंट पॉलिटेक्निक कॉलेज, कोटमगांव, हिंगणवेढा",
+      "buses": 1,
+      "total_km": 188,
+      "effective_from": "02.06.2026",
+      "bus_type": "New Route - Midi Bus"
+    },
+    {
+      "route": "251",
+      "first_page": 69,
+      "description_mr": "नाशिकरोड ते सी.बी.एस मार्गे बिटको, जेलटाकी, सैलानीबाबा, नांदुरगाव, नांदुरनाका, तपोवन, जुना आडगाव नाका",
+      "buses": 2,
+      "total_km": 199.8,
+      "effective_from": "03.05.2026"
+    },
+    {
+      "route": "2631",
+      "first_page": 71,
+      "description_mr": "नाशिकरोड ते भुजबळ नॉलेज सिटी मार्गे अशोका नगर, इंदिरा नगर, सि.बी.एस., पंचवटी, हिरावाडी, अमृतधाम",
+      "total_km": 610.8,
+      "effective_from": "09.04.2026"
+    },
+    {
+      "route": "101A",
+      "first_page": 73,
+      "description_mr": "तपोवन ते बारदान फाटा मार्गे सिडको, सातपुर, अशोक नगर",
+      "total_km": 1048.8,
+      "effective_from": "15.06.2026",
+      "description_uncertain": true
+    },
+    {
+      "route": "102",
+      "first_page": 75,
+      "description_mr": "तपोवन ते बारदान फाटा मार्गे शालीमार, एच.पी.टी, सातपूर, अशोकनगर",
+      "total_km": 779.3,
+      "effective_from": "15.06.2026"
+    },
+    {
+      "route": "103",
+      "first_page": 77,
+      "description_mr": "तपोवन ते सिम्बॉयसिस कॉलेज मार्गे पवन नगर, उत्तम नगर",
+      "total_km": 1526.3,
+      "effective_from": "30.06.2026"
+    },
+    {
+      "route": "104",
+      "first_page": 81,
+      "description_mr": "तपोवन ते पाथर्डी गांव मार्गे नागजी, इंदिरा नगर, वन वैभव",
+      "total_km": 1257.6,
+      "effective_from": "13.08.2026"
+    },
+    {
+      "route": "106A",
+      "first_page": 83,
+      "description_mr": "तपोवन ते अमृता नगर मार्गे कमोद नगर, वासन नगर, पाथर्डी फाटा",
+      "total_km": 736,
+      "effective_from": "10.08.2026"
+    },
+    {
+      "route": "106G",
+      "first_page": 85,
+      "description_mr": "तपोवन ते अमृतानगर मार्गे पंचवटी महामार्ग, लेखानगर, गामणे गार्डन, कृष्णाई नगर, सावंत चौक",
+      "total_km": 682.5,
+      "effective_from": "23.07.2026"
+    },
+    {
+      "route": "107",
+      "first_page": 87,
+      "description_mr": "तपोवन ते अंबड गाव मार्गे महामार्ग, लेखा नगर, गरवारे",
+      "total_km": 696.9,
+      "effective_from": "29.06.2026"
+    },
+    {
+      "route": "108",
+      "first_page": 89,
+      "description_mr": "सी.बी.एस. (मायको सर्कल) ते सुकेणा मार्गे आडगाव, ओझर, दिक्षी",
+      "total_km": 1039.4,
+      "effective_from": "01.04.2026"
+    },
+    {
+      "route": "111A",
+      "first_page": 91,
+      "description_mr": "तपोवन ते म्हाडा मार्गे सिव्हील, सातपुर पेट्रोल पंप, विराट नगर",
+      "total_km": 354,
+      "effective_from": "21.06.2026"
+    },
+    {
+      "route": "111B",
+      "first_page": 93,
+      "description_mr": "तपोवन ते म्हाडा मार्गे सिव्हील, सातपुर, दत्तमंदिर, जाधव संकुल",
+      "total_km": 355.2,
+      "effective_from": "08.06.2026"
+    },
+    {
+      "route": "127",
+      "first_page": 95,
+      "description_mr": "तपोवन ते चुंचाळे गाव मार्गे सीबीएस, खुटवड नगर, केवल पार्के",
+      "total_km": 130.8,
+      "effective_from": "10.08.2026"
+    },
+    {
+      "route": "128A",
+      "first_page": 97,
+      "description_mr": "तपोवन ते चुंचाळे गाव मार्गे सिडको, त्रिमूर्ती चौक, कामटवाडा",
+      "total_km": 1374.1,
+      "effective_from": "01.04.2026"
+    },
+    {
+      "route": "129A",
+      "first_page": 101,
+      "description_mr": "तपोवन ते भगुर मार्गे शालीमार, द्वारका, जयभवानी रोड, देवळाली कॅम्प",
+      "total_km": 1498.2,
+      "effective_from": "28.07.2026"
+    },
+    {
+      "route": "130A",
+      "first_page": 103,
+      "description_mr": "तपोवन ते भगुर मार्गे शालीमार, द्वारका, बिटको, देवळाली कॅम्प",
+      "total_km": 1361.4,
+      "effective_from": "28.07.2026"
+    },
+    {
+      "route": "131A",
+      "first_page": 105,
+      "description_mr": "तपोवन ते गिरणारे मार्गे अशोकस्तंभ, गंगापुर",
+      "total_km": 1543.9,
+      "effective_from": "27.07.2026"
+    },
+    {
+      "route": "132",
+      "first_page": 107,
+      "description_mr": "सी.बी.एस. (मायको सर्कल) ते सायखेडा मार्गे ओढा, लाखलगांव",
+      "total_km": 1651.3,
+      "effective_from": "01.04.2026"
+    },
+    {
+      "route": "133",
+      "first_page": 109,
+      "description_mr": "सी.बी.एस. (मायको सर्कल) ते सायखेडा मार्गे आडगाव, सैय्यद पिंप्री, खेरवाडी",
+      "total_km": 1112.9
+    },
+    {
+      "route": "137",
+      "first_page": 111,
+      "description_mr": "तपोवन ते जातेगांव मार्गे विल्होळी",
+      "total_km": 251,
+      "effective_from": "01.04.2026"
+    },
+    {
+      "route": "144",
+      "first_page": 113,
+      "description_mr": "सी.बी.एस. (मायको सर्कल) ते मोहाडी मार्गे 10 वा मैल, जानोरी",
+      "total_km": 639.1,
+      "effective_from": "01.04.2026"
+    },
+    {
+      "route": "146A",
+      "first_page": 115,
+      "description_mr": "तपोवन ते सिन्नर मार्गे शालीमार, द्वारका, नाशिकरोड",
+      "total_km": 3622.3,
+      "effective_from": "23.07.2026"
+    },
+    {
+      "route": "245A",
+      "first_page": 119,
+      "description_mr": "नाशिकरोड ते त्र्यंबकेश्वर मार्गे जेल रोड, निमाणी, सातपूर बस स्टँड",
+      "total_km": 4453.7,
+      "effective_from": "26.07.2026"
+    },
+    {
+      "route": "152",
+      "first_page": 125,
+      "description_mr": "नविन सि.बी.एस. (मायको सर्कल) ते पिंपळगाव/मुखेड फाटा",
+      "total_km": 3619.3,
+      "effective_from": "18.05.2026"
+    },
+    {
+      "route": "160",
+      "first_page": 129,
+      "description_mr": "नविन सि.बी.एस. (मायको सर्कल) ते कोचरगाव",
+      "total_km": 388.6,
+      "effective_from": "01.05.2026"
+    },
+    {
+      "route": "163",
+      "first_page": 131,
+      "description_mr": "नवीन सीबीएस ते भुजबळ नॉलेज सिटी मार्गे निमाणी, हिरावाडी, अमृतधाम",
+      "total_km": 173.7,
+      "effective_from": "22.06.2026"
+    },
+    {
+      "route": "169",
+      "first_page": 133,
+      "description_mr": "तपोवन ते स्वप्नपूर्ती नगर मार्गे कॉलेज रोड, ए.बी.बी, उत्तम नगर, पाथर्डी फाटा, विक्रांकिर भवन",
+      "total_km": 464,
+      "effective_from": "19.07.2026"
+    },
+    {
+      "route": "260I",
+      "first_page": 135,
+      "description_mr": "नाशिकरोड ते मुंगसरा मार्गे अशोक मार्ग, शालीमार, मखमलाबाद",
+      "buses": 2,
+      "total_km": 444.5,
+      "effective_from": "11.08.2026",
+      "bus_type": "Midi bus"
+    }
+  ]
+}
