@@ -42,6 +42,7 @@ Basemap is [OpenFreeMap](https://openfreemap.org) — `positron` for light,
 | `src/download.ts` | the per-layer format menu and the file save |
 | `src/theme.ts` | theme state, basemap URLs, terrain and point-halo colours |
 | `src/confidence.ts` | the accuracy vocabularies, and what each grade tells a reader |
+| `src/descriptions.ts` | what each layer is, where it came from, and what it will mislead you about |
 | `src/splash.ts` | intro sequence timing and skip |
 | `src/style.css` | design tokens, splash, shell, popup |
 | `scripts/build-datasets.mjs` | splits the master NTKMA KML into per-layer GeoJSON |
@@ -81,6 +82,40 @@ after two animation frames; `style.css` is a `<link>` in `index.html` rather tha
 a JS import, for the same reason. `scripts/check-splash-timing.mjs` asserts the
 intro is already playing while the map chunk is still in flight.
 
+### What a popup says
+
+Clicking a feature used to answer with its raw spreadsheet columns and nothing
+else. That tells you what was recorded and never what you are looking at: "HOLDING
+AREA 60" with an area in square metres does not say whether it is a crowd ground
+or a car park, and `geocodeConfidence: LOW` does not say who graded it.
+
+So `src/descriptions.ts` carries, per layer, what a single feature **is**, where
+the data **came from**, and what the layer will **mislead** you about. Raw keys
+get a readable label — `actualReachTime` shows as "Actual Reach Time" — with the
+original key kept on hover so a reader can still match a popup against a
+downloaded CSV.
+
+Each entry was drafted from that layer's own fields and its build script, then
+fact-checked by a second reader whose brief was to refute it. **That pass
+rewrote 31 of the 36.** What it caught was not stylistic:
+
+- the **ghats** layer described as following the KMZ's folders, when it is the
+  one layer that does not — its two named ghats sit in the Railway station and
+  VIP routes folders, and the rest were pulled out of Holding Areas by measuring
+  against the river
+- the **ring road** called a stretch of road, when all eight features are closed
+  loops that end on their own start point
+- the **parking** merge described as appending polygons, when it also replaced
+  the geometry of an existing zone
+- **congestion points** presented as measured crowding, when "congestion" is the
+  build script's own label for whatever polygons were left over
+
+The layer caveat is deliberately separate from the per-feature confidence badge:
+that one says how sure the map is about *this* point, the caveat says what the
+whole dataset gets wrong. For a layer where every position is a locality guess,
+the badge repeats per dot while the caveat gives the proportion — 40 of 46
+hotels placed by locality name, 6 more near the city centre.
+
 ### Downloads
 
 Every sidebar row has a ↓ button: pick a layer, pick a format, get that layer
@@ -116,6 +151,38 @@ brand colour reads as "selected".
 
 The splash background is exactly `#FEFEFE` because that is the logo PNG's own
 opaque ground; any other value shows its rectangle as a seam.
+
+### Layer colours
+
+All 36 layers have their own colour. They did not used to: colour encoded only
+the group, and layers inside a group were lightness steps of a single hue, which
+put Emergency routes and Bus stops at ΔE 1.5 — indistinguishable — with 89 of the
+630 pairs under ΔE 10.
+
+Hue still carries the family, so "is this emergency or shopping" still reads at a
+glance. What changed is that separation *within* a family is now bought with
+lightness and chroma. Each layer was pinned to a ±35° window around the hue it
+already wore, and forbidden to drift nearer another group's hue than its own —
+without that second rule the optimiser put malls in pure red and police in tan.
+Within those bounds a search maximised the smallest of all 630 pairwise
+distances.
+
+**Worst pair is now ΔE 7.6, with 2 pairs under ΔE 10 instead of 89.** Both
+survivors are inside Shops, where five layers share the orange-brown corner of
+the gamut and there is no more room.
+
+Colour-vision deficiency is enforced as a floor rather than the goal: no pair
+collapses below ΔE 4 under protanopia, deuteranopia or tritanopia (Machado 2009
+matrices), and the per-layer glyph remains the identifier that does not depend on
+colour at all. Optimising *for* CVD caps the whole palette at ΔE 4.9, which is
+worse for everybody — 36 hues that survive colour blindness do not exist, which
+is what the original six-family scheme was right about.
+
+Hospitals and Ghats keep their exact previous colour, and the five layers the map
+opens with are held to a vivid chroma; the other 31 may use the muted end, which
+is where most of the separation is won. Lightness runs 0.455–0.755 OKLCH, and
+every symbol carries a halo — white on the light theme, near-black on the dark —
+so both ends stay legible on either basemap.
 
 ## Data honesty
 

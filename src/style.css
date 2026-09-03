@@ -461,6 +461,32 @@ body {
   color: var(--muted);
 }
 
+/* What the feature is, in a sentence — the first thing worth reading, so it sits
+   directly under the layer name and in the body colour rather than the muted
+   grey the metadata uses. */
+.popup-summary {
+  margin: 0 0 10px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+/* Where the layer came from. Last in the popup and deliberately quiet: checked
+   once, then no longer in the way. */
+.popup-source {
+  margin: 10px 0 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+  font-size: 10.5px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+/* The readable field label carries the raw column name as a tooltip. */
+.popup dt[title] {
+  cursor: help;
+}
+
 .popup-warn {
   margin: 0 0 10px;
   padding: 7px 9px;
@@ -529,6 +555,11 @@ body {
   border-radius: 10px;
   padding: 14px 16px;
   box-shadow: var(--shadow);
+  /* A police station with a description, a caveat and nine fields runs to about
+     540px, which is taller than a phone. Scroll the popup rather than let it
+     run off the top of the map where the close button goes with it. */
+  max-height: 60vh;
+  overflow-y: auto;
   font-family: inherit;
 }
 

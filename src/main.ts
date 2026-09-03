@@ -5,6 +5,7 @@ import type { FeatureCollection } from 'geojson';
 import maplibregl, { type DataDrivenPropertyValueSpecification, type MapGeoJSONFeature } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { CAVEAT, VERIFIED } from './confidence';
+import { LAYER_INFO } from './descriptions';
 import { downloadAllButton, downloadButton } from './download';
 import { NAME_KEYS, featureName } from './formats';
 import { GROUPS, LAYERS, type LayerDef } from './layers';
@@ -300,6 +301,19 @@ function popupContent(feature: MapGeoJSONFeature, def: LayerDef): HTMLElement {
   layer.append(swatch, document.createTextNode(def.label));
   wrapper.append(title, layer);
 
+  // What this dot actually is, in a sentence. A row of raw spreadsheet keys
+  // tells someone what was recorded but never what they are looking at, and the
+  // layer name alone does not say whether a "holding area" is a crowd ground or
+  // a car park. See ./descriptions — every line there is checked against the
+  // data and the build scripts.
+  const info = LAYER_INFO[def.id];
+  if (info) {
+    const summary = document.createElement('p');
+    summary.className = 'popup-summary';
+    summary.textContent = info.summary;
+    wrapper.append(summary);
+  }
+
   const confidence = props.locationConfidence ?? props.geocodeConfidence;
   const caveat = typeof confidence === 'string' ? CAVEAT[confidence] : undefined;
   if (caveat) {
@@ -318,17 +332,42 @@ function popupContent(feature: MapGeoJSONFeature, def: LayerDef): HTMLElement {
     wrapper.append(ok);
   }
 
+  // A layer-wide warning, separate from the per-feature confidence badge above:
+  // that one says how sure the map is about THIS point, this one says what the
+  // whole dataset will mislead you about if you read it at face value.
+  if (info?.caveat) {
+    const note = document.createElement('p');
+    note.className = 'popup-note';
+    note.textContent = info.caveat;
+    wrapper.append(note);
+  }
+
   const table = document.createElement('dl');
   for (const [key, value] of Object.entries(props)) {
     if (value === null || value === undefined || value === '') continue;
     if (NAME_KEYS.includes(key) || HIDDEN_KEYS.has(key)) continue;
     const dt = document.createElement('dt');
-    dt.textContent = key;
+    // Raw keys are whatever the source spreadsheet called the column —
+    // "actualReachTime", "geocodeConfidence", "Tier". The readable label is
+    // shown where one exists, and the raw key stays on hover so anyone matching
+    // the popup against a downloaded CSV can still find the column.
+    const label = info?.fieldNotes?.[key];
+    dt.textContent = label ?? key;
+    if (label) dt.title = key;
     const dd = document.createElement('dd');
     dd.textContent = String(value);
     table.append(dt, dd);
   }
   if (table.childElementCount) wrapper.append(table);
+
+  // Where the layer came from, last and quiet — it is the thing a reader checks
+  // once and then stops needing.
+  if (info) {
+    const source = document.createElement('p');
+    source.className = 'popup-source';
+    source.textContent = info.provenance;
+    wrapper.append(source);
+  }
   return wrapper;
 }
 
