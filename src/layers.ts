@@ -65,7 +65,9 @@ export const LAYERS: LayerDef[] = [
   // KB, and the route layers are only legible zoomed into one corridor anyway.
   { id: 'staging-areas',       file: 'staging-areas.geojson',       label: 'Staging areas',       color: '#189ab7', group: 'Mobility', symbol: 'S' , labels: true },
   { id: 'holding-areas',       file: 'holding-areas.geojson',       label: 'Holding areas',       color: '#0154d5', group: 'Mobility', symbol: 'HA' , labels: true },
-  { id: 'railway-station',     file: 'railway-station.geojson',     label: 'Railway station plans', color: '#474f93', group: 'Mobility', symbol: 'R' , labels: true },
+  // Label only — the id and the file keep the KMZ's own "Railway station"
+  // wording, which is what sourceFolder on every feature refers back to.
+  { id: 'railway-station',     file: 'railway-station.geojson',     label: 'Station access plans', color: '#474f93', group: 'Mobility', symbol: 'R' , labels: true },
   { id: 'vip-routes',          file: 'vip-routes.geojson',          label: 'VIP routes',          color: '#939ecd', group: 'Mobility', symbol: 'VIP' , labels: true },
   { id: 'emergency-routes',    file: 'emergency-routes.geojson',    label: 'Emergency routes',    color: '#6b74c3', group: 'Mobility', symbol: 'E' , labels: true },
   { id: 'movement-routes',     file: 'movement-routes.geojson',     label: 'Movement routes',     color: '#32b7ff', group: 'Mobility', symbol: 'MV' , labels: true },
