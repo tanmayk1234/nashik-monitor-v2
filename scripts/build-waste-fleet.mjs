@@ -23,7 +23,7 @@
 //
 // The 355,246 raw GPS pings are deliberately NOT emitted. Two reasons, and the
 // second is the one that decides it:
-//   - 77 MB against a public/data that is 3.5 MB in total.
+//   - 77 MB, against a public/data that is 6.6 MB in total.
 //   - Each vehicle_details.json is one vehicle's entire shift at roughly one
 //     fix per second on a named date. A vehicle maps to a crew, so publishing
 //     it would put a worker's whole working day on a public map. The route,

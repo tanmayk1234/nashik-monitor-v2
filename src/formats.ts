@@ -16,7 +16,11 @@ export type Format = {
   convert: (fc: FeatureCollection, meta: ExportMeta) => string;
 };
 
-export const NAME_KEYS = ['name', 'Name', 'Ghat Name'];
+// Two spellings, because the sources disagree: the KML and KMZ imports write
+// `name`, the RTI and spreadsheet ones write `Name`. Order is preference order.
+// A third, 'Ghat Name', was dropped — it came from a ghats source that has since
+// been rebuilt from the mobility KMZ, and no feature in public/data carries it.
+export const NAME_KEYS = ['name', 'Name'];
 
 export function featureName(props: Record<string, unknown> | null | undefined): string {
   const hit = NAME_KEYS.map((k) => props?.[k]).find((v) => v !== undefined && v !== null && v !== '');
@@ -40,7 +44,7 @@ function wkt(g: Geometry): string {
     case 'MultiLineString': return `MULTILINESTRING (${rings(g.coordinates)})`;
     case 'Polygon': return `POLYGON (${rings(g.coordinates)})`;
     case 'MultiPolygon': return `MULTIPOLYGON (${g.coordinates.map((p) => `(${rings(p)})`).join(', ')})`;
-    default: return ''; // GeometryCollection — none of the 25 datasets holds one
+    default: return ''; // GeometryCollection — none of the 36 datasets holds one
   }
 }
 

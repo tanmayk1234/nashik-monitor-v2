@@ -6,7 +6,7 @@ import { FORMATS, type Format } from './formats';
 export type Target = { id: string; label: string; color: string };
 type Loader = () => Promise<FeatureCollection | null>;
 
-// One menu shared by all 31 rows and the whole-map button rather than one each:
+// One menu shared by all 36 rows and the whole-map button rather than one each:
 // the button that opened it sets `pending`, and that decides what gets written.
 let pending: { target: Target; load: Loader } | null = null;
 
@@ -26,7 +26,7 @@ function save(text: string, filename: string, mime: string): void {
 async function run(fmt: Format): Promise<void> {
   if (!pending) return;
   const { target, load } = pending;
-  // Merging all 31 datasets means fetching whatever is not cached yet, so this
+  // Merging all 36 datasets means fetching whatever is not cached yet, so this
   // can sit for a second or two on a cold load. Say so rather than look stuck.
   title.textContent = `${target.label} — preparing ${fmt.label}…`;
   const geojson = await load();

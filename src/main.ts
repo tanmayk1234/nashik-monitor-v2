@@ -85,6 +85,17 @@ const styledNumber = (key: string, fallback: number): DataDrivenPropertyValueSpe
 const styledColor = (key: string, fallback: string): DataDrivenPropertyValueSpecification<never> =>
   ['case', ['has', key], ['to-string', ['get', key]], fallback] as never;
 
+// The map label reads the same name keys the popup title does, in the same
+// order. It used to read only lowercase `name`, which is what the KML and KMZ
+// imports write — so every layer sourced from an RTI instead, which writes
+// `Name`, drew its labels as empty strings: all 1,563 waste checkpoints and both
+// bus depots. Built from NAME_KEYS so the two cannot drift apart again.
+const nameExpression = [
+  'case',
+  ...NAME_KEYS.flatMap((key) => [['has', key], ['to-string', ['get', key]]]),
+  '',
+] as unknown as DataDrivenPropertyValueSpecification<never>;
+
 function addSublayers(def: LayerDef): void {
   const visibility = shown.has(def.id) ? 'visible' : 'none';
   map.addLayer({
@@ -149,7 +160,7 @@ function addSublayers(def: LayerDef): void {
     minzoom: 13,
     layout: {
       visibility,
-      'text-field': ['case', ['has', 'name'], ['to-string', ['get', 'name']], ''],
+      'text-field': nameExpression,
       'text-font': ['Noto Sans Bold'],
       'text-size': 11,
       'text-anchor': 'top',
@@ -173,9 +184,10 @@ function mount(def: LayerDef): void {
   pickable = LAYERS.flatMap((l) => sublayerIds(l.id)).filter((id) => map.getLayer(id));
 }
 
-// Fetched on first toggle or first download, never re-fetched. ring-road.geojson
-// is 6.5 MB of 12k LineStrings: fine on demand, wrong to load eagerly. Move that
-// one file to vector tiles if it ever has to be on by default.
+// Fetched on first toggle or first download, never re-fetched. waste-routes is
+// 1.6 MB of 254 planned rounds and waste-zones another 900 KB: fine on demand,
+// wrong to load eagerly. Move those to vector tiles if either ever has to be on
+// by default.
 async function loadData(def: LayerDef): Promise<FeatureCollection | null> {
   const cached = data.get(def.id);
   if (cached) return cached;
@@ -244,7 +256,7 @@ function layerRow(def: LayerDef): HTMLLabelElement {
 }
 
 // Every layer in one file. Each feature gains a `layer` property, or a merged
-// export would be 8,057 features with no way to tell a hospital from a ghat.
+// export would be 12,128 features with no way to tell a hospital from a ghat.
 // Goes through loadData, so anything already on the map is reused from cache and
 // the sidebar counts fill in as the rest arrives.
 async function loadEverything(): Promise<FeatureCollection | null> {

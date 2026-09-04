@@ -23,7 +23,7 @@ const maptiler = (style: string): string => `https://api.maptiler.com/maps/${sty
 
 type BasemapDef = { id: Basemap; label: string; light: string; dark: string };
 
-// positron is deliberately washed out so 31 layers of data stay readable over
+// positron is deliberately washed out so 36 layers of data stay readable over
 // it; liberty carries the full OSM label set — place names, POIs, road shields
 // — for when the basemap itself is what you are reading.
 export const BASEMAPS: BasemapDef[] = [
