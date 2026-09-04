@@ -26,6 +26,11 @@ export type LayerInfo = {
   summary: string;
   provenance: string;
   caveat?: string;
+  // Shown once, as a notice, the moment the layer is switched on — before anyone
+  // has clicked anything. Only for a dataset that would be actively misread
+  // otherwise: a caveat in a popup is no use to someone who takes one look at
+  // 4,079 dots and concludes the city is covered in cameras.
+  notice?: string;
   fieldNotes?: Record<string, string>;
 };
 
@@ -80,10 +85,12 @@ export const LAYER_INFO: Record<string, LayerInfo> = {
     },
   },
   'cctv-cameras': {
-    summary: "One CCTV camera position. Labels come in two forms: Z<zone>-C<camera> (Z1-C1), or a plain running number in one of four series — C-0001, M-001, RRC 1, G-001.",
-    provenance: "Split out of the NTKMA master KML by scripts/build-datasets.mjs, which takes every point placemark in that file as a camera.",
-    caveat: "Zone is parsed off the label and only exists for the Z<n>-C<m> names — 1,280 of the 4,079 cameras, 32 zones of 40 each. The other 2,799 are numbered C-, M-, RRC- and G-, series that carry no zone at all, so a blank zone means the label never named one. Whether those cameras sit inside a zone is not recorded anywhere.",
+    summary: "An indicative camera position, not a surveyed one — a marker for roughly where surveillance coverage is planned, not a camera you could go and stand under.",
+    provenance: "Split out of the NTKMA master KML by scripts/build-datasets.mjs. 2,200 of the 4,079 points were placed programmatically rather than surveyed: a generator scattered them at random inside the ghat and core-city polygons, 400 named G-###, 1,200 named C-#### and 600 named M-### spread around the core perimeter.",
+    notice: "Indicative only. Just over half these 4,079 points were scattered at random inside planning zones rather than surveyed, so treat the layer as where coverage is intended, not as a camera inventory. No dot is a real camera location.",
+    caveat: "No coordinate in this layer is a surveyed camera position. The G-, C- and M- series — 2,200 points — were generated at random inside polygons; the 1,280 Z<n>-C<m> and 599 RRC points came from the KML, and nothing here establishes those as surveyed either. Zone is parsed off the label and exists only for the Z<n>-C<m> names, so a blank zone means the label never carried one.",
     fieldNotes: {
+      placement: "How This Point Was Placed",
       zone: "Camera Zone",
     },
   },

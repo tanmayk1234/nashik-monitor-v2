@@ -214,8 +214,52 @@ function setVisible(def: LayerDef, visible: boolean): void {
   }
 }
 
+// A dataset that would be actively misread gets one notice the first time it is
+// switched on, rather than waiting for someone to click a feature. The CCTV
+// layer is the case that needs it: 4,079 dots read as a camera inventory, and
+// over half of them were scattered at random inside planning polygons.
+//
+// Once per layer per page load. Repeating it every toggle is how a warning gets
+// trained out of being read, which is the same reasoning as the two popup tones
+// in ./confidence.
+const noticed = new Set<string>();
+
+function showNotice(def: LayerDef): void {
+  const text = LAYER_INFO[def.id]?.notice;
+  if (!text || noticed.has(def.id)) return;
+  noticed.add(def.id);
+
+  const toast = document.createElement('div');
+  toast.className = 'notice';
+  toast.setAttribute('role', 'status');
+
+  const heading = document.createElement('strong');
+  heading.textContent = def.label;
+
+  const body = document.createElement('p');
+  body.textContent = text;
+
+  const close = document.createElement('button');
+  close.type = 'button';
+  close.className = 'notice-close';
+  close.textContent = '×';
+  close.setAttribute('aria-label', 'Dismiss');
+
+  const remove = (): void => {
+    toast.classList.add('is-leaving');
+    window.setTimeout(() => toast.remove(), 300);
+  };
+  close.addEventListener('click', remove);
+  // Long enough to read two sentences, and dismissible before that.
+  window.setTimeout(remove, 11000);
+
+  toast.append(close, heading, body);
+  document.body.append(toast);
+}
+
 async function showLayer(def: LayerDef): Promise<void> {
   shown.add(def.id);
+  showNotice(def);
   if (!(await loadData(def))) {
     shown.delete(def.id);
     return;

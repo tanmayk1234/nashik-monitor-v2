@@ -256,6 +256,21 @@ more digits — which is the binary expansion of the number, not survey accuracy
 They are rounded to 6 decimal places, about 0.11 m, finer than any fix in the
 file.
 
+**The 4,079 CCTV points are indicative, not an inventory.** 2,200 of them were
+never surveyed: a generator scattered them at random inside the ghat and
+core-city polygons — 400 named `G-###`, 1,200 named `C-####`, and 600 named
+`M-###` around the core perimeter — and the same script deleted the legacy camera
+placemarks it found on the way through. The other 1,280 `Z<n>-C<m>` and 599
+`RRC` points came from the master KML, and nothing here establishes those as
+surveyed either, so the whole layer carries `locationConfidence: "indicative"`
+rather than splitting a distinction the source does not support. Each point also
+carries `placement`, which is the one thing that genuinely differs between them.
+
+A caveat in a popup was not enough here: 4,079 dots read as "the city is covered
+in cameras" before anyone clicks anything. So this is the one layer that says so
+on selection — switching it on raises a notice, once per page load. `notice` in
+`src/descriptions.ts` is that mechanism, and CCTV is deliberately its only user.
+
 This matters. Two real errors found by cross-checking:
 
 - **Ghats** were 10 spreadsheet points sitting **344–402 m off the Godavari**, in
@@ -284,7 +299,7 @@ the NTKMA master file.
 
 ## Roadmap
 
-- **Clustering.** Mandirs (1,089), grocery shops (745) and CCTV (4,079) draw as
+- **Clustering.** Mandirs (1,089), grocery shops (745) and CCTV (4,079, indicative) draw as
   raw circles. Needs per-layer cluster config, so decide first which layers are
   "browse" and which are "look up".
 - **Search**, URL state, deploy config.

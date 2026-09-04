@@ -127,9 +127,28 @@ function write(file, features, expected) {
 
 // ── CCTV cameras ──────────────────────────────────────────────────────────
 // Labels read Z<zone>-C<camera>, so the zone is worth keeping as its own field.
+//
+// None of these is a surveyed camera position, and the layer must not be able to
+// claim otherwise. 2,200 of the 4,079 were placed by a generator that scattered
+// points at random inside the ghat and core-city polygons — 400 named G-###,
+// 1,200 named C-#### and 600 named M-### around the core perimeter — and that
+// same generator deleted the legacy camera placemarks it found. The remaining
+// Z<n>-C<m> and RRC points came from the KML, and nothing here establishes them
+// as surveyed either, so the whole layer is marked indicative rather than
+// splitting a distinction the source does not support.
+//
+// `placement` keeps the one thing that IS per-point: whether the generator made
+// it up or the KML supplied it. The name prefix is what tells them apart.
+const GENERATED_NAME = /^[GCM]-\d+$/;
 const cameras = named.filter(isCamera).map((entry) => {
   const zone = entry.name.match(/^Z(\d+)-C/)?.[1];
-  return toFeature(entry, zone ? { zone: `Zone ${zone}` } : {});
+  return toFeature(entry, {
+    ...(zone ? { zone: `Zone ${zone}` } : {}),
+    locationConfidence: 'indicative',
+    placement: GENERATED_NAME.test(entry.name)
+      ? 'generated at random in a planning polygon'
+      : 'from the NTKMA master KML',
+  });
 }).filter(Boolean);
 
 // ── Congestion points ─────────────────────────────────────────────────────

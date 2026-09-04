@@ -28,6 +28,15 @@ export const CAVEAT: Record<string, Caveat> = {
     text: 'Approximate — no locality match, placed near the city centre.',
     tone: 'warn',
   },
+  // Stronger than "approximate", and a different kind of claim. An approximate
+  // point is a real thing whose position was guessed; an indicative one is a
+  // marker for planned coverage that was never a survey of anything. 2,200 of
+  // the 4,079 CCTV points were scattered at random inside planning polygons by a
+  // generator, and nothing establishes the rest as surveyed either.
+  indicative: {
+    text: 'Indicative only — a marker for planned coverage, not a surveyed position. There is no camera at this point.',
+    tone: 'warn',
+  },
   LOW: {
     text: 'Low confidence — a neighbourhood-level position, usually shared with other hospitals in this source. Treat it as the area, not the building.',
     tone: 'warn',

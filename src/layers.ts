@@ -1,9 +1,11 @@
+export const GROUPS = ['Kumbh', 'Mobility', 'Emergency', 'Civic', 'Stay', 'Shops'] as const;
+
 export type LayerDef = {
   id: string;
   file: string;
   label: string;
   color: string;
-  group: 'Kumbh' | 'Mobility' | 'Emergency' | 'Civic' | 'Stay' | 'Shops';
+  group: (typeof GROUPS)[number];
   symbol: string;
   on?: boolean;
   // Name the features on the map from zoom 13, the way Google Earth does. Set
@@ -109,5 +111,3 @@ export const LAYERS: LayerDef[] = [
   { id: 'malls',               file: 'malls.geojson',               label: 'Malls',               color: '#ee6f13', group: 'Shops', symbol: 'M' },
   { id: 'watch-stores',        file: 'watch-stores.geojson',        label: 'Watch & clock shops', color: '#aca267', group: 'Shops', symbol: 'W' },
 ];
-
-export const GROUPS = ['Kumbh', 'Mobility', 'Emergency', 'Civic', 'Stay', 'Shops'] as const;

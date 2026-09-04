@@ -442,6 +442,79 @@ body {
 
 #map { flex: 1; }
 
+/* ── Notice ─────────────────────────────────────────────────────────────── */
+/* Shown once when a layer that would be misread is switched on. Bottom-left,
+   clear of the sidebar and of the map controls in the other three corners. */
+
+.notice {
+  position: fixed;
+  left: 320px;
+  bottom: 24px;
+  z-index: 60;
+  max-width: 340px;
+  padding: 12px 34px 13px 14px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  animation: notice-in 0.28s var(--ease) both;
+}
+
+.notice.is-leaving {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.notice strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.notice p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.notice-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  padding: 2px 5px;
+  border: 0;
+  border-radius: 4px;
+  background: none;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.notice-close:hover,
+.notice-close:focus-visible {
+  background: var(--hover);
+  color: var(--text);
+}
+
+@keyframes notice-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* The sidebar collapses out of the way on a narrow screen, so the notice has to
+   come with it rather than sitting under where the panel used to be. */
+@media (max-width: 720px) {
+  .notice { left: 12px; right: 12px; max-width: none; }
+}
+
 /* ── Popup ──────────────────────────────────────────────────────────────── */
 
 .popup h3 {
